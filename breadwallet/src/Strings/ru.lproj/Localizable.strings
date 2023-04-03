@@ -231,27 +231,12 @@
 "Confirmation.to" = "На";
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "Общая стоимость:";
-"ConfirmGift.paperWalletAmount" = "Сумма бумажного кошелька";
-"ConfirmGift.processingTime" = "Проверка этого бумажного кошелька в сети может занять до 60 минут.";
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "Введенные слова не соответствуют вашей фразе для восстановления. Пожалуйста, попробуйте еще раз.";
 /* Confirm paper phrase view label. */
 "ConfirmPaperPhrase.label" = "Чтобы убедиться, что все записано правильно, введите следующие слова из фразы для восстановления.";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "Слово #%1$@";
-"CreateGift.amountLabel" = "Выберите сумму ($ USD)";
-"CreateGift.create" = "Создавать";
-"CreateGift.customAmountHint" = "Специальная сумма (макс. 500 долларов США)";
-"CreateGift.description" = "Мы создадим то, что называется";
-"CreateGift.inputAmountError" = "Вы должны выбрать сумму подарка.";
-"CreateGift.inputRecipientNameError" = "Вы должны ввести имя получателя.";
-"CreateGift.insufficientBalanceError" = "У вас недостаточно средств для отправки подарка.";
-"CreateGift.insufficientBalanceForAmountError" = "У вас недостаточно средств для отправки подарка на эту сумму.";
-"CreateGift.recipientName" = "Имя получателя";
-"CreateGift.serverError" = "Произошла ошибка сервера. Пожалуйста, повторите попытку позже.";
-"CreateGift.subtitle" = "Отправляйте биткойны кому-нибудь, даже если у них нет кошелька.";
-"CreateGift.title" = "Подарить Биткойн в подарок";
-"CreateGift.unexpectedError" = "Произошла непредвиденная ошибка. Обратитесь в службу поддержки.";
 /* Agree to legal terms button */
 "Crowdsale.agree" = "Согласен";
 /* As in "(tap here to) buy (some) tokens" */
@@ -993,11 +978,6 @@
 "ShareData.header" = "Поделиться данными?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Поделиться анонимными данными?";
-"ShareGift.approximateTotal" = "Приблизительная сумма";
-"ShareGift.footerMessage1" = "Плата за сеть будет вычтена из общей суммы при подаче заявки.\n Фактическое значение зависит от текущей цены биткойна.";
-"ShareGift.footerMessage2" = "Загрузите приложение BRD для iPhone или Android.\n Для получения дополнительной информации посетите brd.com/gift.";
-"ShareGift.tagLine" = "Кто-то подарил вам биткойны!";
-"ShareGift.walletName" = "Биткойн";
 /* Button label: select a baker */
 "Staking.add" = "+ Выбрать Бейкера";
 /* Baker cell: Free Space field header */
@@ -1209,8 +1189,6 @@ eg. 182930 (45061 confirmations) */
 "TransactionDetails.gasLimitHeader" = "Лимит газа";
 /* Tx detail field header */
 "TransactionDetails.gasPriceHeader" = "Стоимость газа";
-"TransactionDetails.gift" = "Подарок";
-"TransactionDetails.giftedTo" = "Подарено %1$s";
 /* Label for Hedera Memo field on transaction details screen */
 "TransactionDetails.hederaMemo" = "Hedera Memo";
 /* Hide Details button */

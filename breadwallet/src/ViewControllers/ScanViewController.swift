@@ -193,7 +193,7 @@ extension ScanViewController: AVCaptureMetadataOutputObjectsDelegate {
         
         if allowScanningPrivateKeysOnly {
             switch result {
-            case .privateKey, .gift:
+            case .privateKey:
                 break
             default:
                 guide.state = .negative
@@ -242,8 +242,6 @@ extension ScanViewController: AVCaptureMetadataOutputObjectsDelegate {
             
         case .deepLink:
             saveEvent("scan.deepLink")
-        case .gift:
-            saveEvent("scan.gift")
         default:
             assertionFailure("unexpected result")
         }

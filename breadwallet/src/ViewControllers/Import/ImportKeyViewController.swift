@@ -144,9 +144,6 @@ class ImportKeyViewController: UIViewController, Subscriber {
         switch result {
         case .privateKey(let key):
             didReceiveAddress(key)
-        case .gift(let key, let model):
-            didReceiveAddress(key)
-            self.viewModel = model
         default:
             break
         }
@@ -224,32 +221,10 @@ class ImportKeyViewController: UIViewController, Subscriber {
             DispatchQueue.main.async {
                 self.importingActivity.dismiss(animated: true) {
                     guard success else { return self.showErrorMessage(S.Import.Error.failedSubmit) }
-                    self.markAsReclaimed()
                     self.showSuccess()
                 }
             }
         }
-    }
-    
-    private func markAsReclaimed() {
-        guard let kvStore = Backend.kvStore else { return assertionFailure() }
-        guard let viewModel = viewModel else { return assertionFailure() }
-        guard let gift = viewModel.gift else { return assertionFailure() }
-        let newGift = Gift(shared: gift.shared,
-                           claimed: gift.claimed,
-                           reclaimed: true,
-                           txnHash: gift.txnHash,
-                           keyData: gift.keyData,
-                           name: gift.name,
-                           rate: gift.rate,
-                           amount: gift.amount)
-        viewModel.tx.updateGiftStatus(gift: newGift, kvStore: kvStore)
-        if let hash = newGift.txnHash {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                Store.trigger(name: .txMetaDataUpdated(hash))
-            }
-        }
-        
     }
     
     private func handleError(_ error: WalletSweeperError) {

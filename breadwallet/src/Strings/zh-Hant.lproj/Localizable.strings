@@ -231,27 +231,12 @@
 "Confirmation.to" = "給";
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "總計：";
-"ConfirmGift.paperWalletAmount" = "紙錢包金額";
-"ConfirmGift.processingTime" = "在網絡上驗證此紙錢包可能最多需要60分鐘";
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "輸入的單詞與您的恢復短語不匹配。請再試一遍。";
 /* Confirm paper phrase view label. */
 "ConfirmPaperPhrase.label" = "為確保所有內容均正確記錄，請從您的恢復短語中輸入以下單詞。";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "字組 #%1$@";
-"CreateGift.amountLabel" = "選擇金額（美元）";
-"CreateGift.create" = "創建";
-"CreateGift.customAmountHint" = "自定義金額（最高$ 500）";
-"CreateGift.description" = "我們將創建一個所謂的";
-"CreateGift.inputAmountError" = "您必須選擇禮物金額。";
-"CreateGift.inputRecipientNameError" = "您必須輸入收件人的姓名。";
-"CreateGift.insufficientBalanceError" = "您沒有足夠的資金來發送禮物。";
-"CreateGift.insufficientBalanceForAmountError" = "您的資金不足，無法發送此數量的禮物。";
-"CreateGift.recipientName" = "收件人的名字";
-"CreateGift.serverError" = "發生服務器錯誤。請稍後再試。";
-"CreateGift.subtitle" = "即使沒有錢包，也可以將比特幣發送給某人。";
-"CreateGift.title" = "送出比特幣的禮物";
-"CreateGift.unexpectedError" = "一個意料之外的問題發生了。請聯繫支持。";
 /* Agree to legal terms button */
 "Crowdsale.agree" = "同意";
 /* As in "(tap here to) buy (some) tokens" */
@@ -993,11 +978,6 @@
 "ShareData.header" = "分享資料？";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "分享匿名資料？";
-"ShareGift.approximateTotal" = "大約合計";
-"ShareGift.footerMessage1" = "索賠時將從總費用中扣除網絡費用。\n實際價值取決於比特幣的當前價格。";
-"ShareGift.footerMessage2" = "下載適用於iPhone或Android的BRD應用程序。\n有關更多信息，請訪問brd.com/gift";
-"ShareGift.tagLine" = "有人給了你比特幣！";
-"ShareGift.walletName" = "比特幣";
 /* Button label: select a baker */
 "Staking.add" = "+選擇貝克";
 /* Baker cell: Free Space field header */
@@ -1209,8 +1189,6 @@ eg. 182930 (45061 confirmations) */
 "TransactionDetails.gasLimitHeader" = "Gas 限價";
 /* Tx detail field header */
 "TransactionDetails.gasPriceHeader" = "Gas 價格";
-"TransactionDetails.gift" = "禮物";
-"TransactionDetails.giftedTo" = "送給%1$s";
 /* Label for Hedera Memo field on transaction details screen */
 "TransactionDetails.hederaMemo" = "赫德拉回憶錄";
 /* Hide Details button */

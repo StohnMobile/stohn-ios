@@ -21,7 +21,6 @@ protocol TxViewModel {
     var displayAddress: String { get }
     var comment: String? { get }
     var tokenTransferCode: String? { get }
-    var gift: Gift? { get }
 }
 
 // Default and passthru values
@@ -78,19 +77,6 @@ extension TxViewModel {
     }
     
     var icon: StatusIcon {
-        if let gift = gift, tx.confirmations >= currency.confirmationsUntilFinal {
-            //not shared should override unclaimed
-            if gift.reclaimed == true {
-                return .gift(.reclaimed)
-            } else if gift.claimed {
-                return .gift(.claimed)
-            } else if gift.shared == false {
-                return .gift(.unsent)
-            } else {
-                return .gift(.unclaimed)
-            }
-        }
-        
         if tx.confirmations < currency.confirmationsUntilFinal {
             return .pending(CGFloat(tx.confirmations)/CGFloat(currency.confirmationsUntilFinal))
         }
@@ -104,10 +90,6 @@ extension TxViewModel {
         }
         
         return .sent
-    }
-    
-    var gift: Gift? {
-        return tx.metaData?.gift
     }
 }
 

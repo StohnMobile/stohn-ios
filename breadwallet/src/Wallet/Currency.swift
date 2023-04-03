@@ -206,14 +206,6 @@ class Currency: CurrencyWithIcon {
         return false
     }
 
-    var isGiftingEnabled: Bool {
-        if #available(iOS 13.0, *), isBitcoin {
-            return true
-        } else {
-            return false
-        }
-    }
-    
     var supportsStaking: Bool {
         return isTezos
     }

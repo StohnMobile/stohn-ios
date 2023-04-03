@@ -129,7 +129,6 @@ enum RootModal {
     case trade
     case receiveLegacy
     case stake(currency: Currency)
-    case gift
 }
 
 enum SyncState {
@@ -235,8 +234,6 @@ func == (lhs: RootModal, rhs: RootModal) -> Bool {
         return true
     case (.stake(let lhsCurrency), .stake(let rhsCurrency)):
         return lhsCurrency == rhsCurrency
-    case (.gift, .gift):
-        return true
     default:
         return false
     }

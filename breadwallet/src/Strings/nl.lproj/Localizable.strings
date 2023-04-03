@@ -231,27 +231,12 @@
 "Confirmation.to" = "Naar";
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "Totale Prijs:";
-"ConfirmGift.paperWalletAmount" = "Hoeveelheid papieren portemonnee";
-"ConfirmGift.processingTime" = "Het valideren van deze papieren portemonnee op het netwerk kan tot 60 minuten duren";
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "De ingevoerde woorden komen niet overeen met uw herstelzin. Probeer het a.u.b. opnieuw.";
 /* Confirm paper phrase view label. */
 "ConfirmPaperPhrase.label" = "Voer de volgende woorden uit uw herstelzin in om er zeker van te zijn dat alles correct is opgeschreven.";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "Woord #%1$@";
-"CreateGift.amountLabel" = "Kies bedrag ($ USD)";
-"CreateGift.create" = "Creëer";
-"CreateGift.customAmountHint" = "Aangepast bedrag (maximaal $ 500)";
-"CreateGift.description" = "We maken een zogeheten";
-"CreateGift.inputAmountError" = "U moet een geschenkbedrag selecteren.";
-"CreateGift.inputRecipientNameError" = "U moet de naam van de ontvanger invoeren.";
-"CreateGift.insufficientBalanceError" = "Je hebt onvoldoende saldo om een cadeau te sturen.";
-"CreateGift.insufficientBalanceForAmountError" = "U heeft onvoldoende saldo om dit bedrag te schenken.";
-"CreateGift.recipientName" = "Naam ontvanger";
-"CreateGift.serverError" = "Er is een serverfout opgetreden. Probeer het later nog eens.";
-"CreateGift.subtitle" = "Stuur bitcoin naar iemand, zelfs als ze geen portemonnee hebben.";
-"CreateGift.title" = "Geef Bitcoin cadeau";
-"CreateGift.unexpectedError" = "Er is een onverwachte fout opgetreden. Neem dan contact op met ondersteuning.";
 /* Agree to legal terms button */
 "Crowdsale.agree" = "Akkoord";
 /* As in "(tap here to) buy (some) tokens" */
@@ -993,11 +978,6 @@
 "ShareData.header" = "Data Delen?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Anonieme Data Delen?";
-"ShareGift.approximateTotal" = "Totaal bij benadering";
-"ShareGift.footerMessage1" = "Bij het claimen wordt een netwerkvergoeding van het totaalbedrag afgetrokken.\n De werkelijke waarde is afhankelijk van de huidige prijs van bitcoin.";
-"ShareGift.footerMessage2" = "Download de BRD-app voor iPhone of Android.\n Ga voor meer informatie naar brd.com/gift";
-"ShareGift.tagLine" = "Iemand heeft je bitcoin cadeau gedaan!";
-"ShareGift.walletName" = "Bitcoin";
 /* Button label: select a baker */
 "Staking.add" = "+ Selecteer Baker";
 /* Baker cell: Free Space field header */
@@ -1209,8 +1189,6 @@ eg. 182930 (45061 confirmations) */
 "TransactionDetails.gasLimitHeader" = "Gaslimiet";
 /* Tx detail field header */
 "TransactionDetails.gasPriceHeader" = "Gasprijs";
-"TransactionDetails.gift" = "Geschenk";
-"TransactionDetails.giftedTo" = "Geschonken aan %1$s";
 /* Label for Hedera Memo field on transaction details screen */
 "TransactionDetails.hederaMemo" = "Hedera Memo";
 /* Hide Details button */

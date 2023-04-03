@@ -231,27 +231,12 @@
 "Confirmation.to" = "送金先";
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "費用合計：";
-"ConfirmGift.paperWalletAmount" = "紙の財布の金額";
-"ConfirmGift.processingTime" = "ネットワーク上でこの紙のウォレットを検証するには、最大60分かかる場合があります";
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "入力した単語は、回復フレーズと一致しません。もう一度お試しください。";
 /* Confirm paper phrase view label. */
 "ConfirmPaperPhrase.label" = "すべてが正しく記述されていることを確認するには、回復フレーズから次の単語を入力してください。";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "フレーズ #%1$@";
-"CreateGift.amountLabel" = "金額を選択（$ USD）";
-"CreateGift.create" = "作成する";
-"CreateGift.customAmountHint" = "カスタム金額（最大$ 500）";
-"CreateGift.description" = "と呼ばれるものを作成します";
-"CreateGift.inputAmountError" = "ギフトの金額を選択する必要があります。";
-"CreateGift.inputRecipientNameError" = "受信者の名前を入力する必要があります。";
-"CreateGift.insufficientBalanceError" = "贈り物を送るのに十分な資金がありません。";
-"CreateGift.insufficientBalanceForAmountError" = "この金額のギフトを送るのに十分な資金がありません。";
-"CreateGift.recipientName" = "受取人の氏名";
-"CreateGift.serverError" = "サーバーエラーが発生しました。後でもう一度やり直してください。";
-"CreateGift.subtitle" = "財布を持っていなくてもビットコインを誰かに送ってください。";
-"CreateGift.title" = "ビットコインのギフトを贈る";
-"CreateGift.unexpectedError" = "予期しないエラーが発生しました。サポートにお問い合わせください。";
 /* Agree to legal terms button */
 "Crowdsale.agree" = "同意する";
 /* As in "(tap here to) buy (some) tokens" */
@@ -993,11 +978,6 @@
 "ShareData.header" = "データを共有しますか?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "匿名データをシェアしますか?";
-"ShareGift.approximateTotal" = "おおよその合計";
-"ShareGift.footerMessage1" = "ネットワーク料金は、請求時に合計から差し引かれます。\n実際の値はビットコインの現在の価格によって異なります。";
-"ShareGift.footerMessage2" = "iPhoneまたはAndroid用のBRDアプリをダウンロードします。\n詳細については、brd.com / giftをご覧ください。";
-"ShareGift.tagLine" = "誰かがあなたにビットコインをプレゼントしました！";
-"ShareGift.walletName" = "ビットコイン";
 /* Button label: select a baker */
 "Staking.add" = "+ベイカーを選択";
 /* Baker cell: Free Space field header */
@@ -1209,8 +1189,6 @@ eg. 182930 (45061 confirmations) */
 "TransactionDetails.gasLimitHeader" = "ガソリン上限";
 /* Tx detail field header */
 "TransactionDetails.gasPriceHeader" = "ガソリン価格";
-"TransactionDetails.gift" = "贈り物";
-"TransactionDetails.giftedTo" = "%1$s贈られました";
 /* Label for Hedera Memo field on transaction details screen */
 "TransactionDetails.hederaMemo" = "ヘデラメモ";
 /* Hide Details button */

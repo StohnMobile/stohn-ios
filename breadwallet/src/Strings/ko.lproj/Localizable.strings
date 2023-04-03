@@ -231,27 +231,12 @@
 "Confirmation.to" = "수취인";
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "총 금액:";
-"ConfirmGift.paperWalletAmount" = "종이 지갑 금액";
-"ConfirmGift.processingTime" = "네트워크에서이 종이 지갑을 확인하는 데 최대 60 분이 걸릴 수 있습니다.";
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "입력 한 단어가 복구 문구와 일치하지 않습니다. 다시 시도하십시오.";
 /* Confirm paper phrase view label. */
 "ConfirmPaperPhrase.label" = "모든 것이 올바르게 기록되었는지 확인하려면 복구 문구에서 다음 단어를 입력하십시오.";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "단어 #%1$@";
-"CreateGift.amountLabel" = "금액 선택 ($ USD)";
-"CreateGift.create" = "창조하다";
-"CreateGift.customAmountHint" = "맞춤 금액 (최대 $ 500)";
-"CreateGift.description" = "우리는";
-"CreateGift.inputAmountError" = "선물 금액을 선택해야합니다.";
-"CreateGift.inputRecipientNameError" = "받는 사람의 이름을 입력해야합니다.";
-"CreateGift.insufficientBalanceError" = "선물을 보낼 자금이 부족합니다.";
-"CreateGift.insufficientBalanceForAmountError" = "이 금액의 선물을 보낼 수있는 자금이 부족합니다.";
-"CreateGift.recipientName" = "수령인의 이름";
-"CreateGift.serverError" = "서버 오류가 발생했습니다. 나중에 다시 시도하세요.";
-"CreateGift.subtitle" = "지갑이 없어도 누군가에게 비트 코인을 보냅니다.";
-"CreateGift.title" = "비트 코인 선물하기";
-"CreateGift.unexpectedError" = "예기치 않은 오류가 발생했습니다. 지원팀에 문의하세요.";
 /* Agree to legal terms button */
 "Crowdsale.agree" = "동의하기";
 /* As in "(tap here to) buy (some) tokens" */
@@ -993,11 +978,6 @@
 "ShareData.header" = "데이터를 공유하시겠습니까?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "익명 데이터를 공유하시겠습니까?";
-"ShareGift.approximateTotal" = "대략적인 합계";
-"ShareGift.footerMessage1" = "청구시 총액에서 네트워크 요금이 공제됩니다.\n 실제 가치는 현재 비트 코인 가격에 따라 다릅니다.";
-"ShareGift.footerMessage2" = "iPhone 또는 Android 용 BRD 앱을 다운로드하십시오.\n 자세한 내용은 brd.com/gift를 방문하십시오.";
-"ShareGift.tagLine" = "누군가 당신에게 비트 코인을 선물했습니다!";
-"ShareGift.walletName" = "비트 코인";
 /* Button label: select a baker */
 "Staking.add" = "+ 베이커 선택";
 /* Baker cell: Free Space field header */
@@ -1209,8 +1189,6 @@ eg. 182930 (45061 confirmations) */
 "TransactionDetails.gasLimitHeader" = "Gas Limit";
 /* Tx detail field header */
 "TransactionDetails.gasPriceHeader" = "Gas Price";
-"TransactionDetails.gift" = "선물";
-"TransactionDetails.giftedTo" = "%1$s 에게 선물 함";
 /* Label for Hedera Memo field on transaction details screen */
 "TransactionDetails.hederaMemo" = "헤 데라 메모";
 /* Hide Details button */

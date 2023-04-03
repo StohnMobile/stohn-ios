@@ -12,14 +12,11 @@ import WalletKit
 enum QRCode: Equatable {
     case paymentRequest(PaymentRequest)
     case privateKey(String)
-    case gift(String, TxViewModel?)
     case deepLink(URL)
     case invalid
     
     init(content: String) {
-        if let url = URL(string: content), let key = QRCode.extractPrivKeyFromGift(url: url) {
-            self = .gift(key, nil)
-        } else if (Key.createFromString(asPrivate: content) != nil) || Key.isProtected(asPrivate: content) {
+        if (Key.createFromString(asPrivate: content) != nil) || Key.isProtected(asPrivate: content) {
             self = .privateKey(content)
         } else if let url = URL(string: content), url.isDeepLink {
             self = .deepLink(url)
@@ -31,10 +28,9 @@ enum QRCode: Equatable {
     }
     
     //TxViewModel is needed for marking as reclaimed
-    init?(url: URL, viewModel: TxViewModel?) {
-        guard let key = QRCode.extractPrivKeyFromGift(url: url) else { return nil }
-        self = .gift(key, viewModel)
-    }
+//    init?(url: URL, viewModel: TxViewModel?) {
+//        //
+//    }
     
     private static func detectPaymentRequest(fromURI uri: String) -> PaymentRequest? {
         return Store.state.currencies
@@ -43,13 +39,6 @@ enum QRCode: Equatable {
             }).compactMap {
                 PaymentRequest(string: uri, currency: $0)
             }.first
-    }
-    
-    private static func extractPrivKeyFromGift(url: URL) -> String? {
-        guard let privKeyComponent = Data(base64Encoded: url.lastPathComponent.paddedString) else { return nil }
-        guard let decodedString = String(data: privKeyComponent, encoding: .utf8) else { return nil }
-        guard Key.createFromString(asPrivate: decodedString) != nil else { return nil }
-        return decodedString
     }
     
     static func == (lhs: QRCode, rhs: QRCode) -> Bool {
@@ -61,8 +50,6 @@ enum QRCode: Equatable {
         case (.deepLink(let a), .deepLink(let b)):
             return a == b
         case (.invalid, .invalid):
-            return true
-        case (.gift, .gift):
             return true
         default:
             return false

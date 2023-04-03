@@ -231,27 +231,12 @@
 "Confirmation.to" = "Till";
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "Total kostnad:";
-"ConfirmGift.paperWalletAmount" = "Pappersbelopp";
-"ConfirmGift.processingTime" = "Valideringen av denna pappersplånbok i nätverket kan ta upp till 60 minuter";
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "De angivna orden matchar inte din återställningsfras. Var god försök igen.";
 /* Confirm paper phrase view label. */
 "ConfirmPaperPhrase.label" = "För att säkerställa att allt har skrivits ner korrekt, skriv följande ord från din återställningsfras.";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "Ord #%1$@";
-"CreateGift.amountLabel" = "Välj belopp ($ USD)";
-"CreateGift.create" = "Skapa";
-"CreateGift.customAmountHint" = "Anpassat belopp (max $ 500)";
-"CreateGift.description" = "Vi skapar det som kallas a";
-"CreateGift.inputAmountError" = "Du måste välja ett presentbelopp.";
-"CreateGift.inputRecipientNameError" = "Du måste ange mottagarens namn.";
-"CreateGift.insufficientBalanceError" = "Du har inte tillräckligt med pengar för att skicka en present.";
-"CreateGift.insufficientBalanceForAmountError" = "Du har inte tillräckligt med pengar för att skicka en gåva av detta belopp.";
-"CreateGift.recipientName" = "mottagarens namn";
-"CreateGift.serverError" = "Ett serverfel uppstod. Vänligen försök igen senare.";
-"CreateGift.subtitle" = "Skicka bitcoin till någon även om de inte har en plånbok.";
-"CreateGift.title" = "Ge gåvan av Bitcoin";
-"CreateGift.unexpectedError" = "Ett oväntat fel uppstod. Kontakta support.";
 /* Agree to legal terms button */
 "Crowdsale.agree" = "Godkänn";
 /* As in "(tap here to) buy (some) tokens" */
@@ -993,11 +978,6 @@
 "ShareData.header" = "Dela uppgifter?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Dela anonyma uppgifter?";
-"ShareGift.approximateTotal" = "Ungefärligt totalt";
-"ShareGift.footerMessage1" = "En nätavgift dras av från summan när den begärs.\n Verkligt värde beror på aktuellt pris på bitcoin.";
-"ShareGift.footerMessage2" = "Ladda ner BRD-appen för iPhone eller Android.\n För mer information besök brd.com/gift";
-"ShareGift.tagLine" = "Någon gav dig bitcoin!";
-"ShareGift.walletName" = "Bitcoin";
 /* Button label: select a baker */
 "Staking.add" = "+ Välj Baker";
 /* Baker cell: Free Space field header */
@@ -1209,8 +1189,6 @@ eg. 182930 (45061 confirmations) */
 "TransactionDetails.gasLimitHeader" = "Gasbegränsning";
 /* Tx detail field header */
 "TransactionDetails.gasPriceHeader" = "Gaspris";
-"TransactionDetails.gift" = "Gåva";
-"TransactionDetails.giftedTo" = "Tilldelad till %1$s";
 /* Label for Hedera Memo field on transaction details screen */
 "TransactionDetails.hederaMemo" = "Hedera Memo";
 /* Hide Details button */

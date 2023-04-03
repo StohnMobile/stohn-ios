@@ -231,27 +231,12 @@
 "Confirmation.to" = "A";
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "Costo totale:";
-"ConfirmGift.paperWalletAmount" = "Importo del portafoglio di carta";
-"ConfirmGift.processingTime" = "La convalida di questo paper wallet sulla rete può richiedere fino a 60 minuti";
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "Le parole inserite non corrispondono alla frase di recupero. Per favore riprova.";
 /* Confirm paper phrase view label. */
 "ConfirmPaperPhrase.label" = "Per assicurarti che tutto sia stato scritto correttamente, inserisci le seguenti parole dalla frase di recupero.";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "Parola n°%1$@";
-"CreateGift.amountLabel" = "Scegli l'importo ($ USD)";
-"CreateGift.create" = "Creare";
-"CreateGift.customAmountHint" = "Importo personalizzato (massimo $ 500)";
-"CreateGift.description" = "Creeremo quello che viene chiamato un file";
-"CreateGift.inputAmountError" = "Devi selezionare un importo per il regalo.";
-"CreateGift.inputRecipientNameError" = "Devi inserire il nome del destinatario.";
-"CreateGift.insufficientBalanceError" = "Non disponi di fondi sufficienti per inviare un regalo.";
-"CreateGift.insufficientBalanceForAmountError" = "Non disponi di fondi sufficienti per inviare un regalo di questo importo.";
-"CreateGift.recipientName" = "Nome del destinatario";
-"CreateGift.serverError" = "Si è verificato un errore del server. Per favore riprova più tardi.";
-"CreateGift.subtitle" = "Invia bitcoin a qualcuno anche se non ha un portafoglio.";
-"CreateGift.title" = "Dai il dono di Bitcoin";
-"CreateGift.unexpectedError" = "Si è verificato un errore imprevisto. Contatta l'assistenza.";
 /* Agree to legal terms button */
 "Crowdsale.agree" = "Accetta";
 /* As in "(tap here to) buy (some) tokens" */
@@ -993,11 +978,6 @@
 "ShareData.header" = "Condividi Dati?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Condividi Dati Anonimi?";
-"ShareGift.approximateTotal" = "Totale approssimativo";
-"ShareGift.footerMessage1" = "Una volta richiesta, verrà detratta una tariffa di rete dal totale.\n Il valore effettivo dipende dal prezzo corrente del bitcoin.";
-"ShareGift.footerMessage2" = "Scarica l'app BRD per iPhone o Android.\n Per ulteriori informazioni, visitare brd.com/gift";
-"ShareGift.tagLine" = "Qualcuno ti ha regalato bitcoin!";
-"ShareGift.walletName" = "Bitcoin";
 /* Button label: select a baker */
 "Staking.add" = "+ Seleziona Baker";
 /* Baker cell: Free Space field header */
@@ -1209,8 +1189,6 @@ eg. 182930 (45061 confirmations) */
 "TransactionDetails.gasLimitHeader" = "Limite gas";
 /* Tx detail field header */
 "TransactionDetails.gasPriceHeader" = "Prezzo del gas";
-"TransactionDetails.gift" = "Regalo";
-"TransactionDetails.giftedTo" = "In regalo a %1$s";
 /* Label for Hedera Memo field on transaction details screen */
 "TransactionDetails.hederaMemo" = "Hedera Memo";
 /* Hide Details button */

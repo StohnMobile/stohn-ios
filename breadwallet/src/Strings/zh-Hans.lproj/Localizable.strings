@@ -231,27 +231,12 @@
 "Confirmation.to" = "至";
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "费用总计：";
-"ConfirmGift.paperWalletAmount" = "纸钱包金额";
-"ConfirmGift.processingTime" = "在网络上验证此纸钱包可能最多需要60分钟";
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "输入的单词与您的恢复短语不匹配。请再试一遍。";
 /* Confirm paper phrase view label. */
 "ConfirmPaperPhrase.label" = "为确保所有内容均正确记录，请从您的恢复短语中输入以下单词。";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "单词#%1$@";
-"CreateGift.amountLabel" = "选择金额（美元）";
-"CreateGift.create" = "创建";
-"CreateGift.customAmountHint" = "自定义金额（最高$ 500）";
-"CreateGift.description" = "我们将创建一个所谓的";
-"CreateGift.inputAmountError" = "您必须选择礼物金额。";
-"CreateGift.inputRecipientNameError" = "您必须输入收件人的姓名。";
-"CreateGift.insufficientBalanceError" = "您没有足够的资金来发送礼物。";
-"CreateGift.insufficientBalanceForAmountError" = "您的资金不足，无法发送此数量的礼物。";
-"CreateGift.recipientName" = "收件人的名字";
-"CreateGift.serverError" = "发生服务器错误。请稍后再试。";
-"CreateGift.subtitle" = "即使没有钱包，也可以将比特币发送给某人。";
-"CreateGift.title" = "送出比特币的礼物";
-"CreateGift.unexpectedError" = "一个意料之外的问题发生了。请联系支持。";
 /* Agree to legal terms button */
 "Crowdsale.agree" = "同意";
 /* As in "(tap here to) buy (some) tokens" */
@@ -993,11 +978,6 @@
 "ShareData.header" = "共享数据？";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "共享匿名数据？";
-"ShareGift.approximateTotal" = "大约合计";
-"ShareGift.footerMessage1" = "索赔时将从总费用中扣除网络费用。\n实际价值取决于比特币的当前价格。";
-"ShareGift.footerMessage2" = "下载适用于iPhone或Android的BRD应用程序。\n有关更多信息，请访问brd.com/gift";
-"ShareGift.tagLine" = "有人给了你比特币！";
-"ShareGift.walletName" = "比特币";
 /* Button label: select a baker */
 "Staking.add" = "+选择贝克";
 /* Baker cell: Free Space field header */
@@ -1209,8 +1189,6 @@ eg. 182930 (45061 confirmations) */
 "TransactionDetails.gasLimitHeader" = "燃料上限";
 /* Tx detail field header */
 "TransactionDetails.gasPriceHeader" = "燃料价格";
-"TransactionDetails.gift" = "礼物";
-"TransactionDetails.giftedTo" = "送给%1$s";
 /* Label for Hedera Memo field on transaction details screen */
 "TransactionDetails.hederaMemo" = "赫德拉回忆录";
 /* Hide Details button */

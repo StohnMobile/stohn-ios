@@ -33,12 +33,6 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
             Store.perform(action: RootModalActions.Present(modal: .send(currency: self.currency))) }
         footerView.receiveCallback = { [unowned self] in
             Store.perform(action: RootModalActions.Present(modal: .receive(currency: self.currency))) }
-        footerView.giftCallback = {
-            Store.perform(action: RootModalActions.Present(modal: .gift))
-        }
-        footerView.settingsCallback = {
-            self.modalPresenter?.presentMenu()
-        }
     }
     
     deinit {
@@ -135,15 +129,6 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        wallet?.startGiftingMonitor()
-        if shouldAnimateRewardsView {
-            expandRewardsView()
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            self.footerView.jiggle()
-        }
-        
         saveEvent(makeEventName([EventContext.wallet.name, currency.code, Event.appeared.name]))
     }
     
