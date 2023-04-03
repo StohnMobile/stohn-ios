@@ -309,7 +309,7 @@ class ApplicationController: Subscriber, Trackable {
                 completion(jwt.token)
             case .failure(let error):
                 print("[BDB] authentication failure: \(error)")
-                assertionFailure()
+                // assertionFailure()
                 completion(nil)
             }
         }
@@ -326,7 +326,6 @@ class ApplicationController: Subscriber, Trackable {
 
         Backend.apiClient.updateExperiments()
         Backend.updateExchangeRates()
-        Backend.apiClient.fetchAnnouncements()
     }
     
     private func updateAssetBundles() {
@@ -385,7 +384,7 @@ class ApplicationController: Subscriber, Trackable {
         homeScreen.didTapTrade = {
             Store.perform(action: RootModalActions.Present(modal: .trade))
         }
-        
+
         homeScreen.didTapMenu = { [unowned self] in
             self.modalPresenter?.presentMenu()
         }

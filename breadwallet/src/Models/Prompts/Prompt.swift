@@ -51,7 +51,6 @@ enum PromptType: Int {
     case paperKey
     case noPasscode
     case biometrics
-    case announcement
     case email
 
     var order: Int { return rawValue }
@@ -78,7 +77,6 @@ enum PromptType: Int {
         case .upgradePin: return "upgradePinPrompt"
         case .noPasscode: return "noPasscodePrompt"
         case .email: return "emailPrompt"
-        case .announcement: return "announcementPrompt"
         default: return ""
         }
     }
@@ -367,24 +365,6 @@ class PromptFactory: Subscriber {
         return shared.prompts.count
     }
     
-    // Invoked from BRAPIClient.fetchAnnouncements()
-    static func didFetchAnnouncements(announcements: [Announcement]) {
-        let supported = announcements.filter({ $0.isSupported })
-        
-        if supported.isEmpty {
-            return
-        }
-
-        supported.forEach({
-            if $0.isGetEmailAnnouncement {
-                shared.prompts.append(AnnouncementBasedEmailCollectingPrompt(announcement: $0))
-            } else {
-                shared.prompts.append(StandardAnnouncementPrompt(announcement: $0))
-            }
-        })
-        shared.sort()
-    }
-    
     static func nextPrompt(walletAuthenticator: WalletAuthenticator) -> Prompt? {
         let prompts = PromptFactory.shared.prompts
         let next = prompts.first(where: { $0.shouldPrompt(walletAuthenticator: walletAuthenticator) })
@@ -394,8 +374,6 @@ class PromptFactory: Subscriber {
     static func createPromptView(prompt: Prompt, presenter: UIViewController) -> PromptView {
         if let emailPrompt = prompt as? EmailCollectingPrompt {
             return GetUserEmailPromptView(prompt: emailPrompt, presenter: presenter)
-        } else if let announcementPrompt = prompt as? AnnouncementBasedPrompt {
-            return AnnouncementPromptView(prompt: announcementPrompt)
         } else {
             return PromptView(prompt: prompt)
         }

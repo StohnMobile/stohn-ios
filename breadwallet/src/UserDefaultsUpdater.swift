@@ -14,7 +14,7 @@ private enum AppGroup {
     #elseif INTERNAL
     static let id = "group.com.brd.internalQA"
     #else
-    static let id = "group.org.voisine.breadwallet"
+    static let id = "group.org.litecoin.breadwallet"
     #endif
     static let requestDataKey = "kBRSharedContainerDataWalletRequestDataKey"
     static let receiveAddressKey = "kBRSharedContainerDataWalletReceiveAddressKey"

@@ -15,6 +15,7 @@ class AccountFooterView: UIView, Subscriber, Trackable {
     var sendCallback: (() -> Void)?
     var receiveCallback: (() -> Void)?
     var giftCallback: (() -> Void)?
+    var settingsCallback: (() -> Void)?
     
     private var hasSetup = false
     private let currency: Currency
@@ -90,7 +91,7 @@ class AccountFooterView: UIView, Subscriber, Trackable {
         
         if currency.isGiftingEnabled {
             let giftButton = UIButton.rounded(image: "Gift")
-            giftButton.tap = giftCallback
+            giftButton.tap = settingsCallback
             self.giftButton = giftButton
             buttons.append(UIBarButtonItem(customView: giftButton))
         }

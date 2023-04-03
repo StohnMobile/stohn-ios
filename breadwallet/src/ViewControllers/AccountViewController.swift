@@ -20,6 +20,7 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
         self.footerView = AccountFooterView(currency: currency)
         self.createFooter = CreateAccountFooterView(currency: currency)
         
+        
         self.searchHeaderview = SearchHeaderView()
         super.init(nibName: nil, bundle: nil)
         self.transactionsTableView = TransactionsTableViewController(currency: currency,
@@ -35,6 +36,9 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
         footerView.giftCallback = {
             Store.perform(action: RootModalActions.Present(modal: .gift))
         }
+        footerView.settingsCallback = {
+            self.modalPresenter?.presentMenu()
+        }
     }
     
     deinit {
@@ -44,6 +48,8 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
     }
     
     // MARK: - Private
+    private var modalPresenter: ModalPresenter?
+    
     private var wallet: Wallet? {
         didSet {
             if wallet != nil {
