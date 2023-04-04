@@ -72,7 +72,6 @@ enum TriggerName {
     case showInAppNotification(BRDMessage?)
     case didSyncKVStore
     case createAccount(Currency?, ((Wallet?) -> Void)?)
-    case didSelectBaker(Baker?)
 } //NB : remember to add to triggers to == fuction below
 
 extension TriggerName: Equatable {}
@@ -140,8 +139,6 @@ func == (lhs: TriggerName, rhs: TriggerName) -> Bool {
     case (.didSyncKVStore, .didSyncKVStore):
         return true
     case (.createAccount, .createAccount):
-        return true
-    case (.didSelectBaker, .didSelectBaker):
         return true
     default:
         return false

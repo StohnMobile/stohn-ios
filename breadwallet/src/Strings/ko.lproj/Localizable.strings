@@ -978,44 +978,6 @@
 "ShareData.header" = "데이터를 공유하시겠습니까?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "익명 데이터를 공유하시겠습니까?";
-/* Button label: select a baker */
-"Staking.add" = "+ 베이커 선택";
-/* Baker cell: Free Space field header */
-"Staking.cellFreeSpaceHeader" = "자유 공간";
-"Staking.changeValidator" = "변화";
-"Staking.descriptionTezos" = "Tezos 계정을 검증 자에게 위임하여 코인에 대한 완전한 보안과 제어를 유지하면서 보상을 받으세요.";
-/* Baker cell: Fee field header */
-"Staking.feeHeader" = "회비:";
-/* Status label: current staking transaction is pending */
-"Staking.pendingTransaction" = "거래 보류 중 ...";
-/* Button label: remove selected baker */
-"Staking.remove" = "삭제";
-/* Baker cell: ROI field header */
-"Staking.roiHeader" = "동부 표준시. ROI";
-/* Modal title: Select Baker modal */
-"Staking.selectBakerTitle" = "XTZ 대리인 선택";
-"Staking.stake" = "말뚝";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingActiveFlag" = "유효한";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingInactiveFlag" = "비활성";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingPendingFlag" = "보류 중";
-/* Staking banner title */
-"Staking.stakingTitle" = "스테이 킹";
-"Staking.stakingTo" = "%1$s 스테이 킹";
-"Staking.statusPending" = "보류 중";
-"Staking.statusStaked" = "스테이크!";
-"Staking.subTitle" = "잡고있는 동안 돈을 버십시오";
-/* Tezos XTZ baker asset type */
-"Staking.tezosDune" = "테 조스 & 듄";
-/* Tezos XTZ baker asset type */
-"Staking.tezosMultiasset" = "다중 자산 풀";
-/* Tezos XTZ baker asset type */
-"Staking.tezosOnly" = "Tezos 전용";
-"Staking.title" = "%1$s 지분";
-"Staking.unstake" = "언 스테이크";
-"Staking.validatorHint" = "검증 인 주소 입력";
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "복구 문구를 다시 기록";
 /* Paper key explanation text. */

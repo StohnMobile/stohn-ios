@@ -93,16 +93,7 @@ public enum Event: String {
     case enable
     case disable
     
-    // gift
-    case send
-    case redeem
-    
     case fixerFetch
-    
-    //staking
-    case stake
-    case unstake
-    case changeBaker
     
     var name: String { return rawValue }
 }

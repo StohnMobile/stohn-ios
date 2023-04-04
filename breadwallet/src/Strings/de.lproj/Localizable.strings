@@ -978,44 +978,6 @@
 "ShareData.header" = "Nutzungsdaten übermitteln?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Anonyme Nutzungsdaten übermitteln?";
-/* Button label: select a baker */
-"Staking.add" = "+ Wählen Sie Baker";
-/* Baker cell: Free Space field header */
-"Staking.cellFreeSpaceHeader" = "Freiraum";
-"Staking.changeValidator" = "Veränderung";
-"Staking.descriptionTezos" = "Delegieren Sie Ihr Tezos-Konto an einen Prüfer, um eine Belohnung zu erhalten und gleichzeitig die volle Sicherheit und Kontrolle über Ihre Münzen zu behalten.";
-/* Baker cell: Fee field header */
-"Staking.feeHeader" = "Gebühr:";
-/* Status label: current staking transaction is pending */
-"Staking.pendingTransaction" = "Transaktion ausstehend ...";
-/* Button label: remove selected baker */
-"Staking.remove" = "Entfernen";
-/* Baker cell: ROI field header */
-"Staking.roiHeader" = "Europäische Sommerzeit. ROI";
-/* Modal title: Select Baker modal */
-"Staking.selectBakerTitle" = "Wählen Sie XTZ-Delegat";
-"Staking.stake" = "Anteil";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingActiveFlag" = "AKTIV";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingInactiveFlag" = "INAKTIV";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingPendingFlag" = "STEHT AUS";
-/* Staking banner title */
-"Staking.stakingTitle" = "Abstecken";
-"Staking.stakingTo" = "Abstecken auf %1$s";
-"Staking.statusPending" = "Ausstehend";
-"Staking.statusStaked" = "Eingesteckt!";
-"Staking.subTitle" = "Verdiene Geld, während du hältst";
-/* Tezos XTZ baker asset type */
-"Staking.tezosDune" = "Tezos & Dune";
-/* Tezos XTZ baker asset type */
-"Staking.tezosMultiasset" = "Multiasset Pool";
-/* Tezos XTZ baker asset type */
-"Staking.tezosOnly" = "Nur Tezos";
-"Staking.title" = "Einsatz %1$s";
-"Staking.unstake" = "Unstake";
-"Staking.validatorHint" = "Geben Sie die Validator-Adresse ein";
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Schreiben Sie die Wiederherstellungsphrase erneut auf";
 /* Paper key explanation text. */

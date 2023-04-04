@@ -978,44 +978,6 @@
 "ShareData.header" = "Поделиться данными?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Поделиться анонимными данными?";
-/* Button label: select a baker */
-"Staking.add" = "+ Выбрать Бейкера";
-/* Baker cell: Free Space field header */
-"Staking.cellFreeSpaceHeader" = "Свободное место";
-"Staking.changeValidator" = "Изменять";
-"Staking.descriptionTezos" = "Передайте свою учетную запись Tezos валидатору, чтобы получить вознаграждение, сохраняя при этом полную безопасность и контроль над своими монетами.";
-/* Baker cell: Fee field header */
-"Staking.feeHeader" = "Платеж:";
-/* Status label: current staking transaction is pending */
-"Staking.pendingTransaction" = "Ожидается транзакция ...";
-/* Button label: remove selected baker */
-"Staking.remove" = "Удалить";
-/* Baker cell: ROI field header */
-"Staking.roiHeader" = "Стандартное восточное время. Рентабельность инвестиций";
-/* Modal title: Select Baker modal */
-"Staking.selectBakerTitle" = "Выберите делегата XTZ";
-"Staking.stake" = "Ставка";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingActiveFlag" = "АКТИВНЫЙ";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingInactiveFlag" = "НЕАКТИВНЫЙ";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingPendingFlag" = "В ОЖИДАНИИ";
-/* Staking banner title */
-"Staking.stakingTitle" = "Ставка";
-"Staking.stakingTo" = "ставка на %1$s";
-"Staking.statusPending" = "В ожидании";
-"Staking.statusStaked" = "Ставка!";
-"Staking.subTitle" = "Зарабатывай, пока держишь";
-/* Tezos XTZ baker asset type */
-"Staking.tezosDune" = "Тезос и Дюна";
-/* Tezos XTZ baker asset type */
-"Staking.tezosMultiasset" = "Пул с несколькими активами";
-/* Tezos XTZ baker asset type */
-"Staking.tezosOnly" = "Только Tezos";
-"Staking.title" = "Ставка %1$s";
-"Staking.unstake" = "Unstake";
-"Staking.validatorHint" = "Введите адрес валидатора";
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Запишите фразу восстановления еще раз";
 /* Paper key explanation text. */

@@ -978,44 +978,6 @@
 "ShareData.header" = "データを共有しますか?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "匿名データをシェアしますか?";
-/* Button label: select a baker */
-"Staking.add" = "+ベイカーを選択";
-/* Baker cell: Free Space field header */
-"Staking.cellFreeSpaceHeader" = "フリースペース";
-"Staking.changeValidator" = "変化する";
-"Staking.descriptionTezos" = "Tezosアカウントをバリデーターに委任して、コインの完全なセキュリティと制御を維持しながら報酬を獲得します。";
-/* Baker cell: Fee field header */
-"Staking.feeHeader" = "費用：";
-/* Status label: current staking transaction is pending */
-"Staking.pendingTransaction" = "トランザクション保留中...";
-/* Button label: remove selected baker */
-"Staking.remove" = "削除する";
-/* Baker cell: ROI field header */
-"Staking.roiHeader" = "EST（東部基準時。 ROI";
-/* Modal title: Select Baker modal */
-"Staking.selectBakerTitle" = "XTZデリゲートを選択します";
-"Staking.stake" = "ステーク";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingActiveFlag" = "アクティブ";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingInactiveFlag" = "非活性";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingPendingFlag" = "保留中";
-/* Staking banner title */
-"Staking.stakingTitle" = "ステーキング";
-"Staking.stakingTo" = "%1$sへのステーキング";
-"Staking.statusPending" = "保留中";
-"Staking.statusStaked" = "賭けた！";
-"Staking.subTitle" = "持ちながらお金を稼ぐ";
-/* Tezos XTZ baker asset type */
-"Staking.tezosDune" = "テゾス＆デューン";
-/* Tezos XTZ baker asset type */
-"Staking.tezosMultiasset" = "マルチアセットプール";
-/* Tezos XTZ baker asset type */
-"Staking.tezosOnly" = "テゾスのみ";
-"Staking.title" = "ステーク%1$s";
-"Staking.unstake" = "アンステーク";
-"Staking.validatorHint" = "バリデーターアドレスを入力してください";
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "回復フレーズを書き留めます";
 /* Paper key explanation text. */

@@ -978,44 +978,6 @@
 "ShareData.header" = "Data Delen?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Anonieme Data Delen?";
-/* Button label: select a baker */
-"Staking.add" = "+ Selecteer Baker";
-/* Baker cell: Free Space field header */
-"Staking.cellFreeSpaceHeader" = "Vrije ruimte";
-"Staking.changeValidator" = "Verandering";
-"Staking.descriptionTezos" = "Delegeer uw Tezos-account aan een validator om een beloning te verdienen terwijl u de volledige veiligheid en controle over uw munten behoudt.";
-/* Baker cell: Fee field header */
-"Staking.feeHeader" = "Vergoeding:";
-/* Status label: current staking transaction is pending */
-"Staking.pendingTransaction" = "Transactie in behandeling ...";
-/* Button label: remove selected baker */
-"Staking.remove" = "Verwijderen";
-/* Baker cell: ROI field header */
-"Staking.roiHeader" = "Est. ROI";
-/* Modal title: Select Baker modal */
-"Staking.selectBakerTitle" = "Selecteer XTZ Delegate";
-"Staking.stake" = "Inzet";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingActiveFlag" = "ACTIEF";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingInactiveFlag" = "INACTIEF";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingPendingFlag" = "IN AFWACHTING";
-/* Staking banner title */
-"Staking.stakingTitle" = "Uitzetten";
-"Staking.stakingTo" = "uitzetten naar %1$s";
-"Staking.statusPending" = "In Afwachting";
-"Staking.statusStaked" = "Uitgezet!";
-"Staking.subTitle" = "Verdien geld terwijl je vasthoudt";
-/* Tezos XTZ baker asset type */
-"Staking.tezosDune" = "Tezos & Dune";
-/* Tezos XTZ baker asset type */
-"Staking.tezosMultiasset" = "Multiasset-zwembad";
-/* Tezos XTZ baker asset type */
-"Staking.tezosOnly" = "Alleen Tezos";
-"Staking.title" = "%1$s inzetten";
-"Staking.unstake" = "Ongedaan maken";
-"Staking.validatorHint" = "Voer Validator-adres in";
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Schrijf de herstelzin opnieuw op";
 /* Paper key explanation text. */

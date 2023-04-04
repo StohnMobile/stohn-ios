@@ -978,44 +978,6 @@
 "ShareData.header" = "Partilhar Dados?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Partilhar Dados Anónimos?";
-/* Button label: select a baker */
-"Staking.add" = "+ Selecione Padeiro";
-/* Baker cell: Free Space field header */
-"Staking.cellFreeSpaceHeader" = "Espaço livre";
-"Staking.changeValidator" = "Mudar";
-"Staking.descriptionTezos" = "Delegue sua conta Tezos a um validador para ganhar uma recompensa, mantendo total segurança e controle de suas moedas.";
-/* Baker cell: Fee field header */
-"Staking.feeHeader" = "Taxa:";
-/* Status label: current staking transaction is pending */
-"Staking.pendingTransaction" = "Transação pendente ...";
-/* Button label: remove selected baker */
-"Staking.remove" = "Remover";
-/* Baker cell: ROI field header */
-"Staking.roiHeader" = "Husa. ROI";
-/* Modal title: Select Baker modal */
-"Staking.selectBakerTitle" = "Selecione o Delegado XTZ";
-"Staking.stake" = "Estaca";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingActiveFlag" = "ATIVO";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingInactiveFlag" = "INATIVO";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingPendingFlag" = "PENDENTE";
-/* Staking banner title */
-"Staking.stakingTitle" = "Estacando";
-"Staking.stakingTo" = "apostando em %1$s";
-"Staking.statusPending" = "Pendente";
-"Staking.statusStaked" = "Aposta!";
-"Staking.subTitle" = "Ganhe dinheiro enquanto segura";
-/* Tezos XTZ baker asset type */
-"Staking.tezosDune" = "Tezos e Duna";
-/* Tezos XTZ baker asset type */
-"Staking.tezosMultiasset" = "Pool de conjuntos múltiplos";
-/* Tezos XTZ baker asset type */
-"Staking.tezosOnly" = "Tezos-only";
-"Staking.title" = "Aposta %1$s";
-"Staking.unstake" = "Desamarrar";
-"Staking.validatorHint" = "Digite o endereço do validador";
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Escreva a frase de recuperação novamente";
 /* Paper key explanation text. */

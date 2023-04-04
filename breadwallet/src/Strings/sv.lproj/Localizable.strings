@@ -978,44 +978,6 @@
 "ShareData.header" = "Dela uppgifter?";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Dela anonyma uppgifter?";
-/* Button label: select a baker */
-"Staking.add" = "+ Välj Baker";
-/* Baker cell: Free Space field header */
-"Staking.cellFreeSpaceHeader" = "Fritt utrymme";
-"Staking.changeValidator" = "Förändra";
-"Staking.descriptionTezos" = "Delegera ditt Tezos-konto till en validerare för att få en belöning samtidigt som du behåller full säkerhet och kontroll över dina mynt.";
-/* Baker cell: Fee field header */
-"Staking.feeHeader" = "Avgift:";
-/* Status label: current staking transaction is pending */
-"Staking.pendingTransaction" = "Transaktion väntar ...";
-/* Button label: remove selected baker */
-"Staking.remove" = "Ta bort";
-/* Baker cell: ROI field header */
-"Staking.roiHeader" = "Est. ROI";
-/* Modal title: Select Baker modal */
-"Staking.selectBakerTitle" = "Välj XTZ-delegat";
-"Staking.stake" = "Insats";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingActiveFlag" = "AKTIVA";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingInactiveFlag" = "INAKTIV";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingPendingFlag" = "I VÄNTAN PÅ";
-/* Staking banner title */
-"Staking.stakingTitle" = "Staking";
-"Staking.stakingTo" = "satsar till %1$s";
-"Staking.statusPending" = "Avvaktar";
-"Staking.statusStaked" = "Insatt!";
-"Staking.subTitle" = "Tjäna pengar medan du håller";
-/* Tezos XTZ baker asset type */
-"Staking.tezosDune" = "Tezos & Dune";
-/* Tezos XTZ baker asset type */
-"Staking.tezosMultiasset" = "Multiasset Pool";
-/* Tezos XTZ baker asset type */
-"Staking.tezosOnly" = "Endast Tezos";
-"Staking.title" = "Insats %1$s";
-"Staking.unstake" = "Ta av";
-"Staking.validatorHint" = "Ange valideringsadress";
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Skriv ner återhämtningsfrasen igen";
 /* Paper key explanation text. */

@@ -978,44 +978,6 @@
 "ShareData.header" = "分享資料？";
 /* Share data switch label. */
 "ShareData.toggleLabel" = "分享匿名資料？";
-/* Button label: select a baker */
-"Staking.add" = "+選擇貝克";
-/* Baker cell: Free Space field header */
-"Staking.cellFreeSpaceHeader" = "可用空間";
-"Staking.changeValidator" = "改變";
-"Staking.descriptionTezos" = "將您的Tezos帳戶委託給驗證者以賺取獎勵，同時保持對硬幣的完全安全性和控制力。";
-/* Baker cell: Fee field header */
-"Staking.feeHeader" = "費用：";
-/* Status label: current staking transaction is pending */
-"Staking.pendingTransaction" = "交易待處理中...";
-/* Button label: remove selected baker */
-"Staking.remove" = "移除";
-/* Baker cell: ROI field header */
-"Staking.roiHeader" = "美東時間。投資報酬率";
-/* Modal title: Select Baker modal */
-"Staking.selectBakerTitle" = "選擇XTZ代表";
-"Staking.stake" = "賭注";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingActiveFlag" = "積極的";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingInactiveFlag" = "不活躍";
-/* UI flag showing state of Tezos staking */
-"Staking.stakingPendingFlag" = "待辦的";
-/* Staking banner title */
-"Staking.stakingTitle" = "放樣";
-"Staking.stakingTo" = "下注到%1$s";
-"Staking.statusPending" = "作業中";
-"Staking.statusStaked" = "臭！";
-"Staking.subTitle" = "持有時賺錢";
-/* Tezos XTZ baker asset type */
-"Staking.tezosDune" = "特佐斯與沙丘";
-/* Tezos XTZ baker asset type */
-"Staking.tezosMultiasset" = "多資產池";
-/* Tezos XTZ baker asset type */
-"Staking.tezosOnly" = "僅限Tezos";
-"Staking.title" = "賭注%1$s";
-"Staking.unstake" = "放心";
-"Staking.validatorHint" = "輸入驗證人地址";
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "再次寫下恢復短語";
 /* Paper key explanation text. */
