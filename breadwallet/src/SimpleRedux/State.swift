@@ -17,7 +17,6 @@ struct State {
     let isPushNotificationsEnabled: Bool
     let isPromptingBiometrics: Bool
     let pinLength: Int
-    let walletID: String?
     let wallets: [CurrencyId: WalletState]
     var experiments: [Experiment]?
     let creationRequired: [CurrencyId]
@@ -60,7 +59,6 @@ extension State {
                         isPushNotificationsEnabled: UserDefaults.pushToken != nil,
                         isPromptingBiometrics: false,
                         pinLength: 6,
-                        walletID: nil,
                         wallets: [:],
                         experiments: nil,
                         creationRequired: []
@@ -76,7 +74,6 @@ extension State {
                    isPushNotificationsEnabled: Bool? = nil,
                    isPromptingBiometrics: Bool? = nil,
                    pinLength: Int? = nil,
-                   walletID: String? = nil,
                    wallets: [CurrencyId: WalletState]? = nil,
                    experiments: [Experiment]? = nil,
                    creationRequired: [CurrencyId]? = nil) -> State {
@@ -88,7 +85,6 @@ extension State {
                      isPushNotificationsEnabled: isPushNotificationsEnabled ?? self.isPushNotificationsEnabled,
                      isPromptingBiometrics: isPromptingBiometrics ?? self.isPromptingBiometrics,
                      pinLength: pinLength ?? self.pinLength,
-                     walletID: walletID ?? self.walletID,
                      wallets: wallets ?? self.wallets,
                      experiments: experiments ?? self.experiments,
                      creationRequired: creationRequired ?? self.creationRequired)

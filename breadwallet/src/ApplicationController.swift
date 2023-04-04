@@ -183,10 +183,6 @@ class ApplicationController: Subscriber, Trackable {
         }
         
         updateAssetBundles()
-        
-        // Set up the animation frames early during the startup process so that they're
-        // ready to roll by the time the home screen is displayed.
-        RewardsIconView.prepareAnimationFrames()
     }
     
     private func handleLaunchOptions(_ options: [UIApplication.LaunchOptionsKey: Any]?) {
@@ -367,11 +363,6 @@ class ApplicationController: Subscriber, Trackable {
                                        navigationController: UINavigationController) {
         
         homeScreen.didSelectCurrency = { [unowned self] currency in
-            if currency.isBRDToken, UserDefaults.shouldShowBRDRewardsAnimation {
-                let name = self.makeEventName([EventContext.rewards.name, Event.openWallet.name])
-                self.saveEvent(name, attributes: ["currency": currency.code])
-            }
-            
             let wallet = self.coreSystem.wallet(for: currency)
             let accountViewController = AccountViewController(currency: currency, wallet: wallet)
             navigationController.pushViewController(accountViewController, animated: true)

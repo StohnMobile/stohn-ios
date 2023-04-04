@@ -36,8 +36,6 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
     }
     
     deinit {
-        rewardsShrinkTimer?.invalidate()
-        rewardsShrinkTimer = nil
         Store.unsubscribe(self)
     }
     
@@ -72,15 +70,7 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
     }
     private var tableViewTopConstraint: NSLayoutConstraint?
     private var headerContainerSearchHeight: NSLayoutConstraint?
-    private var rewardsViewHeightConstraint: NSLayoutConstraint?
-    private var rewardsView: RewardsView?
     private var extraCell: UIView?
-    private let rewardsAnimationDuration: TimeInterval = 0.5
-    private let rewardsShrinkTimerDuration: TimeInterval = 6.0
-    private var rewardsShrinkTimer: Timer?
-    private var rewardsTappedEvent: String {
-        return makeEventName([EventContext.rewards.name, Event.banner.name])
-    }
     private var createTimeoutTimer: Timer? {
         willSet {
             createTimeoutTimer?.invalidate()
@@ -88,19 +78,6 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
     }
 
     var isSearching: Bool = false
-    
-    private func tableViewTopConstraintConstant(for rewardsViewState: RewardsView.State) -> CGFloat {
-        return rewardsViewState == .expanded ? RewardsView.expandedSize : (RewardsView.normalSize)
-    }
-    
-    private var shouldShowExtraView: Bool {
-        return currency.isBRDToken || currency.supportsStaking
-    }
-    
-    private var shouldAnimateRewardsView: Bool {
-        //only Rewards view gets animated...not staking view
-        return shouldShowExtraView && UserDefaults.shouldShowBRDRewardsAnimation && currency.isBRDToken
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -257,7 +234,6 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
     
     private func addTransactionsView() {
         if let transactionsTableView = transactionsTableView {
-           // Store this constraint so it can be easily updated later when showing/hiding the rewards view.
            tableViewTopConstraint = transactionsTableView.view.topAnchor.constraint(equalTo: headerView.bottomAnchor)
            
            transactionsTableView.view.backgroundColor = .clear

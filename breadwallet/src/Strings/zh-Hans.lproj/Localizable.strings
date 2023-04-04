@@ -756,12 +756,6 @@
 "ReScan.subheader1" = "估计时间";
 /* Subheader label */
 "ReScan.subheader2" = "何时同步？";
-/* Rewards view expanded body. */
-"RewardsView.expandedBody" = "了解如何节省交易费用并激活未来的奖励计划。";
-/* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "介绍BRD奖励计划。";
-/* Rewards view title */
-"RewardsView.normalTitle" = "奖励";
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "相机闪光灯";
 /* (alert dialog message) Would you like to send a [Bitcoin / Bitcoin Cash / Ethereum] payment to this address?") */
@@ -946,8 +940,6 @@
 "Settings.resetCurrencies" = "重置为默认货币";
 /* Leave review button label */
 "Settings.review" = "给我们评论";
-/* Rewards menu item */
-"Settings.rewards" = "奖励";
 /* Share anonymous data label */
 "Settings.shareData" = "分享匿名数据";
 /* "Enables sharing balance to widget" */

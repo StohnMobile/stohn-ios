@@ -756,12 +756,6 @@
 "ReScan.subheader1" = "Примерное время";
 /* Subheader label */
 "ReScan.subheader2" = "Когда синхронизировать?";
-/* Rewards view expanded body. */
-"RewardsView.expandedBody" = "Узнайте как сэкономить на комиссионных обменах и открыть будущие бонусы.";
-/* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "Представляем Бонусы BRD.";
-/* Rewards view title */
-"RewardsView.normalTitle" = "Бонусы";
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Вспышка камеры";
 /* (alert dialog message) Would you like to send a [Bitcoin / Bitcoin Cash / Ethereum] payment to this address?") */
@@ -946,8 +940,6 @@
 "Settings.resetCurrencies" = "Восстановить валюту по умолчанию";
 /* Leave review button label */
 "Settings.review" = "Оставьте свой отзыв";
-/* Rewards menu item */
-"Settings.rewards" = "Вознаграждения";
 /* Share anonymous data label */
 "Settings.shareData" = "Поделиться анонимными данными";
 /* "Enables sharing balance to widget" */

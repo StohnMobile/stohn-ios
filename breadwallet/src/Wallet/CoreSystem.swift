@@ -601,28 +601,6 @@ class CoreSystem: Subscriber, Trackable {
         UIApplication.shared.isIdleTimerDisabled = false
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
-    
-    // MARK: Wallet ID
-    
-    // walletID identifies a wallet by the ethereum public key
-    // 1. compute the sha256(address[0]) -- note address excludes the "0x" prefix
-    // 2. take the first 10 bytes of the sha256 and base32 encode it (lowercasing the result)
-    // 3. split the result into chunks of 4-character strings and join with a space
-    //
-    // this provides an easily human-readable (and verbally-recitable) string that can
-    // be used to uniquely identify this wallet.
-    //
-    // the user may then provide this ID for later lookup in associated systems
-    private func walletID(address: String) -> String? {
-        if let small = address.withoutHexPrefix.data(using: .utf8)?.sha256[0..<10].base32.lowercased() {
-            return stride(from: 0, to: small.count, by: 4).map {
-                let start = small.index(small.startIndex, offsetBy: $0)
-                let end = small.index(start, offsetBy: 4, limitedBy: small.endIndex) ?? small.endIndex
-                return String(small[start..<end])
-                }.joined(separator: " ")
-        }
-        return nil
-    }
 }
 
 // MARK: - SystemListener
@@ -759,25 +737,10 @@ extension CoreSystem: SystemListener {
 
     func handleWalletEvent(system: System, manager: WalletKit.WalletManager, wallet: WalletKit.Wallet, event: WalletEvent) {
         print("[SYS] \(manager.network) wallet event: \(wallet.currency.code) \(event)")
-        if manager.network.name == "Tezos" {
-            print("[TEZOS] wallet event: \(event)")
-        }
         switch event {
         case .created:
             if let wallet = addWallet(wallet) {
                 addWalletState(for: wallet)
-            }
-            // generate wallet ID from Ethereum address
-            if wallet.currency.uid == Currencies.eth.uid,
-                let walletID = self.walletID(address: wallet.target.description) {
-                DispatchQueue.main.async {
-                    Store.perform(action: WalletID.Set(walletID))
-                    if #available(iOS 13.6, *) {
-                        DispatchQueue.global(qos: .utility).async {
-                            self.keyStore.migrateNoKeyBackup(id: walletID)
-                        }
-                    }
-                }
             }
 
         case .deleted:

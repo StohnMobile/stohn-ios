@@ -369,8 +369,6 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber, Trackable {
         })
     }
     
-    //Needs to be public so that it can be hidden
-    //when the rewards view is expanded on the iPhone5
     func collapseHeader(animated: Bool = true) {
         headerHeight?.constant = AccountHeaderView.headerViewMinHeight
         if animated {

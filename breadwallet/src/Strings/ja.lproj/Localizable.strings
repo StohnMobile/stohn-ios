@@ -756,12 +756,6 @@
 "ReScan.subheader1" = "推定時間";
 /* Subheader label */
 "ReScan.subheader2" = "いつ同期しますか?";
-/* Rewards view expanded body. */
-"RewardsView.expandedBody" = "取引手数料を節約して今後のリワードをアンロックする方法を学びましょう。";
-/* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "BRDリワードについて。";
-/* Rewards view title */
-"RewardsView.normalTitle" = "リワード";
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "カメラのフラッシュ";
 /* (alert dialog message) Would you like to send a [Bitcoin / Bitcoin Cash / Ethereum] payment to this address?") */
@@ -946,8 +940,6 @@
 "Settings.resetCurrencies" = "デフォルトの通貨に戻す";
 /* Leave review button label */
 "Settings.review" = "レビューを書く";
-/* Rewards menu item */
-"Settings.rewards" = "リワード";
 /* Share anonymous data label */
 "Settings.shareData" = "匿名データをシェアする";
 /* "Enables sharing balance to widget" */

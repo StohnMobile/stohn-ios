@@ -756,12 +756,6 @@
 "ReScan.subheader1" = "預估時間";
 /* Subheader label */
 "ReScan.subheader2" = "什麼時候該進行同步？";
-/* Rewards view expanded body. */
-"RewardsView.expandedBody" = "了解如何節省交易費用，解鎖未來的財富。";
-/* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "我們為您介紹BRD Rewards。";
-/* Rewards view title */
-"RewardsView.normalTitle" = "獎勵";
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "相機閃光";
 /* (alert dialog message) Would you like to send a [Bitcoin / Bitcoin Cash / Ethereum] payment to this address?") */
@@ -946,8 +940,6 @@
 "Settings.resetCurrencies" = "重設為預設貨幣";
 /* Leave review button label */
 "Settings.review" = "為我們撰寫評論";
-/* Rewards menu item */
-"Settings.rewards" = "獎勵";
 /* Share anonymous data label */
 "Settings.shareData" = "分享匿名資料";
 /* "Enables sharing balance to widget" */

@@ -14,8 +14,6 @@
 "About.title" = "About";
 /* About screen twitter label */
 "About.twitter" = "Twitter";
-/* About screen wallet ID label */
-"About.walletID" = "BRD Rewards ID";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "Close";
 /* Support center accessibiliy label */
@@ -756,12 +754,6 @@
 "ReScan.subheader1" = "Estimated time";
 /* Subheader label */
 "ReScan.subheader2" = "When to Sync?";
-/* Rewards view expanded body. */
-"RewardsView.expandedBody" = "Learn how you can save on trading fees and unlock future rewards";
-/* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "Introducing BRD Rewards.";
-/* Rewards view title */
-"RewardsView.normalTitle" = "Rewards";
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Camera Flash";
 /* (alert dialog message) Would you like to send a [Bitcoin / Bitcoin Cash / Ethereum] payment to this address?") */
@@ -946,8 +938,6 @@
 "Settings.resetCurrencies" = "Reset to Default Currencies";
 /* Leave review button label */
 "Settings.review" = "Leave us a Review";
-/* Rewards menu item */
-"Settings.rewards" = "Rewards";
 /* Share anonymous data label */
 "Settings.shareData" = "Share Anonymous Data";
 /* "Enables sharing balance to widget" */

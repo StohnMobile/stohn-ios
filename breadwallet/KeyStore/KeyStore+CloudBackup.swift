@@ -15,7 +15,7 @@ import WalletKit
 extension KeyStore: Trackable {
     
     func doesCurrentWalletHaveBackup() -> Bool {
-        let id = Store.state.walletID ?? CloudBackup.noIDKey
+        let id = CloudBackup.noIDKey
         let backup = listBackups().first(where: { $0.identifier == id })
         return backup != nil
     }
@@ -104,9 +104,8 @@ extension KeyStore: Trackable {
     //Since this happens after onboarding, we will have a walletId
     func addBackup(forPin pin: String) -> Bool {
          guard let phrase = seedPhrase(pin: pin) else { return false }
-         guard let id = Store.state.walletID else { return false }
-         let backup = CloudBackup(phrase: phrase, identifier: id, pin: pin)
-         return addBackup(backup)
+         // TODO: currently disabled with no wallet uid
+         return false
     }
 
     func addBackup() -> Bool {
@@ -139,7 +138,7 @@ extension KeyStore: Trackable {
     }
      
     func deleteCurrentBackup() {
-        let ids = [Store.state.walletID, CloudBackup.noIDKey].compactMap { $0 }
+        let ids = [CloudBackup.noIDKey].compactMap { $0 }
         ids.forEach { id in
             print("[CloudBackups] deleting key: \(id)")
             let backups = listBackups().filter({ $0.identifier == id })

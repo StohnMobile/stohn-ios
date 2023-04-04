@@ -756,12 +756,6 @@
 "ReScan.subheader1" = "Uppskattad tid";
 /* Subheader label */
 "ReScan.subheader2" = "När ska man synka?";
-/* Rewards view expanded body. */
-"RewardsView.expandedBody" = "Se hur du kan spara in på handelsavgifter och frigöra framtida belöningar.";
-/* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "Introduktion av BRD Rewards.";
-/* Rewards view title */
-"RewardsView.normalTitle" = "Belöningar";
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Kamerablixt";
 /* (alert dialog message) Would you like to send a [Bitcoin / Bitcoin Cash / Ethereum] payment to this address?") */
@@ -946,8 +940,6 @@
 "Settings.resetCurrencies" = "Återställ till förvalda valutor";
 /* Leave review button label */
 "Settings.review" = "Betygssätt oss";
-/* Rewards menu item */
-"Settings.rewards" = "Belöningar";
 /* Share anonymous data label */
 "Settings.shareData" = "Dela anonyma uppgifter";
 /* "Enables sharing balance to widget" */

@@ -14,7 +14,6 @@ public enum EventContext: String {
     case onboarding
     case generateKey
     case writeKey
-    case rewards
     case pushNotifications
     case inAppNotifications
     case wallet

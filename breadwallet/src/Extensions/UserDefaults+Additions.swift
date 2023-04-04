@@ -39,7 +39,6 @@ private let debugShouldShowPaperKeyPreviewKey = "debugShouldShowPaperKeyPreviewK
 private let debugShowAppRatingPromptOnEnterWalletKey = "debugShowAppRatingPromptOnEnterWalletKey"
 private let debugSuppressAppRatingPromptKey = "debugSuppressAppRatingPromptKey"
 private let debugConnectionModeOverrideKey = "debugConnectionModeOverrideKey"
-private let shouldHideBRDRewardsAnimationKey = "shouldHideBRDRewardsAnimationKey"
 private let shouldHideBRDCellHighlightKey = "shouldHideBRDCellHighlightKey"
 private let debugBackendHostKey = "debugBackendHostKey"
 private let debugWebBundleNameKey = "debugWebBundleNameKey"
@@ -72,8 +71,7 @@ extension UserDefaults {
         [debugShouldShowPaperKeyPreviewKey: false],
         [debugSuppressAppRatingPromptKey: false],
         [debugShowAppRatingPromptOnEnterWalletKey: false],
-        [shouldHideBRDCellHighlightKey: false],
-        [shouldHideBRDRewardsAnimationKey: false]
+        [shouldHideBRDCellHighlightKey: false]
     ]
     
     static let resettableObjects: [ResettableObjectSetting] = [
@@ -337,14 +335,6 @@ extension UserDefaults {
     static var hasSubscribedToEmailUpdates: Bool {
         get { return defaults.bool(forKey: hasSubscribedToEmailUpdatesKey ) }
         set { defaults.set(newValue, forKey: hasSubscribedToEmailUpdatesKey ) }
-    }
-
-    static var shouldShowBRDRewardsAnimation: Bool {
-        // boolean logic is flipped so that 'hide == false' is the default state,
-        // whereas the calling code can check whether to show, which has clearer semantics
-        // (same logic is employed for 'shouldShowBRDCellHighlight')
-        get { return !defaults.bool(forKey: shouldHideBRDRewardsAnimationKey)   }
-        set { defaults.set(!newValue, forKey: shouldHideBRDRewardsAnimationKey) }
     }
 
     static var shouldShowBRDCellHighlight: Bool {

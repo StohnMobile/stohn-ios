@@ -14,8 +14,6 @@
 "About.title" = "관련 사항";
 /* About screen twitter label */
 "About.twitter" = "트위터";
-/* About screen wallet ID label */
-"About.walletID" = "BRD Rewards ID";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "닫기";
 /* Support center accessibiliy label */
@@ -756,12 +754,6 @@
 "ReScan.subheader1" = "예상 시간";
 /* Subheader label */
 "ReScan.subheader2" = "동기화는 언제 해야 합니까?";
-/* Rewards view expanded body. */
-"RewardsView.expandedBody" = "거래 수수료를 절약하고 미래의 보상을 얻을 수 있는 방법을 배우십시오.";
-/* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "BRD 리워즈를 소개합니다.";
-/* Rewards view title */
-"RewardsView.normalTitle" = "리워즈";
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "카메라 플래시";
 /* (alert dialog message) Would you like to send a [Bitcoin / Bitcoin Cash / Ethereum] payment to this address?") */
@@ -946,8 +938,6 @@
 "Settings.resetCurrencies" = "기본 통화로 초기화";
 /* Leave review button label */
 "Settings.review" = "후기를 남겨주세요";
-/* Rewards menu item */
-"Settings.rewards" = "보상";
 /* Share anonymous data label */
 "Settings.shareData" = "익명 데이터 공유";
 /* "Enables sharing balance to widget" */

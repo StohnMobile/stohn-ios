@@ -313,7 +313,6 @@ enum S {
         static let about = NSLocalizedString("Settings.about", value:"About", comment: "About label")
         static let exportTransfers = NSLocalizedString("Settings.exportTransfers", value:"Export transaction history to CSV", comment: "Export transfers")
         static let review = NSLocalizedString("Settings.review", value: "Leave us a Review", comment: "Leave review button label")
-        static let rewards = NSLocalizedString("Settings.rewards", value: "Rewards", comment: "Rewards menu item text")
         static let enjoying = NSLocalizedString("Settings.enjoying", value: "Are you enjoying BRD?", comment: "Are you enjoying BRD alert message body")
         static let wipe = NSLocalizedString("Settings.wipe", value: "Unlink from this device", comment: "Unlink wallet menu label.")
         static let advancedTitle = NSLocalizedString("Settings.advancedTitle", value: "Advanced Settings", comment: "Advanced Settings title")
@@ -333,7 +332,6 @@ enum S {
         static let twitter = NSLocalizedString("About.twitter", value:"Twitter", comment: "About screen twitter label")
         static let reddit = NSLocalizedString("About.reddit", value:"Reddit", comment: "About screen reddit label")
         static let privacy = NSLocalizedString("About.privacy", value:"Privacy Policy", comment: "Privay Policy button label")
-        static let walletID = NSLocalizedString("About.walletID", value:"BRD Rewards ID", comment: "About screen wallet ID label")
         static let footer = NSLocalizedString("About.footer", value:"Made by the global BRD team. Version %1$@ Build %2$@", comment: "About screen footer")
     }
 
@@ -703,12 +701,6 @@ enum S {
         static let enable = NSLocalizedString("Segwit.Enable", value: "Enable", comment: "")
     }
 
-    enum RewardsView {
-        static let normalTitle = NSLocalizedString("RewardsView.normalTitle", value: "Rewards", comment: "Rewards view normal title")
-        static let expandedTitle = NSLocalizedString("RewardsView.expandedTitle", value: "Introducing BRD\nRewards.", comment: "Rewards view expanded title")
-        static let expandedBody = NSLocalizedString("RewardsView.expandedBody", value: "Learn how you can save on trading fees and unlock future rewards", comment: "Rewards view expanded body")
-    }
-    
     enum RecoverKeyFlow {
         static let generateKey = NSLocalizedString("RecoveryKeyFlow.generateKeyTitle",
                                                    value: "Generate your private recovery phrase",
