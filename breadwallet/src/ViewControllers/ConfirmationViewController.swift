@@ -165,11 +165,7 @@ class ConfirmationViewController: UIViewController, ContentBoxPresenter {
     }
 
     private func confirmationFeeLabel() -> String {
-        if amount.currency != feeAmount.currency && feeAmount.currency.isEthereum {
-            return S.Confirmation.feeLabelETH
-        } else {
-            return S.Confirmation.feeLabel
-        }
+        return S.Confirmation.feeLabel
     }
     
     private func setInitialData() {
@@ -197,11 +193,6 @@ class ConfirmationViewController: UIViewController, ContentBoxPresenter {
 
         totalLabel.text = S.Confirmation.totalLabel
         total.text = displayTotal.description
-
-        if currency.isERC20Token {
-            totalLabel.isHidden = true
-            total.isHidden = true
-        }
 
         cancel.tap = strongify(self) { myself in
             myself.dismiss(animated: true, completion: myself.cancelCallback)

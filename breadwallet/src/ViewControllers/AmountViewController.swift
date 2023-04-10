@@ -31,7 +31,7 @@ class AmountViewController: UIViewController, Trackable {
                                            keyboardType: .decimalPad,
                                            maxDigits: Int(currency.defaultUnit.decimals),
                                            shouldShowBiometrics: false)
-        self.canEditFee = currency.isBitcoin || currency.isEthereumCompatible
+        self.canEditFee = currency.isBitcoin
         super.init(nibName: nil, bundle: nil)
     }
 

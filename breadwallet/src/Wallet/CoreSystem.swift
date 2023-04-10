@@ -320,7 +320,7 @@ class CoreSystem: Subscriber, Trackable {
     private func migrateLegacyDatabase(network: Network) {
         guard let system = system,
             let currency = currencies[network.currency.uid],
-            (currency.isBitcoin || currency.isBitcoinCash) else { return assertionFailure() }
+            (currency.isBitcoin) else { return assertionFailure() }
         let fm = FileManager.default
         let filename = currency.isBitcoin ? "BreadWallet.sqlite" : "BreadWallet-bch.sqlite"
         let docsUrl = try? fm.url(for: .documentDirectory,
@@ -371,13 +371,6 @@ class CoreSystem: Subscriber, Trackable {
                             currency: currency,
                             system: self)
         wallets[coreWallet.currency.uid] = wallet
-        if currency.isHBAR && createWalletCallback != nil {
-            createWalletCallback?(wallet)
-            createWalletCallback = nil
-            DispatchQueue.main.async {
-                Store.perform(action: SetCreationSuccess(currency))
-            }
-        }
         return wallet
     }
     

@@ -182,11 +182,7 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
             self?.transactionsTableView?.tableView.contentOffset.y = offset
         }
         
-        if currency.isHBAR && wallet == nil {
-            createFooter.isHidden = false
-        } else {
-            createFooter.isHidden = true
-        }
+        createFooter.isHidden = true
         
         createFooter.didTapCreate = { [weak self] in
             let alert = UIAlertController(title: S.AccountCreation.title,

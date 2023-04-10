@@ -31,19 +31,13 @@ class WalletConnectionSettings {
         assert(currency.tokenType == .native)
         switch currency.uid {
         case Currencies.btc.uid:
-            return .api_only
-        case Currencies.bch.uid:
-            return .api_only
-        case Currencies.eth.uid:
-            return .api_only
+            return .p2p_only
         default:
-            return .api_only
+            return .p2p_only
         }
     }
 
     func mode(for currency: Currency) -> WalletConnectionMode {
-        //Force bch to always be api_only mode
-        guard currency.uid != Currencies.bch.uid else { return .api_only }
         assert(currency.tokenType == .native)
         if let serialization = walletInfo.connectionModes[currency.uid],
             let mode = WalletManagerMode(serialization: serialization) {
@@ -61,7 +55,7 @@ class WalletConnectionSettings {
 
     func set(mode: WalletConnectionMode, for currency: Currency) {
         assert(currency.tokenType == .native)
-        assert(currency.isBitcoin || currency.isEthereum) //TODO:CRYPTO_V2
+        assert(currency.isBitcoin) //TODO:CRYPTO_V2
         guard system.isModeSupported(mode, for: currency.network) || E.isRunningTests else { return assertionFailure() }
         walletInfo.connectionModes[currency.uid] = mode.serialization
         guard let wm = currency.wallet?.manager else { return assert(E.isRunningTests) }
@@ -80,9 +74,7 @@ class WalletConnectionSettings {
 
     /// clean up any invalid modes stored in KV-store
     private func sanitizeAll() {
-        [Currencies.btc.instance,
-         Currencies.bch.instance,
-         Currencies.eth.instance]
+        [Currencies.btc.instance]
             .compactMap { $0 }
             .forEach { sanitize(currency: $0) }
     }

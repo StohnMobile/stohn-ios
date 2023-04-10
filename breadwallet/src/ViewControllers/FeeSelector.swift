@@ -28,21 +28,6 @@ enum FeeLevel: Int {
             }
         }
         
-        if currency.isEthereumCompatible {
-            switch self {
-            case .economy:
-                return Int(C.secondsInMinute) * 5 * 1000
-            case .regular:
-                return Int(C.secondsInMinute) * 3 * 1000
-            case .priority:
-                return Int(C.secondsInMinute) * 1 * 1000
-            }
-        }
-        
-        if currency.uid == "tezos-mainnet:__native__" {
-            return 60000
-        }
-        
         return Int(C.secondsInMinute) * 3 * 1000 // 3 mins
     }
 }

@@ -114,11 +114,6 @@ class AssetListTableView: UITableViewController, Subscriber {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currency = Store.state.currencies[indexPath.row]
         // If a currency has a wallet, home screen cells are always tap-able
-        // Also, if HBAR account creation is required, it is also tap-able
-        guard (currency.wallet != nil) ||
-            //Only an HBAR wallet requiring creation can go to the account screen without a wallet
-            (currency.isHBAR && Store.state.requiresCreation(currency)) else { return }
-        
         didSelectCurrency?(currency)
         handleCellHighlightingOnSelect(indexPath: indexPath, currency: currency)
     }
@@ -160,14 +155,11 @@ extension AssetListTableView {
 extension AssetListTableView {
     
     func shouldHighlightCell(for currency: Currency) -> Bool {
-        // Currently the only currency/wallet we highlight is BRD.
-        guard currency.isBRDToken else { return false }
-        return UserDefaults.shouldShowBRDCellHighlight
+        return false
     }
     
     func clearShouldHighlightForCurrency(currency: Currency) {
-        guard currency.isBRDToken else { return }
-        UserDefaults.shouldShowBRDCellHighlight = false
+        return
     }
     
     func handleCellHighlightingOnDisplay(cell: HighlightableCell, currency: Currency) {

@@ -264,11 +264,6 @@ class ModalPresenter: Subscriber, Trackable {
                         self.presentKeyImport(wallet: wallet, scanResult: scanResult)
                     }
                 }))
-                alert.addAction(UIAlertAction(title: "BCH", style: .default, handler: { _ in
-                    if let wallet = Currencies.bch.instance?.wallet {
-                        self.presentKeyImport(wallet: wallet, scanResult: scanResult)
-                    }
-                }))
                 alert.addAction(UIAlertAction(title: S.Button.cancel, style: .cancel, handler: nil))
                 top.present(alert, animated: true, completion: nil)
             case .deepLink(let url):
@@ -287,11 +282,6 @@ class ModalPresenter: Subscriber, Trackable {
         // MARK: Bitcoin Menu
         var btcItems: [MenuItem] = []
         if let btc = Currencies.btc.instance, let btcWallet = btc.wallet {
-            
-            // Connection mode
-            btcItems.append(MenuItem(title: S.WalletConnectionSettings.menuTitle) { [weak self] in
-                self?.presentConnectionModeScreen(menuNav: menuNav)
-            })
 
             // Rescan
             var rescan = MenuItem(title: S.Settings.sync, callback: { [unowned self] in
@@ -455,10 +445,6 @@ class ModalPresenter: Subscriber, Trackable {
         if E.isSimulator || E.isDebug || E.isTestFlight {
             var developerItems = [MenuItem]()
             
-            developerItems.append(MenuItem(title: "Fast Sync", callback: { [weak self] in
-                self?.presentConnectionModeScreen(menuNav: menuNav)
-            }))
-            
             developerItems.append(MenuItem(title: S.Settings.sendLogs) { [weak self] in
                 self?.showEmailLogsModal()
             })
@@ -611,19 +597,6 @@ class ModalPresenter: Subscriber, Trackable {
         self.menuNavController = menuNav
         
         self.topViewController?.present(menuNav, animated: true, completion: nil)
-    }
-    
-    private func presentConnectionModeScreen(menuNav: UINavigationController) {
-        guard let kv = Backend.kvStore, let walletInfo = WalletInfo(kvStore: kv) else {
-            return assertionFailure()
-        }
-        let connectionSettings = WalletConnectionSettings(system: self.system,
-                                                          kvStore: kv,
-                                                          walletInfo: walletInfo)
-        let connectionSettingsVC = WalletConnectionSettingsViewController(walletConnectionSettings: connectionSettings) { _ in
-            (menuNav.viewControllers.compactMap { $0 as? MenuViewController }).last?.reloadMenu()
-        }
-        menuNav.pushViewController(connectionSettingsVC, animated: true)
     }
     
     private func presentScan(parent: UIViewController, currency: Currency?) -> PresentScan {

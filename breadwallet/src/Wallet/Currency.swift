@@ -111,19 +111,6 @@ class Currency: CurrencyWithIcon {
         if isBitcoin {
             return ["bitcoin"]
         }
-        if isBitcoinCash {
-            return E.isTestnet ? ["bchtest"] : ["bitcoincash"]
-        }
-
-        if isEthereumCompatible {
-            return ["ethereum"]
-        }
-        if isXRP {
-            return ["xrpl", "xrp", "ripple"]
-        }
-        if isHBAR {
-            return ["hbar"]
-        }
         return nil
     }
     
@@ -136,24 +123,10 @@ class Currency: CurrencyWithIcon {
     
     var payId: String? {
         if isBitcoin { return "btc" }
-        if isEthereum { return "eth" }
-        if isXRP { return "xrpl" }
         return nil
     }
     
     var attributeDefinition: AttributeDefinition? {
-        if isXRP {
-            return AttributeDefinition(key: "DestinationTag",
-                                       label: S.Send.destinationTagLabel,
-                                       keyboardType: .numberPad,
-                                       maxLength: 10)
-        }
-        if isHBAR {
-            return AttributeDefinition(key: "Memo",
-                                       label: S.Send.memoTagLabelOptional,
-                                       keyboardType: .default,
-                                       maxLength: 100)
-        }
         return nil
     }
     
@@ -162,32 +135,13 @@ class Currency: CurrencyWithIcon {
         if isBitcoin {
             return E.isTestnet ? "tb1qw508d6qejxtdg4y5r3zarvary0c5xw7kxpjzsx" : "bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq"
         }
-        if isBitcoinCash {
-            return E.isTestnet ? "bchtest:qqpz7r5k72e07j0syq26f0h8srvdqeqjg50wg9fp3z" : "bitcoincash:qpm2qsznhks23z7629mms6s4cwef74vcwvy22gdx6a"
-        }
-        if isEthereumCompatible {
-            return "0xA6A60123Feb7F61081b1BFe063464b3219cEdCEc"
-        }
-        if isXRP {
-            return "r3kmLJN5D28dHuH8vZNUZpMC43pEHpaocV"
-        }
-        if isHBAR {
-            return "0.0.39768"
-        }
         return nil
     }
 
     /// Returns a transfer URI with the given address
     func addressURI(_ address: String) -> String? {
-        //Tezos doesn't have a URI scheme
-        if isTezos, isValidAddress(address) { return address }
         guard let scheme = urlSchemes?.first, isValidAddress(address) else { return nil }
-        if isERC20Token, let tokenAddress = tokenAddress {
-            //This is a non-standard uri format to maintain backwards compatibility with old versions of BRD
-            return "\(scheme):\(address)?tokenaddress=\(tokenAddress)"
-        } else {
-            return "\(scheme):\(address)"
-        }
+        return "\(scheme):\(address)"
     }
     
     func shouldAcceptQRCodeFrom(_ currency: Currency, request: PaymentRequest) -> Bool {
@@ -195,19 +149,7 @@ class Currency: CurrencyWithIcon {
             return true
         }
         
-        //Allows sending erc20 tokens to an Eth receive uri, but not the other way around
-        if self == Currencies.eth.instance
-            && currency.isERC20Token
-            && request.amount == nil //We shouldn't send tokens to an Eth request amount uri
-        {
-            return true
-        }
-        
         return false
-    }
-
-    var supportsStaking: Bool {
-        return isTezos
     }
     
     // MARK: Init
@@ -261,24 +203,14 @@ extension Currency {
     }
 
     var isBitcoin: Bool { return uid == Currencies.btc.uid }
-    var isBitcoinCash: Bool { return uid == Currencies.bch.uid }
-    var isEthereum: Bool { return uid == Currencies.eth.uid }
-    var isERC20Token: Bool { return tokenType == .erc20 }
-    var isBRDToken: Bool { return uid == Currencies.brd.uid }
-    var isXRP: Bool { return uid == Currencies.xrp.uid }
-    var isHBAR: Bool { return uid == Currencies.hbar.uid }
-    var isBitcoinCompatible: Bool { return isBitcoin || isBitcoinCash }
-    var isEthereumCompatible: Bool { return isEthereum || isERC20Token }
-    var isTezos: Bool { return uid == Currencies.xtz.uid }
+    var isBitcoinCompatible: Bool { return isBitcoin }
 }
 
 // MARK: - Confirmation times
 
 extension Currency {
     func feeText(forIndex index: Int) -> String {
-        if isEthereumCompatible {
-            return ethFeeText(forIndex: index)
-        } else if isBitcoinCompatible {
+        if isBitcoinCompatible {
             return btcFeeText(forIndex: index)
         } else {
             return String(format: S.Confirmation.processingTime, S.FeeSelector.ethTime)
@@ -478,14 +410,6 @@ extension CurrencyMetaData: Hashable {
 /// Natively supported currencies. Enum maps to ticker code.
 enum Currencies: String, CaseIterable {
     case btc
-    case bch
-    case eth
-    case brd
-    case tusd
-    case xrp
-    case hbar
-    case xtz
-    case usdc
     
     var code: String { return rawValue }
     var uid: CurrencyId {
@@ -493,22 +417,6 @@ enum Currencies: String, CaseIterable {
         switch self {
         case .btc:
             uids = "bitcoin-\(E.isTestnet ? "testnet" : "mainnet"):__native__"
-        case .bch:
-            uids = "bitcoincash-\(E.isTestnet ? "testnet" : "mainnet"):__native__"
-        case .eth:
-            uids = "ethereum-\(E.isTestnet ? "ropsten" : "mainnet"):__native__"
-        case .brd:
-            uids = "ethereum-mainnet:0x558ec3152e2eb2174905cd19aea4e34a23de9ad6"
-        case .tusd:
-            uids = "ethereum-mainnet:0x0000000000085d4780B73119b644AE5ecd22b376"
-        case .xrp:
-            uids = "ripple-\(E.isTestnet ? "testnet" : "mainnet"):__native__"
-        case .hbar:
-            uids = "hedera-mainnet:__native__"
-        case .xtz:
-            uids = "tezos-mainnet:__native__"
-        case .usdc:
-            uids = "ethereum-mainnet:0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
         }
         return CurrencyId(rawValue: uids)
     }

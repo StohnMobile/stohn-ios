@@ -73,17 +73,11 @@ struct TxDetailViewModel: TxViewModel {
     }
     
     var extraAttributeHeader: String {
-        if tx.currency.isXRP {
-            return S.TransactionDetails.destinationTagHeader
-        }
-        if tx.currency.isHBAR {
-            return S.TransactionDetails.memoTagHeader
-        }
         return ""
     }
     
     var transactionHash: String {
-        return currency.isEthereumCompatible ? tx.hash : tx.hash.removing(prefix: "0x")
+        return tx.hash.removing(prefix: "0x")
     }
 }
 
@@ -102,18 +96,6 @@ extension TxDetailViewModel {
             var feeAmount = tx.fee
             feeAmount.maximumFractionDigits = Amount.highPrecisionDigits
             fee = Store.state.showFiatAmounts ? feeAmount.fiatDescription : feeAmount.tokenDescription
-        }
-
-        //TODO:CRYPTO incoming token transfers have a feeBasis with 0 values
-        if let feeBasis = tx.feeBasis,
-            (currency.isEthereum || (currency.isEthereumCompatible && tx.direction == .sent)) {
-            let gasFormatter = NumberFormatter()
-            gasFormatter.numberStyle = .decimal
-            gasFormatter.maximumFractionDigits = 0
-            self.gasLimit = gasFormatter.string(from: feeBasis.costFactor as NSNumber)
-
-            let gasUnit = feeBasis.pricePerCostFactor.currency.unit(named: "gwei") ?? currency.defaultUnit
-            gasPrice = feeBasis.pricePerCostFactor.tokenDescription(in: gasUnit)
         }
 
         // for outgoing txns for native tokens show the total amount sent including fee
