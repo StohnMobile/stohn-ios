@@ -67,30 +67,11 @@ extension BRAPIClient {
             shouldProcess = false
         }
         
-        var req = URLRequest(url: url("/currencies"))
-        req.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
-        send(request: req, handler: { (result: APIResult<[CurrencyMetaData]>) in
-            switch result {
-            case .success(let currencies):
-                // update cache
-                do {
-                    let data = try JSONEncoder().encode(currencies)
-                    try data.write(to: URL(fileURLWithPath: cachedFilePath))
-                } catch let e {
-                    print("[CurrencyList] failed to write to cache: \(e.localizedDescription)")
-                }
-                if shouldProcess {
-                    processCurrencies(currencies, completion: completion)
-                }
-            case .error(let error):
-                print("[CurrencyList] error fetching tokens: \(error)")
-                copyEmbeddedCurrencies(path: cachedFilePath, fileManager: fm)
-                if shouldProcess {
-                   let result = processCurrenciesCache(path: cachedFilePath, completion: completion)
-                   assert(result, "failed to get currency list from backend or cache")
-                }
-            }
-        })
+        copyEmbeddedCurrencies(path: cachedFilePath, fileManager: fm)
+        if shouldProcess {
+           let result = processCurrenciesCache(path: cachedFilePath, completion: completion)
+           assert(result, "failed to get currency list from cache")
+        }
         cleanupOldTokensFile()
     }
     
