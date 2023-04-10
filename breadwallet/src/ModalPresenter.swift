@@ -55,13 +55,6 @@ class ModalPresenter: Subscriber, Trackable {
         Store.lazySubscribe(self,
                             selector: { $0.rootModal != $1.rootModal },
                             callback: { [weak self] in self?.presentModal($0.rootModal) })
-        
-        Store.subscribe(self, name: .presentFaq("", nil), callback: { [weak self] in
-            guard let trigger = $0 else { return }
-            if case .presentFaq(let articleId, let currency) = trigger {
-                self?.presentFaq(articleId: articleId, currency: currency)
-            }
-        })
 
         //Subscribe to prompt actions
         Store.subscribe(self, name: .promptUpgradePin, callback: { [weak self] _ in
@@ -183,27 +176,6 @@ class ModalPresenter: Subscriber, Trackable {
             Store.perform(action: RootModalActions.Present(modal: .none))
             Store.trigger(name: .hideStatusBar)
         }
-    }
-    
-    func preloadSupportCenter() {
-        supportCenter.preload() // pre-load contents for faster access
-    }
-
-    func presentFaq(articleId: String? = nil, currency: Currency? = nil) {
-        supportCenter.modalPresentationStyle = .overFullScreen
-        supportCenter.modalPresentationCapturesStatusBarAppearance = true
-        supportCenter.transitioningDelegate = supportCenter
-        var url: String
-        if let articleId = articleId {
-            url = "/support/article?slug=\(articleId)"
-            if let currency = currency {
-                url += "&currency=\(currency.supportCode)"
-            }
-        } else {
-            url = "/support?"
-        }
-        supportCenter.navigate(to: url)
-        topViewController?.present(supportCenter, animated: true, completion: {})
     }
 
     private func rootModalViewController(_ type: RootModal) -> UIViewController? {
@@ -504,13 +476,6 @@ class ModalPresenter: Subscriber, Trackable {
                 self?.presentLoginScan()
             },
             
-            // Manage Wallets
-            MenuItem(title: S.MenuButton.manageWallets, icon: MenuItem.Icon.wallet) { [weak self] in
-                guard let `self` = self, let assetCollection = self.system.assetCollection else { return }
-                let vc = ManageWalletsViewController(assetCollection: assetCollection, coreSystem: self.system)
-                menuNav.pushViewController(vc, animated: true)
-            },
-            
             // Preferences
             MenuItem(title: S.Settings.preferences, icon: MenuItem.Icon.preferences, subMenu: preferencesItems, rootNav: menuNav),
             
@@ -518,13 +483,7 @@ class ModalPresenter: Subscriber, Trackable {
             MenuItem(title: S.MenuButton.security,
                      icon: #imageLiteral(resourceName: "security"),
                      subMenu: securityItems,
-                     rootNav: menuNav,
-                     faqButton: UIButton.buildFaqButton(articleId: ArticleIds.securityCenter)),
-            
-            // Support
-            MenuItem(title: S.MenuButton.support, icon: MenuItem.Icon.support) { [weak self] in
-                self?.presentFaq()
-            },
+                     rootNav: menuNav),
             
             // About
             MenuItem(title: S.Settings.about, icon: MenuItem.Icon.about) {
@@ -537,35 +496,6 @@ class ModalPresenter: Subscriber, Trackable {
             }
         ]
 
-        // ATM Finder
-        if let experiment = Store.state.experimentWithName(.atmFinder), experiment.active,
-            let meta = experiment.meta as? BrowserExperimentMetaData,
-            let url = meta.url, !url.isEmpty,
-            let URL = URL(string: url) {
-            
-            rootItems.append(MenuItem(title: S.Settings.atmMapMenuItemTitle,
-                                      subTitle: S.Settings.atmMapMenuItemSubtitle,
-                                      icon: MenuItem.Icon.atmMap) { [weak self] in
-                guard let `self` = self else { return }
-                
-                let browser = BRBrowserViewController()
-                
-                browser.isNavigationBarHidden = true
-                browser.showsBottomToolbar = false
-                browser.statusBarStyle = .lightContent
-                
-                if let closeUrl = meta.closeOn {
-                    browser.closeOnURL = closeUrl
-                }
-                
-                let req = URLRequest(url: URL)
-                
-                browser.load(req)
-                
-                self.topViewController?.present(browser, animated: true, completion: nil)
-            })
-        }
-        
         // MARK: Developer/QA Menu
         
         if E.isSimulator || E.isDebug || E.isTestFlight {
@@ -755,7 +685,7 @@ class ModalPresenter: Subscriber, Trackable {
                             menuNav.present(alert, animated: true, completion: nil)
                 }))
 
-            rootItems.append(MenuItem(title: "Developer Options", icon: nil, subMenu: developerItems, rootNav: menuNav, faqButton: nil))
+            rootItems.append(MenuItem(title: "Developer Options", icon: nil, subMenu: developerItems, rootNav: menuNav))
         }
                 
         let rootMenu = MenuViewController(items: rootItems,

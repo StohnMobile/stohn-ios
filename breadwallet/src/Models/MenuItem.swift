@@ -15,9 +15,7 @@ struct MenuItem {
         static let wallet = UIImage(named: "wallet")
         static let preferences = UIImage(named: "prefs")
         static let security = UIImage(named: "security")
-        static let support = UIImage(named: "support")
         static let about = UIImage(named: "about")
-        static let atmMap = UIImage(named: "placemark")
         static let export = UIImage(named: "Export")
     }
     
@@ -26,7 +24,6 @@ struct MenuItem {
     let icon: UIImage?
     let accessoryText: (() -> String)?
     let callback: () -> Void
-    let faqButton: UIButton? = nil
     var shouldShow: () -> Bool = { return true }
     
     init(title: String, subTitle: String? = nil, icon: UIImage? = nil, accessoryText: (() -> String)? = nil, callback: @escaping () -> Void) {
@@ -37,8 +34,8 @@ struct MenuItem {
         self.callback = callback
     }
     
-    init(title: String, icon: UIImage? = nil, subMenu: [MenuItem], rootNav: UINavigationController, faqButton: UIButton? = nil) {
-        let subMenuVC = MenuViewController(items: subMenu, title: title, faqButton: faqButton)
+    init(title: String, icon: UIImage? = nil, subMenu: [MenuItem], rootNav: UINavigationController) {
+        let subMenuVC = MenuViewController(items: subMenu, title: title)
         self.init(title: title, icon: icon, accessoryText: nil) {
             rootNav.pushViewController(subMenuVC, animated: true)
         }

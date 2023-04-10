@@ -181,8 +181,6 @@ class ApplicationController: Subscriber, Trackable {
         DispatchQueue.global(qos: .background).async {
             _ = Rate.symbolMap //Initialize currency symbol map
         }
-        
-        updateAssetBundles()
     }
     
     private func handleLaunchOptions(_ options: [UIApplication.LaunchOptionsKey: Any]?) {
@@ -211,7 +209,6 @@ class ApplicationController: Subscriber, Trackable {
             Store.perform(action: RequireLogin())
         }
         resume()
-        updateAssetBundles()
         coreSystem.updateFees()
     }
 
@@ -322,19 +319,6 @@ class ApplicationController: Subscriber, Trackable {
 
         Backend.apiClient.updateExperiments()
         Backend.updateExchangeRates()
-    }
-    
-    private func updateAssetBundles() {
-        DispatchQueue.global(qos: .utility).async { [unowned self] in
-            Backend.apiClient.updateBundles { errors in
-                for (n, e) in errors {
-                    print("Bundle \(n) ran update. err: \(String(describing: e))")
-                }
-                DispatchQueue.main.async {
-                    self.modalPresenter?.preloadSupportCenter()
-                }
-            }
-        }
     }
     
     // MARK: - UI
