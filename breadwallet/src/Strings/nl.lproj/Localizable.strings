@@ -756,12 +756,6 @@
 "ReScan.subheader1" = "Geschatte tijd";
 /* Subheader label */
 "ReScan.subheader2" = "Wanneer Synchroniseren?";
-/* Rewards view expanded body. */
-"RewardsView.expandedBody" = "Leer hoe je kan besparen op handelskosten en toekomstige beloningen vrijspeelt.";
-/* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "Introductie van BRD-beloningen.";
-/* Rewards view title */
-"RewardsView.normalTitle" = "Beloningen";
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Camera Flits";
 /* (alert dialog message) Would you like to send a [Bitcoin / Bitcoin Cash / Ethereum] payment to this address?") */
@@ -946,8 +940,6 @@
 "Settings.resetCurrencies" = "Opnieuw instellen naar standaard valuta's";
 /* Leave review button label */
 "Settings.review" = "Laat een review achter";
-/* Rewards menu item */
-"Settings.rewards" = "Beloningen";
 /* Share anonymous data label */
 "Settings.shareData" = "Deel Anonieme Data";
 /* "Enables sharing balance to widget" */

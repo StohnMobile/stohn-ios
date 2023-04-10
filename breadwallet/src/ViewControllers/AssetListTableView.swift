@@ -32,10 +32,6 @@ class AssetListTableView: UITableViewController, Subscriber {
         }
     }
     
-    override func viewDidLayoutSubviews() {
-        setupAddWalletButton()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = .darkBackground
@@ -47,41 +43,6 @@ class AssetListTableView: UITableViewController, Subscriber {
 
         setupSubscriptions()
         reload()
-    }
-    
-    private func setupAddWalletButton() {
-        guard tableView.tableFooterView == nil else { return }
-        let topInset: CGFloat = 0
-        let leftRightInset: CGFloat = C.padding[1]
-        let width = tableView.frame.width - tableView.contentInset.left - tableView.contentInset.right
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: addWalletButtonHeight))
-        
-        addWalletButton.titleLabel?.font = Theme.body1
-        
-        addWalletButton.tintColor = Theme.tertiaryBackground
-        addWalletButton.setTitleColor(Theme.tertiaryText, for: .normal)
-        addWalletButton.setTitleColor(.transparentWhite, for: .highlighted)
-        addWalletButton.titleLabel?.font = Theme.body1
-        
-        addWalletButton.imageView?.contentMode = .scaleAspectFit
-        addWalletButton.setBackgroundImage(UIImage(named: "add"), for: .normal)
-        
-        addWalletButton.contentHorizontalAlignment = .center
-        addWalletButton.contentVerticalAlignment = .center
-
-        let buttonTitle = S.MenuButton.manageWallets
-        addWalletButton.setTitle(buttonTitle, for: .normal)
-        addWalletButton.accessibilityLabel = E.isScreenshots ? "Manage Wallets" : buttonTitle
-
-        addWalletButton.addTarget(self, action: #selector(addWallet), for: .touchUpInside)
-
-        addWalletButton.frame = CGRect(x: leftRightInset, y: topInset,
-                                       width: footerView.frame.width - (2 * leftRightInset),
-                                       height: addWalletButtonHeight)
-        
-        footerView.addSubview(addWalletButton)
-        footerView.backgroundColor = .darkBackground
-        tableView.tableFooterView = footerView
     }
     
     private func setupSubscriptions() {

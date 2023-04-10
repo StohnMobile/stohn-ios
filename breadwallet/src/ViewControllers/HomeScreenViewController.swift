@@ -24,32 +24,9 @@ class HomeScreenViewController: UIViewController, Subscriber, Trackable {
     private var toolbarButtons = [UIButton]()
     private let notificationHandler = NotificationHandler()
     
-    private var shouldShowBuyAndSell: Bool {
-        return (Store.state.experimentWithName(.buyAndSell)?.active ?? false) && (Store.state.defaultCurrencyCode == C.usdCurrencyCode)
-    }
-    
-    private var buyButtonTitle: String {
-        return shouldShowBuyAndSell ? S.HomeScreen.buyAndSell : S.HomeScreen.buy
-    }
-    
-    private let buyButtonIndex = 0
-    private let tradeButtonIndex = 1
     private let menuButtonIndex = 2
     
-    private var buyButton: UIButton? {
-        guard toolbarButtons.count == 3 else { return nil }
-        return toolbarButtons[buyButtonIndex]
-    }
-    
-    private var tradeButton: UIButton? {
-        guard toolbarButtons.count == 3 else { return nil }
-        return toolbarButtons[tradeButtonIndex]
-    }
-    
     var didSelectCurrency: ((Currency) -> Void)?
-    var didTapManageWallets: (() -> Void)?
-    var didTapBuy: (() -> Void)?
-    var didTapTrade: (() -> Void)?
     var didTapMenu: (() -> Void)?
     
     var okToShowPrompts: Bool {
@@ -90,7 +67,6 @@ class HomeScreenViewController: UIViewController, Subscriber, Trackable {
 
     override func viewDidLoad() {
         assetList.didSelectCurrency = didSelectCurrency
-        assetList.didTapAddWallet = didTapManageWallets
         addSubviews()
         addConstraints()
         setInitialData()
@@ -228,9 +204,7 @@ class HomeScreenViewController: UIViewController, Subscriber, Trackable {
     }
     
     private func setupToolbar() {
-        let buttons = [(buyButtonTitle, #imageLiteral(resourceName: "buy"), #selector(buy)),
-                       (S.HomeScreen.trade, #imageLiteral(resourceName: "trade"), #selector(trade)),
-                       (S.HomeScreen.menu, #imageLiteral(resourceName: "menu"), #selector(menu))].map { (title, image, selector) -> UIBarButtonItem in
+        let buttons = [(S.HomeScreen.menu, #imageLiteral(resourceName: "menu"), #selector(menu))].map { (title, image, selector) -> UIBarButtonItem in
                         let button = UIButton.vertical(title: title, image: image)
                         button.tintColor = .navigationTint
                         button.addTarget(self, action: selector, for: .touchUpInside)
@@ -243,10 +217,6 @@ class HomeScreenViewController: UIViewController, Subscriber, Trackable {
         toolbar.items = [
             flexibleSpace,
             buttons[0],
-            flexibleSpace,
-            buttons[1],
-            flexibleSpace,
-            buttons[2],
             flexibleSpace
         ]
         
@@ -302,7 +272,6 @@ class HomeScreenViewController: UIViewController, Subscriber, Trackable {
         }, callback: { _ in
             // Do a full reload of the toolbar so it's laid out correctly with updated button titles.
             self.setupToolbar()
-            self.saveEvent("experiment.buySellMenuButton", attributes: ["show": self.shouldShowBuyAndSell ? "true" : "false"])
         })
         
         Store.subscribe(self, selector: {
@@ -342,16 +311,6 @@ class HomeScreenViewController: UIViewController, Subscriber, Trackable {
     }
     
     // MARK: Actions
-    
-    @objc private func buy() {
-        saveEvent("currency.didTapBuyBitcoin", attributes: [ "buyAndSell": shouldShowBuyAndSell ? "true" : "false" ])
-        didTapBuy?()
-    }
-    
-    @objc private func trade() {
-        saveEvent("currency.didTapTrade", attributes: [:])
-        didTapTrade?()
-    }
     
     @objc private func menu() { didTapMenu?() }
     
