@@ -21,17 +21,12 @@ class ModalHeaderView: UIView {
         didSet { close.tap = closeCallback }
     }
     
-    init(title: String, style: ModalHeaderViewStyle, faqInfo: String? = nil, currency: Currency? = nil) {
+    init(title: String, style: ModalHeaderViewStyle, currency: Currency? = nil) {
         self.titleLabel.text = title
         self.style = style
-        
-        if let faqInfo = faqInfo {
-            self.faq = UIButton.buildFaqButton(articleId: faqInfo, currency: currency)
-        }
 
         super.init(frame: .zero)
         setupSubviews()
-        addFaqButton()
     }
     
     func setTitle(_ title: String) {
@@ -41,7 +36,6 @@ class ModalHeaderView: UIView {
     // MARK: - Private
     private let titleLabel = UILabel(font: .customBold(size: 17.0))
     private let close = UIButton.close
-    private var faq: UIButton?
     private let border = UIView()
     private let buttonSize: CGFloat = 44.0
     private let style: ModalHeaderViewStyle
@@ -75,30 +69,17 @@ class ModalHeaderView: UIView {
         setColors()
     }
 
-    private func addFaqButton() {
-        guard let faq = faq else { return }
-        addSubview(faq)
-        faq.constrain([
-            faq.constraint((style == .transaction) ? .leading : .trailing, toView: self, constant: 0.0),
-            faq.constraint(.centerY, toView: self, constant: 0.0),
-            faq.constraint(.height, constant: buttonSize),
-            faq.constraint(.width, constant: buttonSize) ])
-    }
-
     private func setColors() {
         switch style {
         case .light:
             titleLabel.textColor = .white
             close.tintColor = .white
-            faq?.tintColor = .white
         case .dark:
             border.backgroundColor = .secondaryShadow
-            faq?.tintColor = .lightGray
         case .transaction:
             titleLabel.font = .customBody(size: 16.0)
             titleLabel.textColor = .darkGray
             close.tintColor = .lightGray
-            faq?.tintColor = .lightGray
             border.backgroundColor = .clear
         }
     }

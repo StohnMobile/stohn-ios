@@ -10,8 +10,6 @@ import UIKit
 
 protocol ModalDisplayable {
     var modalTitle: String { get }
-    var faqArticleId: String? { get }
-    var faqCurrency: Currency? { get }
 }
 
 protocol ModalPresentable {

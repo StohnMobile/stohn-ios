@@ -55,19 +55,6 @@ class UpdatePinViewController: UIViewController, Subscriber {
     private let keyMaster: KeyMaster
     private let backupKey: String?
     
-    private lazy var faq = UIButton.buildFaqButton(articleId: ArticleIds.setPin, currency: nil, tapped: { [unowned self] in
-        self.trackEvent(event: .helpButton)
-    })
-    
-    private var shouldShowFAQButton: Bool {
-        if type == .recoverBackup {
-            return false
-        }
-        // Don't show the FAQ button during onboarding because we don't have the wallet/authentication
-        // initialized yet, and therefore can't open platform content.
-        return eventContext != .onboarding
-    }
-    
     private var step: Step = .verify {
         didSet {
             switch step {
@@ -110,10 +97,6 @@ class UpdatePinViewController: UIViewController, Subscriber {
     }
 
     override func viewDidLoad() {
-        if shouldShowFAQButton {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: faq)
-        }
-        
         header.textAlignment = .center
         instruction.textAlignment = .center
         

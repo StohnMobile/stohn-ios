@@ -13,9 +13,8 @@ class MenuViewController: UITableViewController, Subscriber {
     let standardItemHeight: CGFloat = 48.0
     let subtitleItemHeight: CGFloat = 58.0
     
-    init(items: [MenuItem], title: String, faqButton: UIButton? = nil) {
+    init(items: [MenuItem], title: String) {
         self.items = items
-        self.faqButton = faqButton
         super.init(style: .plain)
         self.title = title
     }
@@ -28,7 +27,6 @@ class MenuViewController: UITableViewController, Subscriber {
     private var visibleItems: [MenuItem] {
         return items.filter { $0.shouldShow() }
     }
-    private let faqButton: UIButton?
     
     func reloadMenu() {
         tableView.reloadData()
@@ -46,11 +44,6 @@ class MenuViewController: UITableViewController, Subscriber {
         tableView.rowHeight = 48.0
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        
-        if let button = faqButton {
-            button.tintColor = .navigationTint
-            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
-        }
         
         Store.lazySubscribe(self, selector: { $0.defaultCurrencyCode != $1.defaultCurrencyCode }, callback: { [weak self] _ in
             guard let `self` = self else { return }

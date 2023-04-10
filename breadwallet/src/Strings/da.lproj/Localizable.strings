@@ -16,8 +16,6 @@
 "About.twitter" = "Twitter";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "Luk";
-/* Support center accessibiliy label */
-"AccessibilityLabels.faq" = "Supportcenter";
 /* Account balance */
 "Account.balance" = "Saldo";
 /* Delisted token alert banner message */

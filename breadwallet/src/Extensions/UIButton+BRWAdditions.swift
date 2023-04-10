@@ -71,16 +71,6 @@ extension UIButton {
         return UIButton.icon(image: #imageLiteral(resourceName: "Close-X-small"), accessibilityLabel: accessibilityLabel)
     }
 
-    static func buildFaqButton(articleId: String, currency: Currency? = nil, tapped: (() -> Void)? = nil) -> UIButton {
-        let button = UIButton.icon(image: #imageLiteral(resourceName: "Faq"), accessibilityLabel: S.AccessibilityLabels.faq)
-        button.tintColor = .white
-        button.tap = {
-            Store.trigger(name: .presentFaq(articleId, currency))
-            tapped?()
-        }
-        return button
-    }
-
     static func icon(image: UIImage, accessibilityLabel: String) -> UIButton {
         let button = UIButton(type: .system)
         button.frame = CGRect(x: 0, y: 0, width: 44, height: 44)

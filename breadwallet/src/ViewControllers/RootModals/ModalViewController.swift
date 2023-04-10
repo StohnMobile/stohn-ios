@@ -16,11 +16,7 @@ class ModalViewController: UIViewController, Subscriber {
     init<T: UIViewController>(childViewController: T) where T: ModalDisplayable {
         self.childViewController = childViewController
         self.modalInfo = childViewController
-        if let articleId = childViewController.faqArticleId {
-            self.header = ModalHeaderView(title: modalInfo.modalTitle, style: .dark, faqInfo: articleId, currency: childViewController.faqCurrency)
-        } else {
-            self.header = ModalHeaderView(title: modalInfo.modalTitle, style: .dark)
-        }
+        self.header = ModalHeaderView(title: modalInfo.modalTitle, style: .dark)
 
         super.init(nibName: nil, bundle: nil)
     }

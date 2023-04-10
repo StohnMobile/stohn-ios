@@ -328,10 +328,6 @@ class LoginViewController: UIViewController, Subscriber, Trackable {
             }
         }
 
-        let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.walletDisabled)
-        faqButton.tintColor = Theme.primaryText
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: faqButton)
-
         if disabledView.superview == nil {
             view.addSubview(disabledView)
             setNeedsStatusBarAppearanceUpdate()

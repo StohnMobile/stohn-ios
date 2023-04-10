@@ -71,7 +71,6 @@ class BiometricsSettingsViewController: UIViewController, Subscriber, Trackable 
         setUpAppearance()
         addConstraints()
         setData()
-        addFaqButton()
     }
     
     private func setUpAppearance() {
@@ -213,14 +212,6 @@ class BiometricsSettingsViewController: UIViewController, Subscriber, Trackable 
         } else if toggle == transactionsToggle {
             self.walletAuthenticator.isBiometricsEnabledForTransactions = toggle.isOn
         }
-    }
-    
-    private func addFaqButton() {
-        let negativePadding = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-        negativePadding.width = -16.0
-        let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.enableTouchId)
-        faqButton.tintColor = .white
-        navigationItem.rightBarButtonItems = [negativePadding, UIBarButtonItem(customView: faqButton)]
     }
 
     fileprivate func presentCantUseBiometricsAlert() {

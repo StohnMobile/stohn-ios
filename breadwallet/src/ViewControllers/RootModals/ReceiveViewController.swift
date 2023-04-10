@@ -245,14 +245,6 @@ class ReceiveViewController: UIViewController, Subscriber, Trackable {
 }
 
 extension ReceiveViewController: ModalDisplayable {
-    var faqArticleId: String? {
-        return ArticleIds.receiveTx
-    }
-    
-    var faqCurrency: Currency? {
-        return currency
-    }
-
     var modalTitle: String {
         return "\(S.Receive.title) \(currency.code)"
     }

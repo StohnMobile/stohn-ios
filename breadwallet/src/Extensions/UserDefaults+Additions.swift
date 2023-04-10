@@ -41,7 +41,6 @@ private let debugSuppressAppRatingPromptKey = "debugSuppressAppRatingPromptKey"
 private let debugConnectionModeOverrideKey = "debugConnectionModeOverrideKey"
 private let shouldHideBRDCellHighlightKey = "shouldHideBRDCellHighlightKey"
 private let debugBackendHostKey = "debugBackendHostKey"
-private let debugWebBundleNameKey = "debugWebBundleNameKey"
 private let platformDebugURLKey = "platformDebugURLKey"
 private let appLaunchCountKey = "appLaunchCountKey"
 private let appLaunchCountAtLastRatingPromptKey = "appLaunchCountAtLastRatingPromptKey"
@@ -514,16 +513,6 @@ extension UserDefaults {
 
         set {
             defaults.set(newValue, forKey: debugBackendHostKey)
-        }
-    }
-
-    static var debugWebBundleName: String? {
-        get {
-            return defaults.string(forKey: debugWebBundleNameKey)
-        }
-
-        set {
-            defaults.set(newValue, forKey: debugWebBundleNameKey)
         }
     }
 

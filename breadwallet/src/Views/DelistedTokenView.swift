@@ -29,10 +29,6 @@ class DelistedTokenView: UIView {
         
         label.numberOfLines = 0
         label.text = S.Account.delistedToken
-        
-        button.tap = {
-            Store.trigger(name: .presentFaq(ArticleIds.unsupportedToken, self.currency))
-        }
     }
     
     private func addSubviews() {

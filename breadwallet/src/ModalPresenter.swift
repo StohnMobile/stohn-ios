@@ -18,9 +18,6 @@ class ModalPresenter: Subscriber, Trackable {
 
     // MARK: - Public
     let keyStore: KeyStore
-    lazy var supportCenter: SupportCenterContainer = {
-        return SupportCenterContainer(walletAuthenticator: keyStore)
-    }()
     
     init(keyStore: KeyStore, system: CoreSystem, window: UIWindow, alertPresenter: AlertPresenter?) {
         self.system = system
@@ -153,13 +150,6 @@ class ModalPresenter: Subscriber, Trackable {
                     display(nil)
                 }
                 
-            }
-        }
-        
-        Store.subscribe(self, name: .openPlatformUrl("")) { [weak self] in
-            guard let trigger = $0 else { return }
-            if case let .openPlatformUrl(url) = trigger {
-                self?.presentPlatformWebViewController(url)
             }
         }
     }
@@ -345,40 +335,6 @@ class ModalPresenter: Subscriber, Trackable {
         }
         var btcMenu = MenuItem(title: String(format: S.Settings.currencyPageTitle, Currencies.btc.instance?.name ?? "Bitcoin"), subMenu: btcItems, rootNav: menuNav)
         btcMenu.shouldShow = { return !btcItems.isEmpty }
-        
-        // MARK: Bitcoin Cash Menu
-        var bchItems: [MenuItem] = []
-        if let bch = Currencies.bch.instance, let bchWallet = bch.wallet {
-            if system.connectionMode(for: bch) == .p2p_only {
-                // Rescan
-                bchItems.append(MenuItem(title: S.Settings.sync, callback: { [weak self] in
-                    guard let `self` = self else { return }
-                    menuNav.pushViewController(ReScanViewController(system: self.system, wallet: bchWallet), animated: true)
-                }))
-            }
-            bchItems.append(MenuItem(title: S.Settings.importTile, callback: {
-                menuNav.dismiss(animated: true, completion: { [unowned self] in
-                    self.presentKeyImport(wallet: bchWallet)
-                })
-            }))
-            
-        }
-        var bchMenu = MenuItem(title: String(format: S.Settings.currencyPageTitle, Currencies.bch.instance?.name ?? "Bitcoin Cash"), subMenu: bchItems, rootNav: menuNav)
-        bchMenu.shouldShow = { return !bchItems.isEmpty }
-        
-        // MARK: Ethereum Menu
-        var ethItems: [MenuItem] = []
-        if let eth = Currencies.eth.instance, let ethWallet = eth.wallet {
-            if system.connectionMode(for: eth) == .p2p_only {
-                // Rescan
-                ethItems.append(MenuItem(title: S.Settings.sync, callback: { [weak self] in
-                    guard let `self` = self else { return }
-                    menuNav.pushViewController(ReScanViewController(system: self.system, wallet: ethWallet), animated: true)
-                }))
-            }
-        }
-        var ethMenu = MenuItem(title: String(format: S.Settings.currencyPageTitle, Currencies.eth.instance?.name ?? "Ethereum"), subMenu: ethItems, rootNav: menuNav)
-        ethMenu.shouldShow = { return !ethItems.isEmpty }
 
         // MARK: Preferences
         let preferencesItems: [MenuItem] = [
@@ -393,8 +349,6 @@ class ModalPresenter: Subscriber, Trackable {
             }),
             
             btcMenu,
-            bchMenu,
-            ethMenu,
 
             // Share Anonymous Data
             MenuItem(title: S.Settings.shareData, callback: {
@@ -620,45 +574,6 @@ class ModalPresenter: Subscriber, Trackable {
                 }))
 
             developerItems.append(
-                MenuItem(title: "Web Platform Bundle",
-                         accessoryText: { C.webBundle }, callback: {
-                            let alert = UIAlertController(title: "Set bundle name", message: "Clear and save to reset", preferredStyle: .alert)
-                            alert.addTextField(configurationHandler: { textField in
-                                textField.text = C.webBundle
-                                textField.keyboardType = .URL
-                                textField.clearButtonMode = .always
-                            })
-
-                            alert.addAction(UIAlertAction(title: "Save", style: .default) { (_) in
-                                guard let newBundleName = alert.textFields?.first?.text, !newBundleName.isEmpty else {
-                                    UserDefaults.debugWebBundleName = nil
-                                    (menuNav.topViewController as? MenuViewController)?.reloadMenu()
-                                    return
-                                }
-
-                                guard let bundle = AssetArchive(name: newBundleName, apiClient: Backend.apiClient) else { return assertionFailure() }
-                                bundle.update { error in
-                                    DispatchQueue.main.async {
-                                        guard error == nil else {
-                                            let alert = UIAlertController(title: S.Alert.error,
-                                                                          message: "Unable to fetch bundle named \(newBundleName)",
-                                                preferredStyle: .alert)
-                                            alert.addAction(UIAlertAction(title: S.Button.ok, style: .default, handler: nil))
-                                            menuNav.present(alert, animated: true, completion: nil)
-                                            return
-                                        }
-                                        UserDefaults.debugWebBundleName = newBundleName
-                                        (menuNav.topViewController as? MenuViewController)?.reloadMenu()
-                                    }
-                                }
-                            })
-
-                            alert.addAction(UIAlertAction(title: S.Button.cancel, style: .cancel, handler: nil))
-
-                            menuNav.present(alert, animated: true, completion: nil)
-                }))
-
-            developerItems.append(
                 MenuItem(title: "Web Platform Debug URL",
                          accessoryText: { UserDefaults.platformDebugURL?.absoluteString ?? "<not set>" }, callback: {
                             let alert = UIAlertController(title: "Set debug URL", message: "Clear and save to reset", preferredStyle: .alert)
@@ -738,17 +653,6 @@ class ModalPresenter: Subscriber, Trackable {
                                                        dismissAction: nil)
     }
 
-    private func presentPlatformWebViewController(_ mountPoint: String) {
-        let vc = BRWebViewController(bundleName: C.webBundle,
-                                     mountPoint: mountPoint,
-                                     walletAuthenticator: keyStore,
-                                     system: system)
-        vc.startServer()
-        vc.preload()
-        vc.modalPresentationStyle = .overFullScreen
-        self.topViewController?.present(vc, animated: true, completion: nil)
-    }
-
     private func wipeWallet() {
         let alert = UIAlertController.confirmationAlert(title: S.WipeWallet.alertTitle,
                                                         message: S.WipeWallet.alertMessage,
@@ -769,9 +673,6 @@ class ModalPresenter: Subscriber, Trackable {
         let start = ImportKeyViewController(wallet: wallet, initialQRCode: scanResult)
         start.addCloseNavigationItem(tintColor: .white)
         start.navigationItem.title = S.Import.title
-        let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.importWallet, currency: wallet.currency)
-        faqButton.tintColor = .white
-        start.navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
         nc.viewControllers = [start]
         topViewController?.present(nc, animated: true, completion: nil)
     }

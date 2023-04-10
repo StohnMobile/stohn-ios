@@ -183,14 +183,6 @@ class RequestAmountViewController: UIViewController {
 }
 
 extension RequestAmountViewController: ModalDisplayable {
-    var faqArticleId: String? {
-        return ArticleIds.requestAmount
-    }
-    
-    var faqCurrency: Currency? {
-        return currency
-    }
-
     var modalTitle: String {
         return S.Receive.request
     }

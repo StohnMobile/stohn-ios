@@ -21,13 +21,12 @@ class EnterPhraseViewController: UIViewController, UIScrollViewDelegate, Trackab
     init(keyMaster: KeyMaster, reason: PhraseEntryReason) {
         self.keyMaster = keyMaster
         self.enterPhrase = EnterPhraseCollectionViewController(keyMaster: keyMaster)
-        self.faq = UIButton.buildFaqButton(articleId: ArticleIds.recoverWallet)
         self.reason = reason
         super.init(nibName: nil, bundle: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-
+    
     // MARK: - Private
     private let keyMaster: KeyMaster
     private let reason: PhraseEntryReason
@@ -35,7 +34,6 @@ class EnterPhraseViewController: UIViewController, UIScrollViewDelegate, Trackab
     private let errorLabel = UILabel.wrapping(font: Theme.caption, color: Theme.error)
     private let heading = UILabel.wrapping(font: Theme.h2Title, color: Theme.primaryText)
     private let subheading = UILabel.wrapping(font: Theme.body1, color: Theme.secondaryText)
-    private let faq: UIButton
     private let scrollView = UIScrollView()
     private let container = UIView()
 
@@ -51,8 +49,6 @@ class EnterPhraseViewController: UIViewController, UIScrollViewDelegate, Trackab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: faq)
         
         setUpHeadings()
         addSubviews()
@@ -131,11 +127,6 @@ class EnterPhraseViewController: UIViewController, UIScrollViewDelegate, Trackab
             saveEvent("enterPhrase.resettingPin")
             heading.text = S.RecoverKeyFlow.enterRecoveryKey
             subheading.text = S.RecoverKeyFlow.resetPINInstruction
-            faq.tap = {
-                Store.trigger(name: .presentFaq(ArticleIds.resetPinWithPaperKey, nil))
-            }
-            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: faq)
-            faq.tintColor = Theme.primaryText
         case .validateForWipingWallet:
             saveEvent("enterPhrase.wipeWallet")
             heading.text = S.RecoverKeyFlow.enterRecoveryKey

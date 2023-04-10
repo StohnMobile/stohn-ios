@@ -739,14 +739,6 @@ extension SendViewController {
 // MARK: - ModalDisplayable
 
 extension SendViewController: ModalDisplayable {
-    var faqArticleId: String? {
-        return ArticleIds.sendTx
-    }
-    
-    var faqCurrency: Currency? {
-        return currency
-    }
-
     var modalTitle: String {
         return "\(S.Send.title) \(currency.code)"
     }

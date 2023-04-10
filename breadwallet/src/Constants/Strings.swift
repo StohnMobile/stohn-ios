@@ -428,11 +428,9 @@ enum S {
 
     enum MenuButton {
         static let security = NSLocalizedString("MenuButton.security", value:"Security Settings", comment: "Menu button title")
-        static let support = NSLocalizedString("MenuButton.support", value:"Support", comment: "Menu button title")
         static let settings = NSLocalizedString("MenuButton.settings", value:"Settings", comment: "Menu button title")
         static let lock = NSLocalizedString("MenuButton.lock", value:"Lock Wallet", comment: "Menu button title")
         static let addWallet = NSLocalizedString("MenuButton.addWallet", value: "Add Wallet", comment: "Menu button title")
-        static let manageWallets = NSLocalizedString("MenuButton.manageWallets", value: "Manage Wallets", comment: "Menu button title")
         static let scan = NSLocalizedString("MenuButton.scan", value: "Scan QR Code", comment: "Menu button title")
     }
     
@@ -459,7 +457,6 @@ enum S {
     
     enum AccessibilityLabels {
         static let close = NSLocalizedString("AccessibilityLabels.close", value:"Close", comment: "Close modal button accessibility label")
-        static let faq = NSLocalizedString("AccessibilityLabels.faq", value: "Support Center", comment: "Support center accessibiliy label")
     }
 
     enum Watch {
