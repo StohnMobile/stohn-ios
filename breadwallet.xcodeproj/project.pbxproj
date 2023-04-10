@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B1AFFA01FB7EF7C00E61908 /* BiometricsSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1AFF9E1FB7EF7C00E61908 /* BiometricsSettingsViewController.swift */; };
+		1BEFBBB529DB86BD0079152D /* WalletKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A0C6087242A5CC900F0FBC2 /* WalletKit */; };
+		1BEFBBB629DB86BD0079152D /* CoinGecko in Frameworks */ = {isa = PBXBuildFile; productRef = 3A858B29250A781700812B36 /* CoinGecko */; };
 		22122B721F0B8996000E9AB9 /* BRAPIClient+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22122B711F0B8996000E9AB9 /* BRAPIClient+Events.swift */; };
 		2218BD771E8F55430091D5E8 /* BRAPIClient+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218BD761E8F55430091D5E8 /* BRAPIClient+Assets.swift */; };
 		2218BD791E8F6CBA0091D5E8 /* AssetBundles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2218BD781E8F6CBA0091D5E8 /* AssetBundles.plist */; };
@@ -52,27 +54,17 @@
 		22E773041EE7813000397E0E /* Bonjour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E773031EE7813000397E0E /* Bonjour.swift */; };
 		3A0063BE2509D36500C74A97 /* ExtendedTouchArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0063BD2509D36500C74A97 /* ExtendedTouchArea.swift */; };
 		3A0915CA24D8B31200CDC6A4 /* EnableKeychainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0915C924D8B31100CDC6A4 /* EnableKeychainView.swift */; };
-		3A188FEC257FF1A300957819 /* GiftCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A188FEB257FF1A300957819 /* GiftCurrencyCell.swift */; };
-		3A188FF82582835600957819 /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A188FF72582835600957819 /* Sharing.swift */; };
 		3A1D416E250957A00089FE63 /* MarketDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D416D250957A00089FE63 /* MarketDataView.swift */; };
 		3A1D4180250965730089FE63 /* MarketDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D417F250965730089FE63 /* MarketDataPublisher.swift */; };
 		3A211D1D2242AF0500C2A906 /* Bip38Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A211D1C2242AF0500C2A906 /* Bip38Tests.swift */; };
 		3A36328D225301D60043EBA4 /* PriceChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36328C225301D60043EBA4 /* PriceChangeView.swift */; };
-		3A3D63DC22F10B4F000DE920 /* AddWalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D63DB22F10B4F000DE920 /* AddWalletsViewController.swift */; };
-		3A3D63DE22F10B58000DE920 /* ManageWalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D63DD22F10B57000DE920 /* ManageWalletsViewController.swift */; };
-		3A529E4C253B957200BD0A17 /* StakingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A529E4B253B957200BD0A17 /* StakingCell.swift */; };
-		3A529E5C253CAD3F00BD0A17 /* StakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A529E5B253CAD3F00BD0A17 /* StakeViewController.swift */; };
 		3A5C9B2B22A5676F00C907C1 /* PriceChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C9B2A22A5676F00C907C1 /* PriceChange.swift */; };
 		3A611A0C2322139D004B8E36 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A611A0B2322139D004B8E36 /* Dot.swift */; };
 		3A611A0F2325738C004B8E36 /* AnimatedBlockSetLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A611A0E2325738C004B8E36 /* AnimatedBlockSetLogo.swift */; };
 		3A65DE812447E9AF0025C56E /* AccountInitializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65DE802447E9AF0025C56E /* AccountInitializationTests.swift */; };
-		3A6785F1256F2F1A0065F835 /* RedeemGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6785F0256F2F1A0065F835 /* RedeemGiftViewController.swift */; };
-		3A6785FB257019220065F835 /* RedeemTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6785FA257019220065F835 /* RedeemTransitioningDelegate.swift */; };
 		3A69884F24591F4A0084953D /* PayIdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69884E24591F4A0084953D /* PayIdTests.swift */; };
 		3A69885E24591F890084953D /* PayId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69885D24591F890084953D /* PayId.swift */; };
 		3A6A3C7E24DDC90300ACAC70 /* BackupSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6A3C7D24DDC90300ACAC70 /* BackupSynchronizer.swift */; };
-		3A6C13FF257D463300EA0689 /* GiftHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C13FE257D463300EA0689 /* GiftHeaderView.swift */; };
-		3A6C1406257D594A00EA0689 /* ShareGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C1405257D594A00EA0689 /* ShareGiftViewController.swift */; };
 		3A6CA703244239FD001833CA /* WalletInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CA702244239FD001833CA /* WalletInitializer.swift */; };
 		3A6FD42D24E456B800068ECE /* KeyStoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6FD42C24E456B800068ECE /* KeyStoreUtils.swift */; };
 		3A6FD42F24E4570900068ECE /* KeyStore+CloudBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6FD42E24E4570900068ECE /* KeyStore+CloudBackup.swift */; };
@@ -93,28 +85,16 @@
 		3AEA2CAB24D3219200DA4C3A /* SelectBackupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA2CAA24D3219200DA4C3A /* SelectBackupView.swift */; };
 		3AEF7B72234A4E3C005BE184 /* RequestUrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF7B71234A4E3C005BE184 /* RequestUrlTests.swift */; };
 		3AF78B3B2523B05E00FBB280 /* FioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF78B3A2523B05E00FBB280 /* FioTests.swift */; };
-		3AFAD9302567EE15005853E8 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAD92F2567EE15005853E8 /* GiftViewController.swift */; };
-		3AFAD937256826F3005853E8 /* BorderedTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAD936256826F3005853E8 /* BorderedTextInput.swift */; };
-		3AFAD94825698A74005853E8 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAD94725698A74005853E8 /* Gift.swift */; };
-		3AFAD94F25699112005853E8 /* TxGiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAD94E25699112005853E8 /* TxGiftCell.swift */; };
-		3AFAD9562569F722005853E8 /* GiftingStatusUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAD9552569F722005853E8 /* GiftingStatusUpdater.swift */; };
 		3AFB571524E2E0BA00087527 /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB571424E2E0BA00087527 /* UIHelpers.swift */; };
 		3AFB571724E2E10A00087527 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB571624E2E10A00087527 /* RadioButton.swift */; };
 		4F3AB11A25D53F4300B378DC /* ExternalAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AB11825D53F4300B378DC /* ExternalAPIClient.swift */; };
 		4F3AB11B25D53F4300B378DC /* ExternalAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AB11925D53F4300B378DC /* ExternalAPIRequest.swift */; };
-		4F3AB12325D53F5D00B378DC /* BakingBadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AB12125D53F5D00B378DC /* BakingBadRequest.swift */; };
-		4F3AB12425D53F5D00B378DC /* Baker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AB12225D53F5D00B378DC /* Baker.swift */; };
-		4F3AB12A25D58AB400B378DC /* SelectBakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AB12925D58AB400B378DC /* SelectBakerViewController.swift */; };
-		4F3AB13425D5E7F900B378DC /* SelectBakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AB13325D5E7F900B378DC /* SelectBakerCell.swift */; };
 		71014F7C2327E49400DA1373 /* fiatcurrencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 71014F7B2327E49400DA1373 /* fiatcurrencies.json */; };
 		710B036221F67888007E8A2A /* MockClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710B036121F67888007E8A2A /* MockClasses.swift */; };
 		710B036421F8C208007E8A2A /* AppRatingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710B036321F8C208007E8A2A /* AppRatingManager.swift */; };
 		711730572204FDFB001931B3 /* HomeScreenHiglightableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711730562204FDFB001931B3 /* HomeScreenHiglightableCell.swift */; };
 		71173059220CCC91001931B3 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71173058220CCC91001931B3 /* PromptView.swift */; };
-		7117305B220CE7B8001931B3 /* BRAPIClient+Announcements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117305A220CE7B8001931B3 /* BRAPIClient+Announcements.swift */; };
-		71249913221F44FE00BEA491 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71249912221F44FE00BEA491 /* Announcement.swift */; };
 		71249916221F466800BEA491 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71249915221F466800BEA491 /* Prompt.swift */; };
-		71249918222046EB00BEA491 /* PromptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71249917222046EB00BEA491 /* PromptTests.swift */; };
 		7124991B22204E6C00BEA491 /* announcement-email.json in Resources */ = {isa = PBXBuildFile; fileRef = 7124991A22204E6C00BEA491 /* announcement-email.json */; };
 		7138BABB223062F50059091E /* NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138BABA223062F40059091E /* NotificationTests.swift */; };
 		713CD8872240117A004657D4 /* RecoveryKeyFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713CD8862240117A004657D4 /* RecoveryKeyFlowController.swift */; };
@@ -124,7 +104,6 @@
 		714F5D6E22037F2400F7CA70 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F5D6D22037F2400F7CA70 /* EventMonitor.swift */; };
 		716F824321F91D9A0064E6F4 /* AppRatingManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F824221F91D9A0064E6F4 /* AppRatingManagerTests.swift */; };
 		71904FB72225A1F900A6D027 /* announcement-promo.json in Resources */ = {isa = PBXBuildFile; fileRef = 71904FB62225A1F800A6D027 /* announcement-promo.json */; };
-		71904FB92225AB3900A6D027 /* AnnouncementPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71904FB82225AB3900A6D027 /* AnnouncementPromptView.swift */; };
 		71904FBB2228132100A6D027 /* announcement-supported.json in Resources */ = {isa = PBXBuildFile; fileRef = 71904FBA2228132100A6D027 /* announcement-supported.json */; };
 		71988B0821EF8A0E008B8EA0 /* BRUserAgentHeaderGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71988B0721EF8A0E008B8EA0 /* BRUserAgentHeaderGenerator.swift */; };
 		71988B0921EF8A0E008B8EA0 /* BRUserAgentHeaderGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71988B0721EF8A0E008B8EA0 /* BRUserAgentHeaderGenerator.swift */; };
@@ -170,7 +149,6 @@
 		7C9724661FF07B9A004248C4 /* StatusPip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9724651FF07B9A004248C4 /* StatusPip.swift */; };
 		7C98B0A5215A99C8007C85EB /* brd-tokens-staging.tar in Resources */ = {isa = PBXBuildFile; fileRef = 7C98B0A3215A99C7007C85EB /* brd-tokens-staging.tar */; };
 		7C98B0A6215A99C8007C85EB /* brd-web-3-staging.tar in Resources */ = {isa = PBXBuildFile; fileRef = 7C98B0A4215A99C8007C85EB /* brd-web-3-staging.tar */; };
-		7C9BC58D231764030011732F /* WalletConnectionSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BC58C231764020011732F /* WalletConnectionSettingsViewController.swift */; };
 		7C9BC58F231765190011732F /* WalletConnectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BC58E231765190011732F /* WalletConnectionSettings.swift */; };
 		7C9BC591231843A50011732F /* WalletConnectionSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9BC590231843A50011732F /* WalletConnectionSettingsTests.swift */; };
 		7CA1C47420EC25B9002E9E68 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1C47320EC25B9002E9E68 /* QRCode.swift */; };
@@ -287,150 +265,6 @@
 		9A926F9722034B3800CC2263 /* CellHighlight-59.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A926F4122034B3700CC2263 /* CellHighlight-59.png */; };
 		9A926F9822034B3800CC2263 /* CellHighlight-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A926F4222034B3700CC2263 /* CellHighlight-24.png */; };
 		9A926F9922034B3800CC2263 /* CellHighlight-22.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A926F4322034B3700CC2263 /* CellHighlight-22.png */; };
-		9AE800D021FFF81F00D5058C /* rewardsIcon-17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8008A21FFF80F00D5058C /* rewardsIcon-17.gif */; };
-		9AE800D121FFF81F00D5058C /* rewardsIcon-28.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8008B21FFF80F00D5058C /* rewardsIcon-28.gif */; };
-		9AE800D221FFF81F00D5058C /* rewardsIcon-4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8008C21FFF80F00D5058C /* rewardsIcon-4.gif */; };
-		9AE800D321FFF81F00D5058C /* rewardsIcon-66.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8008D21FFF81000D5058C /* rewardsIcon-66.gif */; };
-		9AE800D421FFF81F00D5058C /* rewardsIcon-58.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8008E21FFF81000D5058C /* rewardsIcon-58.gif */; };
-		9AE800D521FFF81F00D5058C /* rewardsIcon-27.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8008F21FFF81000D5058C /* rewardsIcon-27.gif */; };
-		9AE800D621FFF81F00D5058C /* rewardsIcon-36.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009021FFF81000D5058C /* rewardsIcon-36.gif */; };
-		9AE800D721FFF81F00D5058C /* rewardsIcon-44.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009121FFF81100D5058C /* rewardsIcon-44.gif */; };
-		9AE800D821FFF81F00D5058C /* rewardsIcon-43.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009221FFF81100D5058C /* rewardsIcon-43.gif */; };
-		9AE800D921FFF81F00D5058C /* rewardsIcon-11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009321FFF81100D5058C /* rewardsIcon-11.gif */; };
-		9AE800DA21FFF81F00D5058C /* rewardsIcon-29.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009421FFF81100D5058C /* rewardsIcon-29.gif */; };
-		9AE800DB21FFF81F00D5058C /* rewardsIcon-18.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009521FFF81100D5058C /* rewardsIcon-18.gif */; };
-		9AE800DC21FFF81F00D5058C /* rewardsIcon-52.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009621FFF81100D5058C /* rewardsIcon-52.gif */; };
-		9AE800DD21FFF81F00D5058C /* rewardsIcon-24.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009721FFF81200D5058C /* rewardsIcon-24.gif */; };
-		9AE800DE21FFF81F00D5058C /* rewardsIcon-12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009821FFF81200D5058C /* rewardsIcon-12.gif */; };
-		9AE800DF21FFF81F00D5058C /* rewardsIcon-30.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009921FFF81200D5058C /* rewardsIcon-30.gif */; };
-		9AE800E021FFF81F00D5058C /* rewardsIcon-25.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009A21FFF81200D5058C /* rewardsIcon-25.gif */; };
-		9AE800E121FFF81F00D5058C /* rewardsIcon-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009B21FFF81200D5058C /* rewardsIcon-2.gif */; };
-		9AE800E221FFF81F00D5058C /* rewardsIcon-38.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009C21FFF81300D5058C /* rewardsIcon-38.gif */; };
-		9AE800E321FFF81F00D5058C /* rewardsIcon-55.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009D21FFF81300D5058C /* rewardsIcon-55.gif */; };
-		9AE800E421FFF81F00D5058C /* rewardsIcon-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009E21FFF81300D5058C /* rewardsIcon-5.gif */; };
-		9AE800E521FFF81F00D5058C /* rewardsIcon-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE8009F21FFF81300D5058C /* rewardsIcon-15.gif */; };
-		9AE800E621FFF81F00D5058C /* rewardsIcon-21.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A021FFF81300D5058C /* rewardsIcon-21.gif */; };
-		9AE800E721FFF81F00D5058C /* rewardsIcon-35.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A121FFF81300D5058C /* rewardsIcon-35.gif */; };
-		9AE800E821FFF81F00D5058C /* rewardsIcon-20.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A221FFF81400D5058C /* rewardsIcon-20.gif */; };
-		9AE800E921FFF81F00D5058C /* rewardsIcon-33.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A321FFF81400D5058C /* rewardsIcon-33.gif */; };
-		9AE800EA21FFF81F00D5058C /* rewardsIcon-48.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A421FFF81400D5058C /* rewardsIcon-48.gif */; };
-		9AE800EB21FFF81F00D5058C /* rewardsIcon-9.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A521FFF81400D5058C /* rewardsIcon-9.gif */; };
-		9AE800EC21FFF81F00D5058C /* rewardsIcon-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A621FFF81400D5058C /* rewardsIcon-3.gif */; };
-		9AE800ED21FFF81F00D5058C /* rewardsIcon-60.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A721FFF81400D5058C /* rewardsIcon-60.gif */; };
-		9AE800EE21FFF81F00D5058C /* rewardsIcon-46.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A821FFF81500D5058C /* rewardsIcon-46.gif */; };
-		9AE800EF21FFF81F00D5058C /* rewardsIcon-68.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800A921FFF81500D5058C /* rewardsIcon-68.gif */; };
-		9AE800F021FFF81F00D5058C /* rewardsIcon-31.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800AA21FFF81500D5058C /* rewardsIcon-31.gif */; };
-		9AE800F121FFF81F00D5058C /* rewardsIcon-53.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800AB21FFF81500D5058C /* rewardsIcon-53.gif */; };
-		9AE800F221FFF81F00D5058C /* rewardsIcon-61.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800AC21FFF81500D5058C /* rewardsIcon-61.gif */; };
-		9AE800F321FFF81F00D5058C /* rewardsIcon-47.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800AD21FFF81500D5058C /* rewardsIcon-47.gif */; };
-		9AE800F421FFF81F00D5058C /* rewardsIcon-19.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800AE21FFF81600D5058C /* rewardsIcon-19.gif */; };
-		9AE800F521FFF81F00D5058C /* rewardsIcon-45.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800AF21FFF81600D5058C /* rewardsIcon-45.gif */; };
-		9AE800F621FFF81F00D5058C /* rewardsIcon-39.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B021FFF81600D5058C /* rewardsIcon-39.gif */; };
-		9AE800F721FFF81F00D5058C /* rewardsIcon-8.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B121FFF81600D5058C /* rewardsIcon-8.gif */; };
-		9AE800F821FFF81F00D5058C /* rewardsIcon-37.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B221FFF81600D5058C /* rewardsIcon-37.gif */; };
-		9AE800F921FFF81F00D5058C /* rewardsIcon-22.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B321FFF81700D5058C /* rewardsIcon-22.gif */; };
-		9AE800FA21FFF81F00D5058C /* rewardsIcon-23.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B421FFF81700D5058C /* rewardsIcon-23.gif */; };
-		9AE800FB21FFF81F00D5058C /* rewardsIcon-32.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B521FFF81700D5058C /* rewardsIcon-32.gif */; };
-		9AE800FC21FFF81F00D5058C /* rewardsIcon-7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B621FFF81800D5058C /* rewardsIcon-7.gif */; };
-		9AE800FD21FFF81F00D5058C /* rewardsIcon-59.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B721FFF81800D5058C /* rewardsIcon-59.gif */; };
-		9AE800FE21FFF81F00D5058C /* rewardsIcon-40.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B821FFF81800D5058C /* rewardsIcon-40.gif */; };
-		9AE800FF21FFF81F00D5058C /* rewardsIcon-69.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800B921FFF81900D5058C /* rewardsIcon-69.gif */; };
-		9AE8010021FFF81F00D5058C /* rewardsIcon-10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800BA21FFF81900D5058C /* rewardsIcon-10.gif */; };
-		9AE8010121FFF81F00D5058C /* rewardsIcon-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800BB21FFF81A00D5058C /* rewardsIcon-1.gif */; };
-		9AE8010221FFF81F00D5058C /* rewardsIcon-34.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800BC21FFF81A00D5058C /* rewardsIcon-34.gif */; };
-		9AE8010321FFF81F00D5058C /* rewardsIcon-50.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800BD21FFF81A00D5058C /* rewardsIcon-50.gif */; };
-		9AE8010421FFF81F00D5058C /* rewardsIcon-62.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800BE21FFF81A00D5058C /* rewardsIcon-62.gif */; };
-		9AE8010521FFF81F00D5058C /* rewardsIcon-65.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800BF21FFF81A00D5058C /* rewardsIcon-65.gif */; };
-		9AE8010621FFF81F00D5058C /* rewardsIcon-67.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C021FFF81A00D5058C /* rewardsIcon-67.gif */; };
-		9AE8010721FFF81F00D5058C /* rewardsIcon-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C121FFF81B00D5058C /* rewardsIcon-16.gif */; };
-		9AE8010821FFF81F00D5058C /* rewardsIcon-42.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C221FFF81B00D5058C /* rewardsIcon-42.gif */; };
-		9AE8010921FFF81F00D5058C /* rewardsIcon-26.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C321FFF81B00D5058C /* rewardsIcon-26.gif */; };
-		9AE8010A21FFF81F00D5058C /* rewardsIcon-49.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C421FFF81C00D5058C /* rewardsIcon-49.gif */; };
-		9AE8010B21FFF81F00D5058C /* rewardsIcon-56.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C521FFF81C00D5058C /* rewardsIcon-56.gif */; };
-		9AE8010C21FFF81F00D5058C /* rewardsIcon-70.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C621FFF81C00D5058C /* rewardsIcon-70.gif */; };
-		9AE8010D21FFF81F00D5058C /* rewardsIcon-13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C721FFF81C00D5058C /* rewardsIcon-13.gif */; };
-		9AE8010E21FFF81F00D5058C /* rewardsIcon-41.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C821FFF81D00D5058C /* rewardsIcon-41.gif */; };
-		9AE8010F21FFF81F00D5058C /* rewardsIcon-14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800C921FFF81D00D5058C /* rewardsIcon-14.gif */; };
-		9AE8011021FFF81F00D5058C /* rewardsIcon-54.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800CA21FFF81D00D5058C /* rewardsIcon-54.gif */; };
-		9AE8011121FFF81F00D5058C /* rewardsIcon-6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800CB21FFF81E00D5058C /* rewardsIcon-6.gif */; };
-		9AE8011221FFF81F00D5058C /* rewardsIcon-51.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800CC21FFF81E00D5058C /* rewardsIcon-51.gif */; };
-		9AE8011321FFF81F00D5058C /* rewardsIcon-57.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800CD21FFF81E00D5058C /* rewardsIcon-57.gif */; };
-		9AE8011421FFF81F00D5058C /* rewardsIcon-63.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800CE21FFF81F00D5058C /* rewardsIcon-63.gif */; };
-		9AE8011521FFF81F00D5058C /* rewardsIcon-64.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AE800CF21FFF81F00D5058C /* rewardsIcon-64.gif */; };
-		9AE8FFF821FE64E200D5058C /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8FFF721FE64E200D5058C /* RewardsView.swift */; };
-		9AE8FFFA21FE6FE000D5058C /* RewardsIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8FFF921FE6FE000D5058C /* RewardsIconView.swift */; };
-		9F00EA9325DDEED200A99218 /* brd-tokens.tar in Resources */ = {isa = PBXBuildFile; fileRef = 7CC7D8D421581C41007E1B9A /* brd-tokens.tar */; };
-		9F00EAA825DDEF7900A99218 /* ImageStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F00EAA725DDEF7800A99218 /* ImageStorageService.swift */; };
-		9F00EAD025DDF28400A99218 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F00EAAF25DDF15200A99218 /* Bundle+Extensions.swift */; };
-		9F00EAD725DDF28F00A99218 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F00EAAF25DDF15200A99218 /* Bundle+Extensions.swift */; };
-		9F00EADE25DDF29800A99218 /* ImageStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F00EAA725DDEF7800A99218 /* ImageStorageService.swift */; };
-		9F00EAE525DDF93C00A99218 /* BRTar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9A9411DF61945000F0016 /* BRTar.swift */; };
-		9F00EAEC25DDF93D00A99218 /* BRTar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9A9411DF61945000F0016 /* BRTar.swift */; };
-		9F00EAF425DDFC9600A99218 /* Currency+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F00EAF325DDFC9600A99218 /* Currency+Extensions.swift */; };
-		9F0EA16425E2902700D4225E /* WidgetDataShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EA16325E2902700D4225E /* WidgetDataShareService.swift */; };
-		9F0EA16525E2902700D4225E /* WidgetDataShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EA16325E2902700D4225E /* WidgetDataShareService.swift */; };
-		9F0EA16C25E2904400D4225E /* WidgetDataShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EA16325E2902700D4225E /* WidgetDataShareService.swift */; };
-		9F13F5C925DDD73A0031AEC7 /* fiatcurrencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 71014F7B2327E49400DA1373 /* fiatcurrencies.json */; };
-		9F13F5D025DDD73B0031AEC7 /* fiatcurrencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 71014F7B2327E49400DA1373 /* fiatcurrencies.json */; };
-		9F2118AC25DD74EA00ABD2C8 /* CoinGecko+Extesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2118AB25DD74EA00ABD2C8 /* CoinGecko+Extesions.swift */; };
-		9F2118C025DD7D7D00ABD2C8 /* CoinGecko+Extesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2118AB25DD74EA00ABD2C8 /* CoinGecko+Extesions.swift */; };
-		9F2118F525DDBC6200ABD2C8 /* Formatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2118F425DDBC6200ABD2C8 /* Formatter+Extensions.swift */; };
-		9F29A99C25D5C605000FEB40 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F29A99B25D5C605000FEB40 /* Intents.framework */; };
-		9F29A99F25D5C605000FEB40 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29A99E25D5C605000FEB40 /* IntentHandler.swift */; };
-		9F29A9A325D5C605000FEB40 /* breadwalletIntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F29A99A25D5C605000FEB40 /* breadwalletIntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9F29A9BB25D5C75B000FEB40 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29A9BA25D5C75B000FEB40 /* AssetView.swift */; };
-		9F29A9CF25D5C8AD000FEB40 /* BreadwalletWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0CA1625D5AD180057DD11 /* BreadwalletWidget.intentdefinition */; };
-		9F3C301725DA841100C7C398 /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C54FF9D21658669007BF3EF /* currencies.json */; };
-		9F3C301E25DA841100C7C398 /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C54FF9D21658669007BF3EF /* currencies.json */; };
-		9F3C302525DA8B2F00C7C398 /* WidgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9FAF7625D5D0140014F729 /* WidgetService.swift */; };
-		9F3C305625DA902E00C7C398 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C305525DA902E00C7C398 /* Currency.swift */; };
-		9F3C305725DA902E00C7C398 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C305525DA902E00C7C398 /* Currency.swift */; };
-		9F3C307125DA926800C7C398 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF292F1EF9D76F005C330A /* Environment.swift */; };
-		9F3C307825DA926800C7C398 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBF292F1EF9D76F005C330A /* Environment.swift */; };
-		9F3C307F25DA929600C7C398 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA35D4232A9D1200FB58C4 /* Identifier.swift */; };
-		9F3C308625DA929600C7C398 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEA35D4232A9D1200FB58C4 /* Identifier.swift */; };
-		9F3C308D25DA94C400C7C398 /* UIColor+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C8FB1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift */; };
-		9F3C309425DA94C600C7C398 /* UIColor+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20C8FB1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift */; };
-		9F3C309B25DA951200C7C398 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3170C229C70C00088F97C /* Theme.swift */; };
-		9F3C30A225DA951200C7C398 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3170C229C70C00088F97C /* Theme.swift */; };
-		9F3C30A925DA954300C7C398 /* UIFont+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA9E9F1DC2F9F50066731D /* UIFont+BRWAdditions.swift */; };
-		9F3C30B025DA954300C7C398 /* UIFont+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA9E9F1DC2F9F50066731D /* UIFont+BRWAdditions.swift */; };
-		9F3C311B25DAC14900C7C398 /* Numeric+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE55325D5B79D00E42BE3 /* Numeric+Extensions.swift */; };
-		9F3C313E25DACEDA00C7C398 /* ColorOption+ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C313B25DACEDA00C7C398 /* ColorOption+ExtensionUI.swift */; };
-		9F3C313F25DACEDA00C7C398 /* ColorOption+ExtensionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C313B25DACEDA00C7C398 /* ColorOption+ExtensionUI.swift */; };
-		9F3C314725DACF1300C7C398 /* AssetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C314625DACF1300C7C398 /* AssetListViewModel.swift */; };
-		9F3C315725DACF3300C7C398 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C315525DACF3300C7C398 /* PortfolioView.swift */; };
-		9F3C315825DACF3300C7C398 /* AssetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C315625DACF3300C7C398 /* AssetListView.swift */; };
-		9F3C316C25DACFF000C7C398 /* LogoStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3C316B25DACFF000C7C398 /* LogoStyle+Extensions.swift */; };
-		9F9F89E025D7E202004AC3C3 /* MinimalistAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F89DF25D7E202004AC3C3 /* MinimalistAssetView.swift */; };
-		9F9FAF7725D5D0140014F729 /* WidgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9FAF7625D5D0140014F729 /* WidgetService.swift */; };
-		9FB0CA1125D5AD180057DD11 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB0CA1025D5AD180057DD11 /* WidgetKit.framework */; };
-		9FB0CA1225D5AD180057DD11 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABD8D0D24E1CF1500EC4C91 /* SwiftUI.framework */; };
-		9FB0CA1525D5AD180057DD11 /* BreadwalletWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0CA1425D5AD180057DD11 /* BreadwalletWidget.swift */; };
-		9FB0CA1825D5AD190057DD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB0CA1725D5AD190057DD11 /* Assets.xcassets */; };
-		9FB0CA1A25D5AD190057DD11 /* BreadwalletWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0CA1625D5AD180057DD11 /* BreadwalletWidget.intentdefinition */; };
-		9FB0CA1B25D5AD190057DD11 /* BreadwalletWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0CA1625D5AD180057DD11 /* BreadwalletWidget.intentdefinition */; };
-		9FB0CA1E25D5AD190057DD11 /* breadwalletWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FB0CA0F25D5AD180057DD11 /* breadwalletWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9FBF66BD25D5F1AB007F172D /* AssetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF66BC25D5F1AB007F172D /* AssetViewModel.swift */; };
-		9FD519D525E310D300F9D856 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C371EA5B4680086F724 /* Strings.swift */; };
-		9FD519DC25E310D800F9D856 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C371EA5B4680086F724 /* Strings.swift */; };
-		9FD519E325E3185F00F9D856 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE29901C1EFD6DE50093A0F2 /* Localizable.strings */; };
-		9FD519E425E3185F00F9D856 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE29901C1EFD6DE50093A0F2 /* Localizable.strings */; };
-		9FDDE55725D5B79D00E42BE3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE55025D5B79D00E42BE3 /* Date+Extension.swift */; };
-		9FDDE55825D5B79D00E42BE3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE55125D5B79D00E42BE3 /* String+Extensions.swift */; };
-		9FDDE55925D5B79D00E42BE3 /* CGTypes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE55225D5B79D00E42BE3 /* CGTypes+Extensions.swift */; };
-		9FDDE55A25D5B79D00E42BE3 /* Numeric+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE55325D5B79D00E42BE3 /* Numeric+Extensions.swift */; };
-		9FDDE55B25D5B79D00E42BE3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE55525D5B79D00E42BE3 /* ChartView.swift */; };
-		9FDDE55C25D5B79D00E42BE3 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE55625D5B79D00E42BE3 /* ChartViewModel.swift */; };
-		9FDDE57225D5B82A00E42BE3 /* AssetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE57125D5B82A00E42BE3 /* AssetWidget.swift */; };
-		9FDDE57925D5B85000E42BE3 /* AssetListWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE57825D5B85000E42BE3 /* AssetListWidget.swift */; };
-		9FDDE58C25D5B88F00E42BE3 /* PortfolioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDE58B25D5B88F00E42BE3 /* PortfolioWidget.swift */; };
-		9FDDE5AC25D5B96000E42BE3 /* mock-candles.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FDDE5AB25D5B96000E42BE3 /* mock-candles.json */; };
-		A243915E84E4AA2AE09D687F /* SharedComponentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2439874424CF77054369327 /* SharedComponentViews.swift */; };
-		A24391B09865778F327FD609 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243907548F9B61AEED41A04 /* PortfolioViewModel.swift */; };
-		A24395E9DFDD64D08DDC45B4 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243988A5DA12A405BFEB9F6 /* Configuration.swift */; };
-		A243978083345DAFD36DA7A4 /* MarketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24399A172C828ECD708E17D /* MarketInfo.swift */; };
-		A2439D019C08106D6E14D70A /* MarketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24399A172C828ECD708E17D /* MarketInfo.swift */; };
 		CE0822641FCD1BD100EF371D /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0822631FCD1BD100EF371D /* HomeScreenViewController.swift */; };
 		CE0822661FCE059A00EF371D /* HomeScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0822651FCE059A00EF371D /* HomeScreenCell.swift */; };
 		CE0BC980215ACBE100E68B2B /* TokenImageNoBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BC97F215ACBE100E68B2B /* TokenImageNoBackground.swift */; };
@@ -482,7 +316,6 @@
 		CE4DFB2E1E9C26DA0014009E /* ShareDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DFB2D1E9C26DA0014009E /* ShareDataViewController.swift */; };
 		CE5393B022D7CC98000303B3 /* HistoryPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5393AF22D7CC98000303B3 /* HistoryPeriod.swift */; };
 		CE5E6C941EB7964900A476DB /* WalletDisabledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E6C931EB7964900A476DB /* WalletDisabledView.swift */; };
-		CE5E6C961EB8CCF500A476DB /* SupportCenterContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E6C951EB8CCF500A476DB /* SupportCenterContainer.swift */; };
 		CE5E6C9A1EB9135000A476DB /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5E6C991EB9135000A476DB /* Icon.xcassets */; };
 		CE5F21D91E4A922700C47B8E /* DismissLoginAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F21D81E4A922700C47B8E /* DismissLoginAnimator.swift */; };
 		CE5F21DB1E4A93A500C47B8E /* LoginTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F21DA1E4A93A500C47B8E /* LoginTransitionDelegate.swift */; };
@@ -521,8 +354,6 @@
 		CEA362681E00EE320061FC0E /* CameraGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA362671E00EE320061FC0E /* CameraGuideView.swift */; };
 		CEA3626A1E01150D0061FC0E /* CGContext+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA362691E01150D0061FC0E /* CGContext+Additions.swift */; };
 		CEA7E6761F057D77001F8C27 /* WalletInfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E6751F057D77001F8C27 /* WalletInfoTest.swift */; };
-		CEA7E67E1F09A9D2001F8C27 /* Screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E67D1F09A9D2001F8C27 /* Screenshots.swift */; };
-		CEA7E6871F09AB00001F8C27 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E6861F09AB00001F8C27 /* SnapshotHelper.swift */; };
 		CEA9178620C07FBB00F29B31 /* SyncingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9178520C07FBB00F29B31 /* SyncingHeaderView.swift */; };
 		CEAA9E911DC0FDFE0066731D /* UIViewPropertyAnimator+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA9E901DC0FDFE0066731D /* UIViewPropertyAnimator+BRWAdditions.swift */; };
 		CEAA9E951DC1659F0066731D /* UILabel+BRWAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA9E941DC1659F0066731D /* UILabel+BRWAdditions.swift */; };
@@ -573,7 +404,6 @@
 		CEE1F5631DF13E5A00D733AD /* ModalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1F5621DF13E5A00D733AD /* ModalHeaderView.swift */; };
 		CEE20C2D1EA288FA0086F724 /* UpdatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C2C1EA288FA0086F724 /* UpdatingLabel.swift */; };
 		CEE20C2F1EA3E5820086F724 /* BlinkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C2E1EA3E5820086F724 /* BlinkingView.swift */; };
-		CEE20C341EA5B4550086F724 /* ArticleIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C331EA5B4550086F724 /* ArticleIds.swift */; };
 		CEE20C361EA5B4620086F724 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C351EA5B4620086F724 /* Constants.swift */; };
 		CEE20C381EA5B4680086F724 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE20C371EA5B4680086F724 /* Strings.swift */; };
 		CEE6282A1EA98B6D001035AA /* DispatchQueue+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE628291EA98B6D001035AA /* DispatchQueue+Additions.swift */; };
@@ -636,20 +466,6 @@
 			remoteGlobalIDString = 75A2A78F1DA5934300A983D8;
 			remoteInfo = breadwallet;
 		};
-		9F29A9A125D5C605000FEB40 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F29A99925D5C605000FEB40;
-			remoteInfo = breadwalletIntentHandler;
-		};
-		9FB0CA1C25D5AD190057DD11 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FB0CA0E25D5AD180057DD11;
-			remoteInfo = breadwalletWidgetExtension;
-		};
 		CEA7E6801F09A9D2001F8C27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75A2A7881DA5934300A983D8 /* Project object */;
@@ -697,8 +513,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9FB0CA1E25D5AD190057DD11 /* breadwalletWidgetExtension.appex in Embed App Extensions */,
-				9F29A9A325D5C605000FEB40 /* breadwalletIntentHandler.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,27 +569,17 @@
 		22E773031EE7813000397E0E /* Bonjour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bonjour.swift; path = src/Platform/Bonjour.swift; sourceTree = "<group>"; };
 		3A0063BD2509D36500C74A97 /* ExtendedTouchArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtendedTouchArea.swift; path = src/Views/ExtendedTouchArea.swift; sourceTree = "<group>"; };
 		3A0915C924D8B31100CDC6A4 /* EnableKeychainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnableKeychainView.swift; path = src/CloudBackup/EnableKeychainView.swift; sourceTree = "<group>"; };
-		3A188FEB257FF1A300957819 /* GiftCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftCurrencyCell.swift; path = src/Gifting/GiftCurrencyCell.swift; sourceTree = "<group>"; };
-		3A188FF72582835600957819 /* Sharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Sharing.swift; path = src/Gifting/Sharing.swift; sourceTree = "<group>"; };
 		3A1D416D250957A00089FE63 /* MarketDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MarketDataView.swift; path = src/Views/MarketDataView.swift; sourceTree = "<group>"; };
 		3A1D417F250965730089FE63 /* MarketDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MarketDataPublisher.swift; path = src/Utilities/MarketDataPublisher.swift; sourceTree = "<group>"; };
 		3A211D1C2242AF0500C2A906 /* Bip38Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bip38Tests.swift; sourceTree = "<group>"; };
 		3A36328C225301D60043EBA4 /* PriceChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PriceChangeView.swift; path = src/Views/PriceChangeView.swift; sourceTree = "<group>"; };
-		3A3D63DB22F10B4F000DE920 /* AddWalletsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddWalletsViewController.swift; path = src/ViewControllers/AddWalletsViewController.swift; sourceTree = "<group>"; };
-		3A3D63DD22F10B57000DE920 /* ManageWalletsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManageWalletsViewController.swift; path = src/ViewControllers/ManageWalletsViewController.swift; sourceTree = "<group>"; };
-		3A529E4B253B957200BD0A17 /* StakingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakingCell.swift; sourceTree = "<group>"; };
-		3A529E5B253CAD3F00BD0A17 /* StakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StakeViewController.swift; path = src/ViewControllers/StakeViewController.swift; sourceTree = "<group>"; };
 		3A5C9B2A22A5676F00C907C1 /* PriceChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PriceChange.swift; path = src/Models/PriceChange.swift; sourceTree = "<group>"; };
 		3A611A0B2322139D004B8E36 /* Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dot.swift; path = src/Views/Dot.swift; sourceTree = "<group>"; };
 		3A611A0E2325738C004B8E36 /* AnimatedBlockSetLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimatedBlockSetLogo.swift; path = src/AnimatedBlockSetLogo.swift; sourceTree = "<group>"; };
 		3A65DE802447E9AF0025C56E /* AccountInitializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInitializationTests.swift; sourceTree = "<group>"; };
-		3A6785F0256F2F1A0065F835 /* RedeemGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemGiftViewController.swift; sourceTree = "<group>"; };
-		3A6785FA257019220065F835 /* RedeemTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RedeemTransitioningDelegate.swift; path = src/Views/RedeemTransitioningDelegate.swift; sourceTree = "<group>"; };
 		3A69884E24591F4A0084953D /* PayIdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayIdTests.swift; sourceTree = "<group>"; };
 		3A69885D24591F890084953D /* PayId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayId.swift; sourceTree = "<group>"; };
 		3A6A3C7D24DDC90300ACAC70 /* BackupSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackupSynchronizer.swift; path = src/BackupSynchronizer.swift; sourceTree = "<group>"; };
-		3A6C13FE257D463300EA0689 /* GiftHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftHeaderView.swift; path = src/Gifting/GiftHeaderView.swift; sourceTree = "<group>"; };
-		3A6C1405257D594A00EA0689 /* ShareGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShareGiftViewController.swift; path = src/Gifting/ShareGiftViewController.swift; sourceTree = "<group>"; };
 		3A6CA702244239FD001833CA /* WalletInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInitializer.swift; sourceTree = "<group>"; };
 		3A6FD42C24E456B800068ECE /* KeyStoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStoreUtils.swift; sourceTree = "<group>"; };
 		3A6FD42E24E4570900068ECE /* KeyStore+CloudBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyStore+CloudBackup.swift"; sourceTree = "<group>"; };
@@ -797,28 +601,16 @@
 		3AEA2CAA24D3219200DA4C3A /* SelectBackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelectBackupView.swift; path = src/CloudBackup/SelectBackupView.swift; sourceTree = "<group>"; };
 		3AEF7B71234A4E3C005BE184 /* RequestUrlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUrlTests.swift; sourceTree = "<group>"; };
 		3AF78B3A2523B05E00FBB280 /* FioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FioTests.swift; sourceTree = "<group>"; };
-		3AFAD92F2567EE15005853E8 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftViewController.swift; path = src/Gifting/GiftViewController.swift; sourceTree = "<group>"; };
-		3AFAD936256826F3005853E8 /* BorderedTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BorderedTextInput.swift; path = src/Gifting/BorderedTextInput.swift; sourceTree = "<group>"; };
-		3AFAD94725698A74005853E8 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Gift.swift; path = src/Platform/Gift.swift; sourceTree = "<group>"; };
-		3AFAD94E25699112005853E8 /* TxGiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TxGiftCell.swift; path = src/Gifting/TxGiftCell.swift; sourceTree = "<group>"; };
-		3AFAD9552569F722005853E8 /* GiftingStatusUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GiftingStatusUpdater.swift; path = src/Gifting/GiftingStatusUpdater.swift; sourceTree = "<group>"; };
 		3AFB571424E2E0BA00087527 /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIHelpers.swift; path = src/CloudBackup/UIHelpers.swift; sourceTree = "<group>"; };
 		3AFB571624E2E10A00087527 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RadioButton.swift; path = src/CloudBackup/RadioButton.swift; sourceTree = "<group>"; };
 		4F3AB11825D53F4300B378DC /* ExternalAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExternalAPIClient.swift; path = src/ExternalAPIClient/ExternalAPIClient.swift; sourceTree = "<group>"; };
 		4F3AB11925D53F4300B378DC /* ExternalAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExternalAPIRequest.swift; path = src/ExternalAPIClient/ExternalAPIRequest.swift; sourceTree = "<group>"; };
-		4F3AB12125D53F5D00B378DC /* BakingBadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BakingBadRequest.swift; path = src/ExternalAPIClient/BakingBad/BakingBadRequest.swift; sourceTree = "<group>"; };
-		4F3AB12225D53F5D00B378DC /* Baker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Baker.swift; path = src/ExternalAPIClient/BakingBad/Baker.swift; sourceTree = "<group>"; };
-		4F3AB12925D58AB400B378DC /* SelectBakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectBakerViewController.swift; path = src/ViewControllers/SelectBakerViewController.swift; sourceTree = "<group>"; };
-		4F3AB13325D5E7F900B378DC /* SelectBakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelectBakerCell.swift; path = src/ViewControllers/SelectBakerCell.swift; sourceTree = "<group>"; };
 		71014F7B2327E49400DA1373 /* fiatcurrencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = fiatcurrencies.json; path = Resources/fiatcurrencies.json; sourceTree = "<group>"; };
 		710B036121F67888007E8A2A /* MockClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockClasses.swift; path = MockClasses/MockClasses.swift; sourceTree = "<group>"; };
 		710B036321F8C208007E8A2A /* AppRatingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppRatingManager.swift; path = src/Utilities/AppRatingManager.swift; sourceTree = "<group>"; };
 		711730562204FDFB001931B3 /* HomeScreenHiglightableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeScreenHiglightableCell.swift; path = src/Views/HomeScreenHiglightableCell.swift; sourceTree = "<group>"; };
 		71173058220CCC91001931B3 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromptView.swift; path = src/Views/PromptView.swift; sourceTree = "<group>"; };
-		7117305A220CE7B8001931B3 /* BRAPIClient+Announcements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BRAPIClient+Announcements.swift"; path = "src/Platform/BRAPIClient+Announcements.swift"; sourceTree = "<group>"; };
-		71249912221F44FE00BEA491 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Announcement.swift; path = src/Models/Prompts/Announcement.swift; sourceTree = "<group>"; };
 		71249915221F466800BEA491 /* Prompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Prompt.swift; path = src/Models/Prompts/Prompt.swift; sourceTree = "<group>"; };
-		71249917222046EB00BEA491 /* PromptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTests.swift; sourceTree = "<group>"; };
 		7124991A22204E6C00BEA491 /* announcement-email.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "announcement-email.json"; path = "json/announcement-email.json"; sourceTree = "<group>"; };
 		7138BABA223062F40059091E /* NotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTests.swift; sourceTree = "<group>"; };
 		713CD8862240117A004657D4 /* RecoveryKeyFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecoveryKeyFlowController.swift; path = src/FlowControllers/RecoveryKeyFlowController.swift; sourceTree = "<group>"; };
@@ -828,7 +620,6 @@
 		714F5D6D22037F2400F7CA70 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = src/Utilities/EventMonitor.swift; sourceTree = "<group>"; };
 		716F824221F91D9A0064E6F4 /* AppRatingManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRatingManagerTests.swift; sourceTree = "<group>"; };
 		71904FB62225A1F800A6D027 /* announcement-promo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "announcement-promo.json"; path = "json/announcement-promo.json"; sourceTree = "<group>"; };
-		71904FB82225AB3900A6D027 /* AnnouncementPromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnnouncementPromptView.swift; path = src/Views/AnnouncementPromptView.swift; sourceTree = "<group>"; };
 		71904FBA2228132100A6D027 /* announcement-supported.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "announcement-supported.json"; path = "json/announcement-supported.json"; sourceTree = "<group>"; };
 		71988B0721EF8A0E008B8EA0 /* BRUserAgentHeaderGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BRUserAgentHeaderGenerator.swift; path = src/Platform/BRUserAgentHeaderGenerator.swift; sourceTree = "<group>"; };
 		71988B0A21EF8D06008B8EA0 /* BRUserAgentHeaderGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRUserAgentHeaderGeneratorTests.swift; sourceTree = "<group>"; };
@@ -886,7 +677,6 @@
 		7C9724651FF07B9A004248C4 /* StatusPip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusPip.swift; path = src/Views/StatusPip.swift; sourceTree = "<group>"; };
 		7C98B0A3215A99C7007C85EB /* brd-tokens-staging.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; name = "brd-tokens-staging.tar"; path = "Resources/brd-tokens-staging.tar"; sourceTree = "<group>"; };
 		7C98B0A4215A99C8007C85EB /* brd-web-3-staging.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; name = "brd-web-3-staging.tar"; path = "Resources/brd-web-3-staging.tar"; sourceTree = "<group>"; };
-		7C9BC58C231764020011732F /* WalletConnectionSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalletConnectionSettingsViewController.swift; path = src/ViewControllers/WalletConnectionSettingsViewController.swift; sourceTree = "<group>"; };
 		7C9BC58E231765190011732F /* WalletConnectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectionSettings.swift; sourceTree = "<group>"; };
 		7C9BC590231843A50011732F /* WalletConnectionSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectionSettingsTests.swift; sourceTree = "<group>"; };
 		7CA1C47320EC25B9002E9E68 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = src/Models/QRCode.swift; sourceTree = "<group>"; };
@@ -1005,119 +795,10 @@
 		9A926F4122034B3700CC2263 /* CellHighlight-59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CellHighlight-59.png"; path = "src/Views/AnimatedIcons/Cell Highlight View Frames/CellHighlight-59.png"; sourceTree = "<group>"; };
 		9A926F4222034B3700CC2263 /* CellHighlight-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CellHighlight-24.png"; path = "src/Views/AnimatedIcons/Cell Highlight View Frames/CellHighlight-24.png"; sourceTree = "<group>"; };
 		9A926F4322034B3700CC2263 /* CellHighlight-22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CellHighlight-22.png"; path = "src/Views/AnimatedIcons/Cell Highlight View Frames/CellHighlight-22.png"; sourceTree = "<group>"; };
-		9AE8008A21FFF80F00D5058C /* rewardsIcon-17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-17.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-17.gif"; sourceTree = "<group>"; };
-		9AE8008B21FFF80F00D5058C /* rewardsIcon-28.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-28.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-28.gif"; sourceTree = "<group>"; };
-		9AE8008C21FFF80F00D5058C /* rewardsIcon-4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-4.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-4.gif"; sourceTree = "<group>"; };
-		9AE8008D21FFF81000D5058C /* rewardsIcon-66.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-66.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-66.gif"; sourceTree = "<group>"; };
-		9AE8008E21FFF81000D5058C /* rewardsIcon-58.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-58.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-58.gif"; sourceTree = "<group>"; };
-		9AE8008F21FFF81000D5058C /* rewardsIcon-27.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-27.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-27.gif"; sourceTree = "<group>"; };
-		9AE8009021FFF81000D5058C /* rewardsIcon-36.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-36.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-36.gif"; sourceTree = "<group>"; };
-		9AE8009121FFF81100D5058C /* rewardsIcon-44.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-44.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-44.gif"; sourceTree = "<group>"; };
-		9AE8009221FFF81100D5058C /* rewardsIcon-43.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-43.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-43.gif"; sourceTree = "<group>"; };
-		9AE8009321FFF81100D5058C /* rewardsIcon-11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-11.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-11.gif"; sourceTree = "<group>"; };
-		9AE8009421FFF81100D5058C /* rewardsIcon-29.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-29.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-29.gif"; sourceTree = "<group>"; };
-		9AE8009521FFF81100D5058C /* rewardsIcon-18.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-18.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-18.gif"; sourceTree = "<group>"; };
-		9AE8009621FFF81100D5058C /* rewardsIcon-52.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-52.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-52.gif"; sourceTree = "<group>"; };
-		9AE8009721FFF81200D5058C /* rewardsIcon-24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-24.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-24.gif"; sourceTree = "<group>"; };
-		9AE8009821FFF81200D5058C /* rewardsIcon-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-12.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-12.gif"; sourceTree = "<group>"; };
-		9AE8009921FFF81200D5058C /* rewardsIcon-30.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-30.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-30.gif"; sourceTree = "<group>"; };
-		9AE8009A21FFF81200D5058C /* rewardsIcon-25.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-25.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-25.gif"; sourceTree = "<group>"; };
-		9AE8009B21FFF81200D5058C /* rewardsIcon-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-2.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-2.gif"; sourceTree = "<group>"; };
-		9AE8009C21FFF81300D5058C /* rewardsIcon-38.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-38.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-38.gif"; sourceTree = "<group>"; };
-		9AE8009D21FFF81300D5058C /* rewardsIcon-55.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-55.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-55.gif"; sourceTree = "<group>"; };
-		9AE8009E21FFF81300D5058C /* rewardsIcon-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-5.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-5.gif"; sourceTree = "<group>"; };
-		9AE8009F21FFF81300D5058C /* rewardsIcon-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-15.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-15.gif"; sourceTree = "<group>"; };
-		9AE800A021FFF81300D5058C /* rewardsIcon-21.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-21.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-21.gif"; sourceTree = "<group>"; };
-		9AE800A121FFF81300D5058C /* rewardsIcon-35.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-35.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-35.gif"; sourceTree = "<group>"; };
-		9AE800A221FFF81400D5058C /* rewardsIcon-20.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-20.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-20.gif"; sourceTree = "<group>"; };
-		9AE800A321FFF81400D5058C /* rewardsIcon-33.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-33.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-33.gif"; sourceTree = "<group>"; };
-		9AE800A421FFF81400D5058C /* rewardsIcon-48.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-48.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-48.gif"; sourceTree = "<group>"; };
-		9AE800A521FFF81400D5058C /* rewardsIcon-9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-9.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-9.gif"; sourceTree = "<group>"; };
-		9AE800A621FFF81400D5058C /* rewardsIcon-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-3.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-3.gif"; sourceTree = "<group>"; };
-		9AE800A721FFF81400D5058C /* rewardsIcon-60.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-60.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-60.gif"; sourceTree = "<group>"; };
-		9AE800A821FFF81500D5058C /* rewardsIcon-46.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-46.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-46.gif"; sourceTree = "<group>"; };
-		9AE800A921FFF81500D5058C /* rewardsIcon-68.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-68.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-68.gif"; sourceTree = "<group>"; };
-		9AE800AA21FFF81500D5058C /* rewardsIcon-31.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-31.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-31.gif"; sourceTree = "<group>"; };
-		9AE800AB21FFF81500D5058C /* rewardsIcon-53.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-53.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-53.gif"; sourceTree = "<group>"; };
-		9AE800AC21FFF81500D5058C /* rewardsIcon-61.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-61.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-61.gif"; sourceTree = "<group>"; };
-		9AE800AD21FFF81500D5058C /* rewardsIcon-47.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-47.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-47.gif"; sourceTree = "<group>"; };
-		9AE800AE21FFF81600D5058C /* rewardsIcon-19.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-19.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-19.gif"; sourceTree = "<group>"; };
-		9AE800AF21FFF81600D5058C /* rewardsIcon-45.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-45.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-45.gif"; sourceTree = "<group>"; };
-		9AE800B021FFF81600D5058C /* rewardsIcon-39.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-39.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-39.gif"; sourceTree = "<group>"; };
-		9AE800B121FFF81600D5058C /* rewardsIcon-8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-8.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-8.gif"; sourceTree = "<group>"; };
-		9AE800B221FFF81600D5058C /* rewardsIcon-37.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-37.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-37.gif"; sourceTree = "<group>"; };
-		9AE800B321FFF81700D5058C /* rewardsIcon-22.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-22.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-22.gif"; sourceTree = "<group>"; };
-		9AE800B421FFF81700D5058C /* rewardsIcon-23.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-23.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-23.gif"; sourceTree = "<group>"; };
-		9AE800B521FFF81700D5058C /* rewardsIcon-32.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-32.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-32.gif"; sourceTree = "<group>"; };
-		9AE800B621FFF81800D5058C /* rewardsIcon-7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-7.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-7.gif"; sourceTree = "<group>"; };
-		9AE800B721FFF81800D5058C /* rewardsIcon-59.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-59.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-59.gif"; sourceTree = "<group>"; };
-		9AE800B821FFF81800D5058C /* rewardsIcon-40.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-40.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-40.gif"; sourceTree = "<group>"; };
-		9AE800B921FFF81900D5058C /* rewardsIcon-69.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-69.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-69.gif"; sourceTree = "<group>"; };
-		9AE800BA21FFF81900D5058C /* rewardsIcon-10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-10.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-10.gif"; sourceTree = "<group>"; };
-		9AE800BB21FFF81A00D5058C /* rewardsIcon-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-1.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-1.gif"; sourceTree = "<group>"; };
-		9AE800BC21FFF81A00D5058C /* rewardsIcon-34.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-34.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-34.gif"; sourceTree = "<group>"; };
-		9AE800BD21FFF81A00D5058C /* rewardsIcon-50.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-50.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-50.gif"; sourceTree = "<group>"; };
-		9AE800BE21FFF81A00D5058C /* rewardsIcon-62.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-62.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-62.gif"; sourceTree = "<group>"; };
-		9AE800BF21FFF81A00D5058C /* rewardsIcon-65.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-65.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-65.gif"; sourceTree = "<group>"; };
-		9AE800C021FFF81A00D5058C /* rewardsIcon-67.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-67.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-67.gif"; sourceTree = "<group>"; };
-		9AE800C121FFF81B00D5058C /* rewardsIcon-16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-16.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-16.gif"; sourceTree = "<group>"; };
-		9AE800C221FFF81B00D5058C /* rewardsIcon-42.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-42.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-42.gif"; sourceTree = "<group>"; };
-		9AE800C321FFF81B00D5058C /* rewardsIcon-26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-26.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-26.gif"; sourceTree = "<group>"; };
-		9AE800C421FFF81C00D5058C /* rewardsIcon-49.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-49.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-49.gif"; sourceTree = "<group>"; };
-		9AE800C521FFF81C00D5058C /* rewardsIcon-56.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-56.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-56.gif"; sourceTree = "<group>"; };
-		9AE800C621FFF81C00D5058C /* rewardsIcon-70.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-70.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-70.gif"; sourceTree = "<group>"; };
-		9AE800C721FFF81C00D5058C /* rewardsIcon-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-13.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-13.gif"; sourceTree = "<group>"; };
-		9AE800C821FFF81D00D5058C /* rewardsIcon-41.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-41.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-41.gif"; sourceTree = "<group>"; };
-		9AE800C921FFF81D00D5058C /* rewardsIcon-14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-14.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-14.gif"; sourceTree = "<group>"; };
-		9AE800CA21FFF81D00D5058C /* rewardsIcon-54.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-54.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-54.gif"; sourceTree = "<group>"; };
-		9AE800CB21FFF81E00D5058C /* rewardsIcon-6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-6.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-6.gif"; sourceTree = "<group>"; };
-		9AE800CC21FFF81E00D5058C /* rewardsIcon-51.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-51.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-51.gif"; sourceTree = "<group>"; };
-		9AE800CD21FFF81E00D5058C /* rewardsIcon-57.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-57.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-57.gif"; sourceTree = "<group>"; };
-		9AE800CE21FFF81F00D5058C /* rewardsIcon-63.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-63.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-63.gif"; sourceTree = "<group>"; };
-		9AE800CF21FFF81F00D5058C /* rewardsIcon-64.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "rewardsIcon-64.gif"; path = "src/Views/AnimatedIcons/Rewards Icon Frames/rewardsIcon-64.gif"; sourceTree = "<group>"; };
-		9AE8FFF721FE64E200D5058C /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RewardsView.swift; path = src/Views/RewardsView.swift; sourceTree = "<group>"; };
-		9AE8FFF921FE6FE000D5058C /* RewardsIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RewardsIconView.swift; path = src/Views/AnimatedIcons/RewardsIconView.swift; sourceTree = "<group>"; };
-		9F00EAA725DDEF7800A99218 /* ImageStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorageService.swift; sourceTree = "<group>"; };
-		9F00EAAF25DDF15200A99218 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
-		9F00EAF325DDFC9600A99218 /* Currency+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+Extensions.swift"; sourceTree = "<group>"; };
-		9F0EA16325E2902700D4225E /* WidgetDataShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataShareService.swift; sourceTree = "<group>"; };
-		9F0EA17325E29DC500D4225E /* breadwalletWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = breadwalletWidgetExtension.entitlements; sourceTree = "<group>"; };
-		9F2118AB25DD74EA00ABD2C8 /* CoinGecko+Extesions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinGecko+Extesions.swift"; sourceTree = "<group>"; };
-		9F2118F425DDBC6200ABD2C8 /* Formatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extensions.swift"; sourceTree = "<group>"; };
-		9F29A99A25D5C605000FEB40 /* breadwalletIntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = breadwalletIntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F29A99B25D5C605000FEB40 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		9F29A99E25D5C605000FEB40 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		9F29A9A025D5C605000FEB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F29A9BA25D5C75B000FEB40 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
-		9F3C305525DA902E00C7C398 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
-		9F3C313B25DACEDA00C7C398 /* ColorOption+ExtensionUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorOption+ExtensionUI.swift"; sourceTree = "<group>"; };
-		9F3C314625DACF1300C7C398 /* AssetListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetListViewModel.swift; sourceTree = "<group>"; };
-		9F3C315525DACF3300C7C398 /* PortfolioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
-		9F3C315625DACF3300C7C398 /* AssetListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetListView.swift; sourceTree = "<group>"; };
-		9F3C316B25DACFF000C7C398 /* LogoStyle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogoStyle+Extensions.swift"; sourceTree = "<group>"; };
-		9F9F89DF25D7E202004AC3C3 /* MinimalistAssetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimalistAssetView.swift; sourceTree = "<group>"; };
-		9F9FAF7625D5D0140014F729 /* WidgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetService.swift; sourceTree = "<group>"; };
-		9FB0CA0F25D5AD180057DD11 /* breadwalletWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = breadwalletWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB0CA1025D5AD180057DD11 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		9FB0CA1425D5AD180057DD11 /* BreadwalletWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadwalletWidget.swift; sourceTree = "<group>"; };
-		9FB0CA1625D5AD180057DD11 /* BreadwalletWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BreadwalletWidget.intentdefinition; sourceTree = "<group>"; };
-		9FB0CA1725D5AD190057DD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9FB0CA1925D5AD190057DD11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FBF66BC25D5F1AB007F172D /* AssetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewModel.swift; sourceTree = "<group>"; };
-		9FDDE55025D5B79D00E42BE3 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		9FDDE55125D5B79D00E42BE3 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		9FDDE55225D5B79D00E42BE3 /* CGTypes+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGTypes+Extensions.swift"; sourceTree = "<group>"; };
-		9FDDE55325D5B79D00E42BE3 /* Numeric+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Numeric+Extensions.swift"; sourceTree = "<group>"; };
-		9FDDE55525D5B79D00E42BE3 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
-		9FDDE55625D5B79D00E42BE3 /* ChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
-		9FDDE57125D5B82A00E42BE3 /* AssetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWidget.swift; sourceTree = "<group>"; };
-		9FDDE57825D5B85000E42BE3 /* AssetListWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListWidget.swift; sourceTree = "<group>"; };
-		9FDDE58B25D5B88F00E42BE3 /* PortfolioWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioWidget.swift; sourceTree = "<group>"; };
-		9FDDE5AB25D5B96000E42BE3 /* mock-candles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock-candles.json"; sourceTree = "<group>"; };
-		A243907548F9B61AEED41A04 /* PortfolioViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
-		A2439874424CF77054369327 /* SharedComponentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedComponentViews.swift; sourceTree = "<group>"; };
-		A243988A5DA12A405BFEB9F6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		A24399A172C828ECD708E17D /* MarketInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketInfo.swift; sourceTree = "<group>"; };
 		CE0822631FCD1BD100EF371D /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeScreenViewController.swift; path = src/ViewControllers/HomeScreenViewController.swift; sourceTree = "<group>"; };
 		CE0822651FCE059A00EF371D /* HomeScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeScreenCell.swift; path = src/Views/HomeScreenCell.swift; sourceTree = "<group>"; };
 		CE0BC97F215ACBE100E68B2B /* TokenImageNoBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TokenImageNoBackground.swift; path = src/Views/TokenImageNoBackground.swift; sourceTree = "<group>"; };
@@ -1184,7 +865,6 @@
 		CE4DFB2D1E9C26DA0014009E /* ShareDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareDataViewController.swift; path = src/ViewControllers/ShareDataViewController.swift; sourceTree = "<group>"; };
 		CE5393AF22D7CC98000303B3 /* HistoryPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryPeriod.swift; path = src/Models/HistoryPeriod.swift; sourceTree = "<group>"; };
 		CE5E6C931EB7964900A476DB /* WalletDisabledView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WalletDisabledView.swift; path = src/Views/WalletDisabledView.swift; sourceTree = "<group>"; };
-		CE5E6C951EB8CCF500A476DB /* SupportCenterContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SupportCenterContainer.swift; path = src/ViewControllers/SupportCenterContainer.swift; sourceTree = "<group>"; };
 		CE5E6C991EB9135000A476DB /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
 		CE5F21D81E4A922700C47B8E /* DismissLoginAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DismissLoginAnimator.swift; path = src/ViewControllers/ViewControllerTransitions/DismissLoginAnimator.swift; sourceTree = "<group>"; };
 		CE5F21DA1E4A93A500C47B8E /* LoginTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginTransitionDelegate.swift; path = src/ViewControllers/ViewControllerTransitions/LoginTransitionDelegate.swift; sourceTree = "<group>"; };
@@ -1224,9 +904,6 @@
 		CEA362691E01150D0061FC0E /* CGContext+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGContext+Additions.swift"; path = "src/Extensions/CGContext+Additions.swift"; sourceTree = "<group>"; };
 		CEA7E6751F057D77001F8C27 /* WalletInfoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletInfoTest.swift; sourceTree = "<group>"; };
 		CEA7E67B1F09A9D2001F8C27 /* Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Screenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA7E67D1F09A9D2001F8C27 /* Screenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshots.swift; sourceTree = "<group>"; };
-		CEA7E67F1F09A9D2001F8C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEA7E6861F09AB00001F8C27 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		CEA9178520C07FBB00F29B31 /* SyncingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SyncingHeaderView.swift; path = src/Views/SyncingHeaderView.swift; sourceTree = "<group>"; };
 		CEAA9E901DC0FDFE0066731D /* UIViewPropertyAnimator+BRWAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+BRWAdditions.swift"; path = "src/Extensions/UIViewPropertyAnimator+BRWAdditions.swift"; sourceTree = "<group>"; };
 		CEAA9E941DC1659F0066731D /* UILabel+BRWAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+BRWAdditions.swift"; path = "src/Extensions/UILabel+BRWAdditions.swift"; sourceTree = "<group>"; };
@@ -1277,7 +954,6 @@
 		CEE1F5621DF13E5A00D733AD /* ModalHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalHeaderView.swift; path = src/Views/ModalHeaderView.swift; sourceTree = "<group>"; };
 		CEE20C2C1EA288FA0086F724 /* UpdatingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdatingLabel.swift; path = src/Views/UpdatingLabel.swift; sourceTree = "<group>"; };
 		CEE20C2E1EA3E5820086F724 /* BlinkingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlinkingView.swift; path = src/Views/BlinkingView.swift; sourceTree = "<group>"; };
-		CEE20C331EA5B4550086F724 /* ArticleIds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleIds.swift; path = src/Constants/ArticleIds.swift; sourceTree = "<group>"; };
 		CEE20C351EA5B4620086F724 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = src/Constants/Constants.swift; sourceTree = "<group>"; };
 		CEE20C371EA5B4680086F724 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = src/Constants/Strings.swift; sourceTree = "<group>"; };
 		CEE628291EA98B6D001035AA /* DispatchQueue+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Additions.swift"; path = "src/Extensions/DispatchQueue+Additions.swift"; sourceTree = "<group>"; };
@@ -1335,6 +1011,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BEFBBB629DB86BD0079152D /* CoinGecko in Frameworks */,
+				1BEFBBB529DB86BD0079152D /* WalletKit in Frameworks */,
 				3ABD8D1B24E1CF1500EC4C91 /* SwiftUI.framework in Frameworks */,
 				7CBC6B2E21751ECA00899AFB /* iAd.framework in Frameworks */,
 				22A9A9661DF61FEE000F0016 /* WebKit.framework in Frameworks */,
@@ -1361,23 +1039,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F29A99725D5C605000FEB40 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F29A99C25D5C605000FEB40 /* Intents.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FB0CA0C25D5AD180057DD11 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FB0CA1225D5AD180057DD11 /* SwiftUI.framework in Frameworks */,
-				9FB0CA1125D5AD180057DD11 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CEA7E6781F09A9D2001F8C27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1401,7 +1062,6 @@
 				CE4CA7BB1EE3649100373F11 /* BRActivityView.swift */,
 				E821D4CB21C16B2E00B0907B /* BRAnalyticsEvent.swift */,
 				22A9A9321DF61945000F0016 /* BRAPIClient.swift */,
-				7117305A220CE7B8001931B3 /* BRAPIClient+Announcements.swift */,
 				2218BD761E8F55430091D5E8 /* BRAPIClient+Assets.swift */,
 				7C67B6352056FB13006487BE /* BRAPIClient+Currencies.swift */,
 				E89C0612216D79550012CE0D /* BRAPIClient+EmailSubscription.swift */,
@@ -1462,17 +1122,6 @@
 			path = Modules/libbz2;
 			sourceTree = "<group>";
 		};
-		3A529E4A253B956000BD0A17 /* Staking */ = {
-			isa = PBXGroup;
-			children = (
-				3A529E4B253B957200BD0A17 /* StakingCell.swift */,
-				3A529E5B253CAD3F00BD0A17 /* StakeViewController.swift */,
-				4F3AB12925D58AB400B378DC /* SelectBakerViewController.swift */,
-				4F3AB13325D5E7F900B378DC /* SelectBakerCell.swift */,
-			);
-			name = Staking;
-			sourceTree = "<group>";
-		};
 		3A611A0D23257354004B8E36 /* BlockSetAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1480,15 +1129,6 @@
 				3A611A0B2322139D004B8E36 /* Dot.swift */,
 			);
 			name = BlockSetAnimation;
-			sourceTree = "<group>";
-		};
-		3A6785EF256F2EF70065F835 /* ReceiveGift */ = {
-			isa = PBXGroup;
-			children = (
-				3A6785F0256F2F1A0065F835 /* RedeemGiftViewController.swift */,
-				3A6785FA257019220065F835 /* RedeemTransitioningDelegate.swift */,
-			);
-			name = ReceiveGift;
 			sourceTree = "<group>";
 		};
 		3A6FD41E24E4568800068ECE /* KeyStore */ = {
@@ -1544,38 +1184,13 @@
 			name = PayId;
 			sourceTree = "<group>";
 		};
-		3AFAD92E2567ED22005853E8 /* Gifting */ = {
-			isa = PBXGroup;
-			children = (
-				3AFAD92F2567EE15005853E8 /* GiftViewController.swift */,
-				3A6C13FE257D463300EA0689 /* GiftHeaderView.swift */,
-				3AFAD936256826F3005853E8 /* BorderedTextInput.swift */,
-				3AFAD94E25699112005853E8 /* TxGiftCell.swift */,
-				3AFAD9552569F722005853E8 /* GiftingStatusUpdater.swift */,
-				3A6C1405257D594A00EA0689 /* ShareGiftViewController.swift */,
-				3A188FEB257FF1A300957819 /* GiftCurrencyCell.swift */,
-				3A188FF72582835600957819 /* Sharing.swift */,
-			);
-			name = Gifting;
-			sourceTree = "<group>";
-		};
 		4F3AB11725D53F0000B378DC /* ExternalAPIClient */ = {
 			isa = PBXGroup;
 			children = (
-				4F3AB12025D53F4900B378DC /* BakingBad */,
 				4F3AB11825D53F4300B378DC /* ExternalAPIClient.swift */,
 				4F3AB11925D53F4300B378DC /* ExternalAPIRequest.swift */,
 			);
 			name = ExternalAPIClient;
-			sourceTree = "<group>";
-		};
-		4F3AB12025D53F4900B378DC /* BakingBad */ = {
-			isa = PBXGroup;
-			children = (
-				4F3AB12225D53F5D00B378DC /* Baker.swift */,
-				4F3AB12125D53F5D00B378DC /* BakingBadRequest.swift */,
-			);
-			name = BakingBad;
 			sourceTree = "<group>";
 		};
 		710B035B21F6603C007E8A2A /* Utilities */ = {
@@ -1604,7 +1219,6 @@
 		71249914221F465000BEA491 /* Prompts */ = {
 			isa = PBXGroup;
 			children = (
-				71249912221F44FE00BEA491 /* Announcement.swift */,
 				71249915221F466800BEA491 /* Prompt.swift */,
 			);
 			name = Prompts;
@@ -1654,10 +1268,8 @@
 				75A2A7921DA5934300A983D8 /* breadwallet */,
 				75A2A7A71DA5934300A983D8 /* breadwalletTests */,
 				75A2A7B21DA5934300A983D8 /* breadwalletUITests */,
-				9FB0CA1325D5AD180057DD11 /* breadwalletWidget */,
 				9F29A99D25D5C605000FEB40 /* breadwalletIntentHandler */,
 				75B6F52F1DA71DCC0031A93F /* Modules */,
-				CEA7E67C1F09A9D2001F8C27 /* Screenshots */,
 				75A2A7F11DA5935F00A983D8 /* Frameworks */,
 				75A2A7911DA5934300A983D8 /* Products */,
 			);
@@ -1671,8 +1283,6 @@
 				75A2A7AF1DA5934300A983D8 /* breadwalletUITests.xctest */,
 				22A9A9961DF63426000F0016 /* libbz2.framework */,
 				CEA7E67B1F09A9D2001F8C27 /* Screenshots.xctest */,
-				9FB0CA0F25D5AD180057DD11 /* breadwalletWidgetExtension.appex */,
-				9F29A99A25D5C605000FEB40 /* breadwalletIntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1698,9 +1308,6 @@
 				CE916E321EDA800E00D641D6 /* UserDefaultsUpdater.swift */,
 				75A2A79A1DA5934300A983D8 /* Assets.xcassets */,
 				CE5E6C991EB9135000A476DB /* Icon.xcassets */,
-				3A6785EF256F2EF70065F835 /* ReceiveGift */,
-				3AFAD92E2567ED22005853E8 /* Gifting */,
-				3A529E4A253B956000BD0A17 /* Staking */,
 				3A7605F524D0BB0E0057C1F4 /* CloudBackup */,
 				CEE20C321EA5B2EC0086F724 /* Constants */,
 				CE20C8F01DBAF6E100C8397A /* Extensions */,
@@ -1742,7 +1349,6 @@
 				3A69884E24591F4A0084953D /* PayIdTests.swift */,
 				CEC6F8461E8878B6000795B8 /* PaymentRequestTests.swift */,
 				CE6DCC281E63D0280044257B /* PhraseTests.swift */,
-				71249917222046EB00BEA491 /* PromptTests.swift */,
 				7CA1C47520EC2BFA002E9E68 /* QRCodeTests.swift */,
 				3AEF7B71234A4E3C005BE184 /* RequestUrlTests.swift */,
 				7CF2B04F228F4528004AA905 /* StringExtensionTests.swift */,
@@ -1923,83 +1529,6 @@
 			name = "Cell Highlight View Frames";
 			sourceTree = "<group>";
 		};
-		9AE8FFFD21FEAC0A00D5058C /* Rewards Icon Frames */ = {
-			isa = PBXGroup;
-			children = (
-				9AE800BB21FFF81A00D5058C /* rewardsIcon-1.gif */,
-				9AE8009B21FFF81200D5058C /* rewardsIcon-2.gif */,
-				9AE800A621FFF81400D5058C /* rewardsIcon-3.gif */,
-				9AE8008C21FFF80F00D5058C /* rewardsIcon-4.gif */,
-				9AE8009E21FFF81300D5058C /* rewardsIcon-5.gif */,
-				9AE800CB21FFF81E00D5058C /* rewardsIcon-6.gif */,
-				9AE800B621FFF81800D5058C /* rewardsIcon-7.gif */,
-				9AE800B121FFF81600D5058C /* rewardsIcon-8.gif */,
-				9AE800A521FFF81400D5058C /* rewardsIcon-9.gif */,
-				9AE800BA21FFF81900D5058C /* rewardsIcon-10.gif */,
-				9AE8009321FFF81100D5058C /* rewardsIcon-11.gif */,
-				9AE8009821FFF81200D5058C /* rewardsIcon-12.gif */,
-				9AE800C721FFF81C00D5058C /* rewardsIcon-13.gif */,
-				9AE800C921FFF81D00D5058C /* rewardsIcon-14.gif */,
-				9AE8009F21FFF81300D5058C /* rewardsIcon-15.gif */,
-				9AE800C121FFF81B00D5058C /* rewardsIcon-16.gif */,
-				9AE8008A21FFF80F00D5058C /* rewardsIcon-17.gif */,
-				9AE8009521FFF81100D5058C /* rewardsIcon-18.gif */,
-				9AE800AE21FFF81600D5058C /* rewardsIcon-19.gif */,
-				9AE800A221FFF81400D5058C /* rewardsIcon-20.gif */,
-				9AE800A021FFF81300D5058C /* rewardsIcon-21.gif */,
-				9AE800B321FFF81700D5058C /* rewardsIcon-22.gif */,
-				9AE800B421FFF81700D5058C /* rewardsIcon-23.gif */,
-				9AE8009721FFF81200D5058C /* rewardsIcon-24.gif */,
-				9AE8009A21FFF81200D5058C /* rewardsIcon-25.gif */,
-				9AE800C321FFF81B00D5058C /* rewardsIcon-26.gif */,
-				9AE8008F21FFF81000D5058C /* rewardsIcon-27.gif */,
-				9AE8008B21FFF80F00D5058C /* rewardsIcon-28.gif */,
-				9AE8009421FFF81100D5058C /* rewardsIcon-29.gif */,
-				9AE8009921FFF81200D5058C /* rewardsIcon-30.gif */,
-				9AE800AA21FFF81500D5058C /* rewardsIcon-31.gif */,
-				9AE800B521FFF81700D5058C /* rewardsIcon-32.gif */,
-				9AE800A321FFF81400D5058C /* rewardsIcon-33.gif */,
-				9AE800BC21FFF81A00D5058C /* rewardsIcon-34.gif */,
-				9AE800A121FFF81300D5058C /* rewardsIcon-35.gif */,
-				9AE8009021FFF81000D5058C /* rewardsIcon-36.gif */,
-				9AE800B221FFF81600D5058C /* rewardsIcon-37.gif */,
-				9AE8009C21FFF81300D5058C /* rewardsIcon-38.gif */,
-				9AE800B021FFF81600D5058C /* rewardsIcon-39.gif */,
-				9AE800B821FFF81800D5058C /* rewardsIcon-40.gif */,
-				9AE800C821FFF81D00D5058C /* rewardsIcon-41.gif */,
-				9AE800C221FFF81B00D5058C /* rewardsIcon-42.gif */,
-				9AE8009221FFF81100D5058C /* rewardsIcon-43.gif */,
-				9AE8009121FFF81100D5058C /* rewardsIcon-44.gif */,
-				9AE800AF21FFF81600D5058C /* rewardsIcon-45.gif */,
-				9AE800A821FFF81500D5058C /* rewardsIcon-46.gif */,
-				9AE800AD21FFF81500D5058C /* rewardsIcon-47.gif */,
-				9AE800A421FFF81400D5058C /* rewardsIcon-48.gif */,
-				9AE800C421FFF81C00D5058C /* rewardsIcon-49.gif */,
-				9AE800BD21FFF81A00D5058C /* rewardsIcon-50.gif */,
-				9AE800CC21FFF81E00D5058C /* rewardsIcon-51.gif */,
-				9AE8009621FFF81100D5058C /* rewardsIcon-52.gif */,
-				9AE800AB21FFF81500D5058C /* rewardsIcon-53.gif */,
-				9AE800CA21FFF81D00D5058C /* rewardsIcon-54.gif */,
-				9AE8009D21FFF81300D5058C /* rewardsIcon-55.gif */,
-				9AE800C521FFF81C00D5058C /* rewardsIcon-56.gif */,
-				9AE800CD21FFF81E00D5058C /* rewardsIcon-57.gif */,
-				9AE8008E21FFF81000D5058C /* rewardsIcon-58.gif */,
-				9AE800B721FFF81800D5058C /* rewardsIcon-59.gif */,
-				9AE800A721FFF81400D5058C /* rewardsIcon-60.gif */,
-				9AE800AC21FFF81500D5058C /* rewardsIcon-61.gif */,
-				9AE800BE21FFF81A00D5058C /* rewardsIcon-62.gif */,
-				9AE800CE21FFF81F00D5058C /* rewardsIcon-63.gif */,
-				9AE800CF21FFF81F00D5058C /* rewardsIcon-64.gif */,
-				9AE800BF21FFF81A00D5058C /* rewardsIcon-65.gif */,
-				9AE8008D21FFF81000D5058C /* rewardsIcon-66.gif */,
-				9AE800C021FFF81A00D5058C /* rewardsIcon-67.gif */,
-				9AE800A921FFF81500D5058C /* rewardsIcon-68.gif */,
-				9AE800B921FFF81900D5058C /* rewardsIcon-69.gif */,
-				9AE800C621FFF81C00D5058C /* rewardsIcon-70.gif */,
-			);
-			name = "Rewards Icon Frames";
-			sourceTree = "<group>";
-		};
 		9F29A99D25D5C605000FEB40 /* breadwalletIntentHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -2007,104 +1536,6 @@
 				9F29A9A025D5C605000FEB40 /* Info.plist */,
 			);
 			path = breadwalletIntentHandler;
-			sourceTree = "<group>";
-		};
-		9F29A9B925D5C723000FEB40 /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				9FDDE57125D5B82A00E42BE3 /* AssetWidget.swift */,
-				9FDDE57825D5B85000E42BE3 /* AssetListWidget.swift */,
-				9FDDE58B25D5B88F00E42BE3 /* PortfolioWidget.swift */,
-			);
-			path = Widgets;
-			sourceTree = "<group>";
-		};
-		9F29A9C825D5C760000FEB40 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9FDDE55425D5B79D00E42BE3 /* ChartView */,
-				9F29A9BA25D5C75B000FEB40 /* AssetView.swift */,
-				9F3C315625DACF3300C7C398 /* AssetListView.swift */,
-				9F3C315525DACF3300C7C398 /* PortfolioView.swift */,
-				9F9F89DF25D7E202004AC3C3 /* MinimalistAssetView.swift */,
-				A2439874424CF77054369327 /* SharedComponentViews.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		9F3C306425DA903400C7C398 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9F3C305525DA902E00C7C398 /* Currency.swift */,
-				A24399A172C828ECD708E17D /* MarketInfo.swift */,
-				A243988A5DA12A405BFEB9F6 /* Configuration.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		9F9FAF8625D5D02E0014F729 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				9F9FAF7625D5D0140014F729 /* WidgetService.swift */,
-				9F00EAA725DDEF7800A99218 /* ImageStorageService.swift */,
-				9F0EA16325E2902700D4225E /* WidgetDataShareService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		9FB0CA1325D5AD180057DD11 /* breadwalletWidget */ = {
-			isa = PBXGroup;
-			children = (
-				9F3C306425DA903400C7C398 /* Model */,
-				9F9FAF8625D5D02E0014F729 /* Services */,
-				9FDDE54F25D5B79D00E42BE3 /* Extensions */,
-				9FBF66C425D5F1AF007F172D /* ViewModels */,
-				9F29A9C825D5C760000FEB40 /* Views */,
-				9F29A9B925D5C723000FEB40 /* Widgets */,
-				9FB0CA1425D5AD180057DD11 /* BreadwalletWidget.swift */,
-				9FB0CA1625D5AD180057DD11 /* BreadwalletWidget.intentdefinition */,
-				9F0EA17325E29DC500D4225E /* breadwalletWidgetExtension.entitlements */,
-				9FB0CA1725D5AD190057DD11 /* Assets.xcassets */,
-				9FB0CA1925D5AD190057DD11 /* Info.plist */,
-				9FDDE5AB25D5B96000E42BE3 /* mock-candles.json */,
-			);
-			path = breadwalletWidget;
-			sourceTree = "<group>";
-		};
-		9FBF66C425D5F1AF007F172D /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				9FBF66BC25D5F1AB007F172D /* AssetViewModel.swift */,
-				9F3C314625DACF1300C7C398 /* AssetListViewModel.swift */,
-				A243907548F9B61AEED41A04 /* PortfolioViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		9FDDE54F25D5B79D00E42BE3 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9FDDE55025D5B79D00E42BE3 /* Date+Extension.swift */,
-				9FDDE55125D5B79D00E42BE3 /* String+Extensions.swift */,
-				9FDDE55325D5B79D00E42BE3 /* Numeric+Extensions.swift */,
-				9FDDE55225D5B79D00E42BE3 /* CGTypes+Extensions.swift */,
-				9F3C313B25DACEDA00C7C398 /* ColorOption+ExtensionUI.swift */,
-				9F3C316B25DACFF000C7C398 /* LogoStyle+Extensions.swift */,
-				9F2118AB25DD74EA00ABD2C8 /* CoinGecko+Extesions.swift */,
-				9F2118F425DDBC6200ABD2C8 /* Formatter+Extensions.swift */,
-				9F00EAAF25DDF15200A99218 /* Bundle+Extensions.swift */,
-				9F00EAF325DDFC9600A99218 /* Currency+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		9FDDE55425D5B79D00E42BE3 /* ChartView */ = {
-			isa = PBXGroup;
-			children = (
-				9FDDE55525D5B79D00E42BE3 /* ChartView.swift */,
-				9FDDE55625D5B79D00E42BE3 /* ChartViewModel.swift */,
-			);
-			path = ChartView;
 			sourceTree = "<group>";
 		};
 		CE1E5F241EF081F300BD0F72 /* Import */ = {
@@ -2142,7 +1573,6 @@
 				CEEC70931E96A24F00EF788E /* DefaultCurrencyViewController.swift */,
 				CE4DFB2B1E9BE5880014009E /* ReScanViewController.swift */,
 				CE4DFB2D1E9C26DA0014009E /* ShareDataViewController.swift */,
-				CE5E6C951EB8CCF500A476DB /* SupportCenterContainer.swift */,
 				CEEE92F01EBA7CBA00B7AC9C /* RequestAmountViewController.swift */,
 				CEF61B111ECF52C700C7EA6A /* AmountViewController.swift */,
 				CEA05CC21F21B53C00D850F0 /* FeeSelector.swift */,
@@ -2151,8 +1581,6 @@
 				1B1AFF9E1FB7EF7C00E61908 /* BiometricsSettingsViewController.swift */,
 				7CA238132011A97C00A4A59D /* TxDetailViewController.swift */,
 				CE977108216FA16300B9F621 /* SegwitViewController.swift */,
-				3A3D63DB22F10B4F000DE920 /* AddWalletsViewController.swift */,
-				3A3D63DD22F10B57000DE920 /* ManageWalletsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -2226,7 +1654,6 @@
 				CEBF32F31DDCE12900348FC6 /* AccountFooterView.swift */,
 				CEBF32F11DDCE10D00348FC6 /* AccountHeaderView.swift */,
 				CEF3E82C1DE528BF007C0A9E /* AlertView.swift */,
-				71904FB82225AB3900A6D027 /* AnnouncementPromptView.swift */,
 				CE41327522CACA05002391E6 /* BalanceCell.swift */,
 				CEE20C2E1EA3E5820086F724 /* BlinkingView.swift */,
 				CEBF32ED1DDBC30000348FC6 /* BRDButton.swift */,
@@ -2259,7 +1686,6 @@
 				3A36328C225301D60043EBA4 /* PriceChangeView.swift */,
 				71173058220CCC91001931B3 /* PromptView.swift */,
 				CEC6AA3C1DEE687000EE5AFD /* RadialGradientView.swift */,
-				9AE8FFF721FE64E200D5058C /* RewardsView.swift */,
 				CE8F0AE21EB91BB500AA7642 /* SearchHeaderView.swift */,
 				CE6B6B491E54C0CA00B31405 /* SecurityCenterCell.swift */,
 				CEAFC8601E5D5B0500E4FD06 /* SegmentedButton.swift */,
@@ -2333,7 +1759,6 @@
 				7CBD57902107FAFA0042C388 /* PairedWalletIndex.swift */,
 				22A9A93D1DF61945000F0016 /* TxMetaData.swift */,
 				CE45C1FA1E74F89C002C3847 /* WalletInfo.swift */,
-				3AFAD94725698A74005853E8 /* Gift.swift */,
 			);
 			name = "KVStore Objects";
 			sourceTree = "<group>";
@@ -2388,16 +1813,6 @@
 			);
 			name = Wallet;
 			path = src/Wallet;
-			sourceTree = "<group>";
-		};
-		CEA7E67C1F09A9D2001F8C27 /* Screenshots */ = {
-			isa = PBXGroup;
-			children = (
-				CEA7E6861F09AB00001F8C27 /* SnapshotHelper.swift */,
-				CEA7E67D1F09A9D2001F8C27 /* Screenshots.swift */,
-				CEA7E67F1F09A9D2001F8C27 /* Info.plist */,
-			);
-			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		CEAA9E9C1DC2F8270066731D /* Fonts */ = {
@@ -2486,7 +1901,6 @@
 			children = (
 				CEE20C351EA5B4620086F724 /* Constants.swift */,
 				CEBF292F1EF9D76F005C330A /* Environment.swift */,
-				CEE20C331EA5B4550086F724 /* ArticleIds.swift */,
 				CEE20C371EA5B4680086F724 /* Strings.swift */,
 				CE3D4C581EF743EF0016B1C8 /* Functions.swift */,
 				71999FDC22147CD90024271F /* Events.swift */,
@@ -2498,7 +1912,6 @@
 			isa = PBXGroup;
 			children = (
 				CEEC707E1E8D6B4100EF788E /* MenuViewController.swift */,
-				7C9BC58C231764020011732F /* WalletConnectionSettingsViewController.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -2507,11 +1920,9 @@
 			isa = PBXGroup;
 			children = (
 				9A39B0752202A96500E5018B /* Cell Highlight View Frames */,
-				9AE8FFFD21FEAC0A00D5058C /* Rewards Icon Frames */,
 				CEF3E8311DE55540007C0A9E /* CheckView.swift */,
 				CEF3E8331DE57166007C0A9E /* AnimatableIcon.swift */,
 				9A39B1242202AE9E00E5018B /* MultiframeAnimation.swift */,
-				9AE8FFF921FE6FE000D5058C /* RewardsIconView.swift */,
 				9A39B1222202AA3400E5018B /* HomeScreenCellHighlightView.swift */,
 			);
 			name = AnimatedIcons;
@@ -2603,13 +2014,11 @@
 			);
 			dependencies = (
 				22A9A99C1DF63426000F0016 /* PBXTargetDependency */,
-				9FB0CA1D25D5AD190057DD11 /* PBXTargetDependency */,
-				9F29A9A225D5C605000FEB40 /* PBXTargetDependency */,
 			);
 			name = breadwallet;
 			packageProductDependencies = (
-				3A0C6087242A5CC900F0FBC2,
-				3A858B29250A781700812B36,
+				3A0C6087242A5CC900F0FBC2 /* WalletKit */,
+				3A858B29250A781700812B36 /* CoinGecko */,
 			);
 			productName = breadwallet;
 			productReference = 75A2A7901DA5934300A983D8 /* breadwallet.app */;
@@ -2650,46 +2059,6 @@
 			productName = breadwalletUITests;
 			productReference = 75A2A7AF1DA5934300A983D8 /* breadwalletUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		9F29A99925D5C605000FEB40 /* breadwalletIntentHandler */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F29A9AC25D5C605000FEB40 /* Build configuration list for PBXNativeTarget "breadwalletIntentHandler" */;
-			buildPhases = (
-				9F29A99625D5C605000FEB40 /* Sources */,
-				9F29A99725D5C605000FEB40 /* Frameworks */,
-				9F29A99825D5C605000FEB40 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = breadwalletIntentHandler;
-			packageProductDependencies = (
-				9F3C2FAA25DA7F2F00C7C398,
-			);
-			productName = breadwalletIntentHandler;
-			productReference = 9F29A99A25D5C605000FEB40 /* breadwalletIntentHandler.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		9FB0CA0E25D5AD180057DD11 /* breadwalletWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9FB0CA2725D5AD190057DD11 /* Build configuration list for PBXNativeTarget "breadwalletWidgetExtension" */;
-			buildPhases = (
-				9FB0CA0B25D5AD180057DD11 /* Sources */,
-				9FB0CA0C25D5AD180057DD11 /* Frameworks */,
-				9FB0CA0D25D5AD180057DD11 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = breadwalletWidgetExtension;
-			packageProductDependencies = (
-				9F3C2FA625DA7F1C00C7C398,
-			);
-			productName = breadwalletWidgetExtension;
-			productReference = 9FB0CA0F25D5AD180057DD11 /* breadwalletWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		CEA7E67A1F09A9D2001F8C27 /* Screenshots */ = {
 			isa = PBXNativeTarget;
@@ -2765,12 +2134,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 75A2A78F1DA5934300A983D8;
 					};
-					9F29A99925D5C605000FEB40 = {
-						CreatedOnToolsVersion = 12.4;
-					};
-					9FB0CA0E25D5AD180057DD11 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					CEA7E67A1F09A9D2001F8C27 = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 1020;
@@ -2802,7 +2165,7 @@
 			);
 			mainGroup = 75A2A7871DA5934300A983D8;
 			packageReferences = (
-				3A858B28250A781700812B36,
+				3A858B28250A781700812B36 /* XCRemoteSwiftPackageReference "coingecko" */,
 			);
 			productRefGroup = 75A2A7911DA5934300A983D8 /* Products */;
 			projectDirPath = "";
@@ -2814,8 +2177,6 @@
 				759DA0D71DAC8668008CC49B /* submodules */,
 				22A9A9951DF63426000F0016 /* libbz2 */,
 				CEA7E67A1F09A9D2001F8C27 /* Screenshots */,
-				9FB0CA0E25D5AD180057DD11 /* breadwalletWidgetExtension */,
-				9F29A99925D5C605000FEB40 /* breadwalletIntentHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -2835,9 +2196,7 @@
 				9A926F9922034B3800CC2263 /* CellHighlight-22.png in Resources */,
 				9A926F5A22034B3800CC2263 /* CellHighlight-13.png in Resources */,
 				E837FD02219D1C0600F59D99 /* onboarding-video-coins-in.mp4 in Resources */,
-				9AE8010E21FFF81F00D5058C /* rewardsIcon-41.gif in Resources */,
 				9A926F9822034B3800CC2263 /* CellHighlight-24.png in Resources */,
-				9AE8010321FFF81F00D5058C /* rewardsIcon-50.gif in Resources */,
 				7CC7D8DA21581C41007E1B9A /* brd-web-3.tar in Resources */,
 				9A926F7222034B3800CC2263 /* CellHighlight-74.png in Resources */,
 				9A926F5922034B3800CC2263 /* CellHighlight-26.png in Resources */,
@@ -2845,14 +2204,6 @@
 				9A926F5622034B3800CC2263 /* CellHighlight-67.png in Resources */,
 				CEDA9EDC1FDE0C56005E8D1B /* countries.plist in Resources */,
 				9A926F8D22034B3800CC2263 /* CellHighlight-55.png in Resources */,
-				9AE800F021FFF81F00D5058C /* rewardsIcon-31.gif in Resources */,
-				9AE800ED21FFF81F00D5058C /* rewardsIcon-60.gif in Resources */,
-				9AE8010121FFF81F00D5058C /* rewardsIcon-1.gif in Resources */,
-				9AE8011221FFF81F00D5058C /* rewardsIcon-51.gif in Resources */,
-				9AE800E521FFF81F00D5058C /* rewardsIcon-15.gif in Resources */,
-				9AE800F721FFF81F00D5058C /* rewardsIcon-8.gif in Resources */,
-				9AE800D721FFF81F00D5058C /* rewardsIcon-44.gif in Resources */,
-				9AE800FB21FFF81F00D5058C /* rewardsIcon-32.gif in Resources */,
 				9A926F6A22034B3800CC2263 /* CellHighlight-77.png in Resources */,
 				9A926F8022034B3800CC2263 /* CellHighlight-19.png in Resources */,
 				7C54FF9E2165866A007BF3EF /* currencies.json in Resources */,
@@ -2862,81 +2213,46 @@
 				9A926F7E22034B3800CC2263 /* CellHighlight-4.png in Resources */,
 				9A926F5222034B3800CC2263 /* CellHighlight-5.png in Resources */,
 				9A926F7622034B3800CC2263 /* CellHighlight-25.png in Resources */,
-				9AE800FF21FFF81F00D5058C /* rewardsIcon-69.gif in Resources */,
 				9A926F8A22034B3800CC2263 /* CellHighlight-7.png in Resources */,
-				9AE8011321FFF81F00D5058C /* rewardsIcon-57.gif in Resources */,
-				9AE800D621FFF81F00D5058C /* rewardsIcon-36.gif in Resources */,
 				9A926F4822034B3700CC2263 /* CellHighlight-41.png in Resources */,
 				9A926F6122034B3800CC2263 /* CellHighlight-47.png in Resources */,
-				9AE800D021FFF81F00D5058C /* rewardsIcon-17.gif in Resources */,
 				9A926F7322034B3800CC2263 /* CellHighlight-81.png in Resources */,
-				9AE800DD21FFF81F00D5058C /* rewardsIcon-24.gif in Resources */,
-				9AE800E921FFF81F00D5058C /* rewardsIcon-33.gif in Resources */,
 				9A926F7122034B3800CC2263 /* CellHighlight-46.png in Resources */,
-				9AE800EE21FFF81F00D5058C /* rewardsIcon-46.gif in Resources */,
 				9A926F5122034B3800CC2263 /* CellHighlight-83.png in Resources */,
 				9A926F7B22034B3800CC2263 /* CellHighlight-79.png in Resources */,
-				9AE8010621FFF81F00D5058C /* rewardsIcon-67.gif in Resources */,
-				9AE800F221FFF81F00D5058C /* rewardsIcon-61.gif in Resources */,
 				9A926F6322034B3800CC2263 /* CellHighlight-76.png in Resources */,
 				9A926F7822034B3800CC2263 /* CellHighlight-42.png in Resources */,
 				9A926F5322034B3800CC2263 /* CellHighlight-2.png in Resources */,
 				CE4C1CD01ED8BCC70063E184 /* BIP39Words.plist in Resources */,
 				9A926F6E22034B3800CC2263 /* CellHighlight-17.png in Resources */,
-				9AE8010521FFF81F00D5058C /* rewardsIcon-65.gif in Resources */,
 				9A926F8822034B3800CC2263 /* CellHighlight-27.png in Resources */,
 				75A2A79E1DA5934300A983D8 /* LaunchScreen.storyboard in Resources */,
-				9AE800DF21FFF81F00D5058C /* rewardsIcon-30.gif in Resources */,
-				9AE800E421FFF81F00D5058C /* rewardsIcon-5.gif in Resources */,
 				9A926F4A22034B3800CC2263 /* CellHighlight-49.png in Resources */,
 				9A926F5F22034B3800CC2263 /* CellHighlight-58.png in Resources */,
-				9AE8010421FFF81F00D5058C /* rewardsIcon-62.gif in Resources */,
-				9AE800D321FFF81F00D5058C /* rewardsIcon-66.gif in Resources */,
-				9AE8011021FFF81F00D5058C /* rewardsIcon-54.gif in Resources */,
 				9A926F4922034B3700CC2263 /* CellHighlight-6.png in Resources */,
 				9A926F7922034B3800CC2263 /* CellHighlight-36.png in Resources */,
 				9A926F9122034B3800CC2263 /* CellHighlight-9.png in Resources */,
 				9A926F4622034B3700CC2263 /* CellHighlight-72.png in Resources */,
-				9AE800E121FFF81F00D5058C /* rewardsIcon-2.gif in Resources */,
-				9AE800E321FFF81F00D5058C /* rewardsIcon-55.gif in Resources */,
-				9AE8011421FFF81F00D5058C /* rewardsIcon-63.gif in Resources */,
 				9A926F8622034B3800CC2263 /* CellHighlight-10.png in Resources */,
 				9A926F6F22034B3800CC2263 /* CellHighlight-60.png in Resources */,
-				9AE800DC21FFF81F00D5058C /* rewardsIcon-52.gif in Resources */,
-				9AE8010221FFF81F00D5058C /* rewardsIcon-34.gif in Resources */,
-				9AE8010D21FFF81F00D5058C /* rewardsIcon-13.gif in Resources */,
 				9A926F8F22034B3800CC2263 /* CellHighlight-85.png in Resources */,
-				9AE800F321FFF81F00D5058C /* rewardsIcon-47.gif in Resources */,
 				9A926F6922034B3800CC2263 /* CellHighlight-82.png in Resources */,
 				E837FD00219D1C0600F59D99 /* onboarding-video-globe.mp4 in Resources */,
 				9A926F4C22034B3800CC2263 /* CellHighlight-51.png in Resources */,
-				9AE8010921FFF81F00D5058C /* rewardsIcon-26.gif in Resources */,
-				9AE800F921FFF81F00D5058C /* rewardsIcon-22.gif in Resources */,
 				9A926F4F22034B3800CC2263 /* CellHighlight-34.png in Resources */,
 				CEAA9EA31DC2FC700066731D /* Font-Book.otf in Resources */,
 				9A926F5822034B3800CC2263 /* CellHighlight-64.png in Resources */,
 				9A926F8C22034B3800CC2263 /* CellHighlight-75.png in Resources */,
-				9AE800DB21FFF81F00D5058C /* rewardsIcon-18.gif in Resources */,
 				9A926F4722034B3700CC2263 /* CellHighlight-14.png in Resources */,
-				9AE800F821FFF81F00D5058C /* rewardsIcon-37.gif in Resources */,
 				9A926F6422034B3800CC2263 /* CellHighlight-86.png in Resources */,
 				9A926F9722034B3800CC2263 /* CellHighlight-59.png in Resources */,
 				9A926F8422034B3800CC2263 /* CellHighlight-54.png in Resources */,
-				9AE800F621FFF81F00D5058C /* rewardsIcon-39.gif in Resources */,
 				9A926F6022034B3800CC2263 /* CellHighlight-8.png in Resources */,
 				222319B21F279B3C00008F20 /* POSTBouncer.html in Resources */,
-				9AE800FE21FFF81F00D5058C /* rewardsIcon-40.gif in Resources */,
-				9AE800D921FFF81F00D5058C /* rewardsIcon-11.gif in Resources */,
-				9AE800FC21FFF81F00D5058C /* rewardsIcon-7.gif in Resources */,
 				9A926F7F22034B3800CC2263 /* CellHighlight-43.png in Resources */,
 				9A926F8722034B3800CC2263 /* CellHighlight-52.png in Resources */,
-				9AE800F521FFF81F00D5058C /* rewardsIcon-45.gif in Resources */,
-				9AE8010C21FFF81F00D5058C /* rewardsIcon-70.gif in Resources */,
-				9AE800DA21FFF81F00D5058C /* rewardsIcon-29.gif in Resources */,
-				9AE800E221FFF81F00D5058C /* rewardsIcon-38.gif in Resources */,
 				9A926F9322034B3800CC2263 /* CellHighlight-35.png in Resources */,
 				E837FD01219D1C0600F59D99 /* onboarding-video-coins-out.mp4 in Resources */,
-				9AE800E021FFF81F00D5058C /* rewardsIcon-25.gif in Resources */,
 				9A926F9622034B3800CC2263 /* CellHighlight-12.png in Resources */,
 				9A926F7422034B3800CC2263 /* CellHighlight-30.png in Resources */,
 				9A926F5D22034B3800CC2263 /* CellHighlight-15.png in Resources */,
@@ -2945,40 +2261,25 @@
 				9A926F8122034B3800CC2263 /* CellHighlight-28.png in Resources */,
 				9A926F7722034B3800CC2263 /* CellHighlight-44.png in Resources */,
 				9A926F4B22034B3800CC2263 /* CellHighlight-11.png in Resources */,
-				9AE800FD21FFF81F00D5058C /* rewardsIcon-59.gif in Resources */,
 				9A926F8222034B3800CC2263 /* CellHighlight-20.png in Resources */,
 				9A926F6722034B3800CC2263 /* CellHighlight-48.png in Resources */,
-				9AE800EB21FFF81F00D5058C /* rewardsIcon-9.gif in Resources */,
 				7C98B0A6215A99C8007C85EB /* brd-web-3-staging.tar in Resources */,
 				9A926F5522034B3800CC2263 /* CellHighlight-65.png in Resources */,
-				9AE800E721FFF81F00D5058C /* rewardsIcon-35.gif in Resources */,
 				9A926F7A22034B3800CC2263 /* CellHighlight-50.png in Resources */,
 				CE473D7C1F042F1E00C0ACFD /* coinflip.aiff in Resources */,
 				9A926F8E22034B3800CC2263 /* CellHighlight-84.png in Resources */,
-				9AE800EF21FFF81F00D5058C /* rewardsIcon-68.gif in Resources */,
 				CE5E6C9A1EB9135000A476DB /* Icon.xcassets in Resources */,
 				71014F7C2327E49400DA1373 /* fiatcurrencies.json in Resources */,
-				9AE800EC21FFF81F00D5058C /* rewardsIcon-3.gif in Resources */,
-				9AE8011521FFF81F00D5058C /* rewardsIcon-64.gif in Resources */,
 				9A926F4422034B3700CC2263 /* CellHighlight-29.png in Resources */,
-				9AE8010A21FFF81F00D5058C /* rewardsIcon-49.gif in Resources */,
 				9A926F8522034B3800CC2263 /* CellHighlight-23.png in Resources */,
 				CE29901A1EFD6DE50093A0F2 /* Localizable.strings in Resources */,
-				9AE800D121FFF81F00D5058C /* rewardsIcon-28.gif in Resources */,
 				2218BD791E8F6CBA0091D5E8 /* AssetBundles.plist in Resources */,
-				9AE800E821FFF81F00D5058C /* rewardsIcon-20.gif in Resources */,
-				9AE8010021FFF81F00D5058C /* rewardsIcon-10.gif in Resources */,
 				9A926F9022034B3800CC2263 /* CellHighlight-18.png in Resources */,
-				9AE8011121FFF81F00D5058C /* rewardsIcon-6.gif in Resources */,
 				9A926F8922034B3800CC2263 /* CellHighlight-69.png in Resources */,
 				9A926F8B22034B3800CC2263 /* CellHighlight-38.png in Resources */,
 				9A926F7C22034B3800CC2263 /* CellHighlight-73.png in Resources */,
-				9AE800EA21FFF81F00D5058C /* rewardsIcon-48.gif in Resources */,
 				CEAA9EA41DC2FC700066731D /* Font-Medium.otf in Resources */,
-				9AE800D221FFF81F00D5058C /* rewardsIcon-4.gif in Resources */,
 				9A926F6D22034B3800CC2263 /* CellHighlight-31.png in Resources */,
-				9AE800D521FFF81F00D5058C /* rewardsIcon-27.gif in Resources */,
-				9AE800D821FFF81F00D5058C /* rewardsIcon-43.gif in Resources */,
 				9A926F6222034B3800CC2263 /* CellHighlight-45.png in Resources */,
 				CEAA9E9E1DC2F90C0066731D /* Font-Bold.otf in Resources */,
 				7C98B0A5215A99C8007C85EB /* brd-tokens-staging.tar in Resources */,
@@ -2987,23 +2288,13 @@
 				9A926F5C22034B3800CC2263 /* CellHighlight-16.png in Resources */,
 				9A926F7022034B3800CC2263 /* CellHighlight-1.png in Resources */,
 				9A926F4E22034B3800CC2263 /* CellHighlight-71.png in Resources */,
-				9AE800E621FFF81F00D5058C /* rewardsIcon-21.gif in Resources */,
 				9A926F5022034B3800CC2263 /* CellHighlight-80.png in Resources */,
 				9A926F5722034B3800CC2263 /* CellHighlight-40.png in Resources */,
 				9A926F5422034B3800CC2263 /* CellHighlight-37.png in Resources */,
-				9AE800FA21FFF81F00D5058C /* rewardsIcon-23.gif in Resources */,
-				9AE800D421FFF81F00D5058C /* rewardsIcon-58.gif in Resources */,
 				9A926F5E22034B3800CC2263 /* CellHighlight-66.png in Resources */,
-				9AE8010F21FFF81F00D5058C /* rewardsIcon-14.gif in Resources */,
-				9AE800F421FFF81F00D5058C /* rewardsIcon-19.gif in Resources */,
-				9AE8010821FFF81F00D5058C /* rewardsIcon-42.gif in Resources */,
 				9A926F6522034B3800CC2263 /* CellHighlight-63.png in Resources */,
-				9AE800F121FFF81F00D5058C /* rewardsIcon-53.gif in Resources */,
-				9AE800DE21FFF81F00D5058C /* rewardsIcon-12.gif in Resources */,
 				9A926F7D22034B3800CC2263 /* CellHighlight-57.png in Resources */,
-				9AE8010721FFF81F00D5058C /* rewardsIcon-16.gif in Resources */,
 				9A926F4D22034B3800CC2263 /* CellHighlight-68.png in Resources */,
-				9AE8010B21FFF81F00D5058C /* rewardsIcon-56.gif in Resources */,
 				9A926F6B22034B3800CC2263 /* CellHighlight-39.png in Resources */,
 				9A926F5B22034B3800CC2263 /* CellHighlight-32.png in Resources */,
 				9A926F7522034B3800CC2263 /* CellHighlight-33.png in Resources */,
@@ -3026,29 +2317,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F29A99825D5C605000FEB40 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F13F5D025DDD73B0031AEC7 /* fiatcurrencies.json in Resources */,
-				9FD519E425E3185F00F9D856 /* Localizable.strings in Resources */,
-				9F3C301E25DA841100C7C398 /* currencies.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FB0CA0D25D5AD180057DD11 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F00EA9325DDEED200A99218 /* brd-tokens.tar in Resources */,
-				9FD519E325E3185F00F9D856 /* Localizable.strings in Resources */,
-				9FDDE5AC25D5B96000E42BE3 /* mock-candles.json in Resources */,
-				9FB0CA1825D5AD190057DD11 /* Assets.xcassets in Resources */,
-				9F13F5C925DDD73A0031AEC7 /* fiatcurrencies.json in Resources */,
-				9F3C301725DA841100C7C398 /* currencies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3146,14 +2414,11 @@
 				CEC6AA4D1DF0741100EE5AFD /* ModalDisplayable.swift in Sources */,
 				7CF9988D23202C75004AEC17 /* BRAPIClient+Experiments.swift in Sources */,
 				CEE0EF521EBD14B60018DB36 /* PinTransitioningDelegate.swift in Sources */,
-				9AE8FFFA21FE6FE000D5058C /* RewardsIconView.swift in Sources */,
 				754AE0BC1DFE8A46007FD001 /* SecureAllocator.swift in Sources */,
 				22A9A94A1DF61945000F0016 /* BRCameraPlugin.swift in Sources */,
-				3A529E4C253B957200BD0A17 /* StakingCell.swift in Sources */,
 				3A5C9B2B22A5676F00C907C1 /* PriceChange.swift in Sources */,
 				CEA9178620C07FBB00F29B31 /* SyncingHeaderView.swift in Sources */,
 				CEC6AA3B1DEE4EB000EE5AFD /* CGRect+Additions.swift in Sources */,
-				4F3AB12A25D58AB400B378DC /* SelectBakerViewController.swift in Sources */,
 				E843C1172188D19000F46672 /* OnboardingViewController.swift in Sources */,
 				3A36328D225301D60043EBA4 /* PriceChangeView.swift in Sources */,
 				7C5AC8A6203B93D3001B221E /* TxListCell.swift in Sources */,
@@ -3171,7 +2436,6 @@
 				3A611A0F2325738C004B8E36 /* AnimatedBlockSetLogo.swift in Sources */,
 				71C44E92225F95B100EF4459 /* RecoveryKeyCompleteViewController.swift in Sources */,
 				CE6DCC251E6001E50044257B /* UIControl+Callback.swift in Sources */,
-				71904FB92225AB3900A6D027 /* AnnouncementPromptView.swift in Sources */,
 				71999FDD22147CD90024271F /* Events.swift in Sources */,
 				CE0822641FCD1BD100EF371D /* HomeScreenViewController.swift in Sources */,
 				223DB2191DF691260076A151 /* BRSocketHelpers.c in Sources */,
@@ -3185,23 +2449,17 @@
 				2218BD771E8F55430091D5E8 /* BRAPIClient+Assets.swift in Sources */,
 				3AEA2C9C24D122EA00DA4C3A /* CloudBackupView.swift in Sources */,
 				22A9A94D1DF61945000F0016 /* BRHTTPFileMiddleware.swift in Sources */,
-				3A188FEC257FF1A300957819 /* GiftCurrencyCell.swift in Sources */,
 				CE8644251F2C160200033129 /* ConfirmationViewController.swift in Sources */,
 				7CBA74E820227D1300FBBFA9 /* MenuCell.swift in Sources */,
 				CEE9A2E920AB4F9A00C5CF2F /* BRAPIClient+Metrics.swift in Sources */,
 				CEBF32F01DDCD30600348FC6 /* AccountViewController.swift in Sources */,
 				CEE1F5631DF13E5A00D733AD /* ModalHeaderView.swift in Sources */,
 				9A39B1252202AE9E00E5018B /* MultiframeAnimation.swift in Sources */,
-				3AFAD9562569F722005853E8 /* GiftingStatusUpdater.swift in Sources */,
 				CE5F21DB1E4A93A500C47B8E /* LoginTransitionDelegate.swift in Sources */,
 				71C44E942264BE2C00EF4459 /* BaseRecoveryKeyViewController.swift in Sources */,
 				CEAA9EA81DC3342E0066731D /* PinView.swift in Sources */,
-				7117305B220CE7B8001931B3 /* BRAPIClient+Announcements.swift in Sources */,
 				CE1D84B61EAEB2F4002A5D7B /* UIBarButtonItem+Additions.swift in Sources */,
-				CE5E6C961EB8CCF500A476DB /* SupportCenterContainer.swift in Sources */,
 				CE4B6C1A1E219CA600CF935B /* RescanCoordinator.swift in Sources */,
-				9F0EA16C25E2904400D4225E /* WidgetDataShareService.swift in Sources */,
-				9FB0CA1B25D5AD190057DD11 /* BreadwalletWidget.intentdefinition in Sources */,
 				CE6D0E5C1E14BFA700137DF1 /* KeyboardNotificationInfo.swift in Sources */,
 				CEA05CC31F21B53C00D850F0 /* FeeSelector.swift in Sources */,
 				E89C0611216A8BE70012CE0D /* GetUserEmailPromptView.swift in Sources */,
@@ -3234,7 +2492,6 @@
 				7C72D13622662BB40091B185 /* Wallet.swift in Sources */,
 				CEC6F8451E886723000795B8 /* PaymentRequest.swift in Sources */,
 				CE274A611FD7C902000A4E62 /* RootNavigationController.swift in Sources */,
-				3A6C1406257D594A00EA0689 /* ShareGiftViewController.swift in Sources */,
 				CE4C1CC81ED88B600063E184 /* URLController.swift in Sources */,
 				CE20C9171DBE6F2A00C8397A /* UIButton+BRWAdditions.swift in Sources */,
 				CE3CDB9720D443CE007059F6 /* CutoutLabel.swift in Sources */,
@@ -3249,7 +2506,6 @@
 				CE0CD1591DBFBCF5004023DA /* ModalPresenter.swift in Sources */,
 				7CEA35D5232A9D1200FB58C4 /* Identifier.swift in Sources */,
 				CEE20C2F1EA3E5820086F724 /* BlinkingView.swift in Sources */,
-				3A6C13FF257D463300EA0689 /* GiftHeaderView.swift in Sources */,
 				CEC6AA441DEFCDE900EE5AFD /* ModalViewController.swift in Sources */,
 				CEF7D94622CE6AC000939D19 /* HistoryPeriodButton.swift in Sources */,
 				3AFB571724E2E10A00087527 /* RadioButton.swift in Sources */,
@@ -3307,13 +2563,11 @@
 				CEE20C2D1EA288FA0086F724 /* UpdatingLabel.swift in Sources */,
 				714F5D6E22037F2400F7CA70 /* EventMonitor.swift in Sources */,
 				CE3D4C591EF743EF0016B1C8 /* Functions.swift in Sources */,
-				CEE20C341EA5B4550086F724 /* ArticleIds.swift in Sources */,
 				3A93890A22A303800081FCF9 /* CubicCurveAlgorithm.swift in Sources */,
 				7141BB5B2245271800F7ECF2 /* WriteRecoveryKeyViewController.swift in Sources */,
 				CEE65DF01E39056F0002994D /* Rate.swift in Sources */,
 				CEDB09331FEAA21C001AF56A /* TxDetailViewModel.swift in Sources */,
 				7CB593E122F8C8FE005A230A /* AuthenticationClient.swift in Sources */,
-				4F3AB12425D53F5D00B378DC /* Baker.swift in Sources */,
 				71988B0821EF8A0E008B8EA0 /* BRUserAgentHeaderGenerator.swift in Sources */,
 				CEE20C361EA5B4620086F724 /* Constants.swift in Sources */,
 				3A7605F724D0BB1F0057C1F4 /* CloudBackup.swift in Sources */,
@@ -3331,17 +2585,14 @@
 				22A9A94E1DF61945000F0016 /* BRHTTPIndexMiddleware.swift in Sources */,
 				71173059220CCC91001931B3 /* PromptView.swift in Sources */,
 				CE8CD8DD1E2D9EF200785E02 /* Sender.swift in Sources */,
-				3AFAD94825698A74005853E8 /* Gift.swift in Sources */,
 				CE4DFB2C1E9BE5880014009E /* ReScanViewController.swift in Sources */,
 				7C9724661FF07B9A004248C4 /* StatusPip.swift in Sources */,
 				7C35E712200AC2080064808F /* TxViewModel.swift in Sources */,
-				71249913221F44FE00BEA491 /* Announcement.swift in Sources */,
 				71F829422321953F00B3C76E /* AlertPresenter.swift in Sources */,
 				CE8F0AE31EB91BB500AA7642 /* SearchHeaderView.swift in Sources */,
 				22A9A9551DF61945000F0016 /* BRTar.swift in Sources */,
 				CEAA9E971DC18E1F0066731D /* PhraseView.swift in Sources */,
 				3A6A3C7E24DDC90300ACAC70 /* BackupSynchronizer.swift in Sources */,
-				3AFAD937256826F3005853E8 /* BorderedTextInput.swift in Sources */,
 				CEF3E82F1DE534C5007C0A9E /* GradientView.swift in Sources */,
 				CE6D0F991DE8B75900BD4BCF /* DismissModalAnimator.swift in Sources */,
 				CE4C1CC61ED65D830063E184 /* DrawableCircle.swift in Sources */,
@@ -3356,7 +2607,6 @@
 				22A9A94C1DF61945000F0016 /* BRGeoLocationPlugin.swift in Sources */,
 				CEAA9EA61DC3246F0066731D /* StartNavigationDelegate.swift in Sources */,
 				7CBF4B6420081BCE00E003AA /* KeyedDecodingContainer+Additions.swift in Sources */,
-				3A188FF82582835600957819 /* Sharing.swift in Sources */,
 				22A9A94B1DF61945000F0016 /* BRCoding.swift in Sources */,
 				22A9A9561DF61945000F0016 /* BRWalletPlugin.swift in Sources */,
 				CE6B829A1FE3A7B6007A41B9 /* UIScrollView+Additions.swift in Sources */,
@@ -3369,10 +2619,8 @@
 				CEAA9E911DC0FDFE0066731D /* UIViewPropertyAnimator+BRWAdditions.swift in Sources */,
 				7C1931CD2327371A0061DE20 /* CoreDatabase.swift in Sources */,
 				22E773041EE7813000397E0E /* Bonjour.swift in Sources */,
-				3AFAD9302567EE15005853E8 /* GiftViewController.swift in Sources */,
 				7CE940E61FEB8A5F005A2B53 /* TxDetailRowCell.swift in Sources */,
 				3AB3EE0F227A23B400414616 /* ASADataFormatter.swift in Sources */,
-				3AFAD94F25699112005853E8 /* TxGiftCell.swift in Sources */,
 				CEAA9EA01DC2F9F50066731D /* UIFont+BRWAdditions.swift in Sources */,
 				CEF61B121ECF52C700C7EA6A /* AmountViewController.swift in Sources */,
 				CEBF32F21DDCE10D00348FC6 /* AccountHeaderView.swift in Sources */,
@@ -3381,7 +2629,6 @@
 				71C44E90225D135E00EF4459 /* ConfirmRecoveryKeyViewController.swift in Sources */,
 				7CF913BE1FFC7DC30085CB70 /* TxMemoCell.swift in Sources */,
 				3A0063BE2509D36500C74A97 /* ExtendedTouchArea.swift in Sources */,
-				3A3D63DE22F10B58000DE920 /* ManageWalletsViewController.swift in Sources */,
 				22A9A9471DF61945000F0016 /* BRAPIProxy.swift in Sources */,
 				CE20C9011DBBFFF800C8397A /* Actions.swift in Sources */,
 				CE20C9191DBE7B8200C8397A /* State.swift in Sources */,
@@ -3405,11 +2652,8 @@
 				CE4DFB2E1E9C26DA0014009E /* ShareDataViewController.swift in Sources */,
 				CE1E5F261EF083A600BD0F72 /* ImportKeyViewController.swift in Sources */,
 				CE25BF931DFDA7A600BC67B6 /* MessageUIPresenter.swift in Sources */,
-				3A6785FB257019220065F835 /* RedeemTransitioningDelegate.swift in Sources */,
 				CE20C90C1DBC59E600C8397A /* StartFlowPresenter.swift in Sources */,
 				CE20C8FC1DBB0F3A00C8397A /* UIColor+BRWAdditions.swift in Sources */,
-				3A6785F1256F2F1A0065F835 /* RedeemGiftViewController.swift in Sources */,
-				9AE8FFF821FE64E200D5058C /* RewardsView.swift in Sources */,
 				CEA3626A1E01150D0061FC0E /* CGContext+Additions.swift in Sources */,
 				7C6ACCB41FEB34470028ABFA /* TxLabelCell.swift in Sources */,
 				7C40DE2D20E09207000E289D /* ToggleButton.swift in Sources */,
@@ -3421,9 +2665,7 @@
 				CE36454C1E7B42850079D0CF /* WhiteDecimalPad.swift in Sources */,
 				CE5F21D91E4A922700C47B8E /* DismissLoginAnimator.swift in Sources */,
 				7C45481A2187E65B0002E884 /* AnyCodable.swift in Sources */,
-				4F3AB12325D53F5D00B378DC /* BakingBadRequest.swift in Sources */,
 				CECCE5A51E02408300D99448 /* UIView+FrameChangeBlocking.swift in Sources */,
-				3A3D63DC22F10B4F000DE920 /* AddWalletsViewController.swift in Sources */,
 				22A9A94F1DF61945000F0016 /* BRHTTPRouter.swift in Sources */,
 				CE6DCC271E6108D50044257B /* EnterPhraseCell.swift in Sources */,
 				CE760EDD1E561DF900EFAC2B /* UpdatePinViewController.swift in Sources */,
@@ -3436,13 +2678,10 @@
 				713CD8872240117A004657D4 /* RecoveryKeyFlowController.swift in Sources */,
 				CED341331EF5A5C00014912A /* InAppAlert.swift in Sources */,
 				CE47A8E01F7DA54000FF35BA /* UIScreen+Additions.swift in Sources */,
-				7C9BC58D231764030011732F /* WalletConnectionSettingsViewController.swift in Sources */,
 				CEB909F51E5FE63D001804DC /* EnterPhraseViewController.swift in Sources */,
 				713CD88A2240198A004657D4 /* RecoveryKeyIntroViewController.swift in Sources */,
 				CE6D0F971DE8B73A00BD4BCF /* ModalTransitionDelegate.swift in Sources */,
 				1B1AFFA01FB7EF7C00E61908 /* BiometricsSettingsViewController.swift in Sources */,
-				4F3AB13425D5E7F900B378DC /* SelectBakerCell.swift in Sources */,
-				3A529E5C253CAD3F00BD0A17 /* StakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3481,7 +2720,6 @@
 				CEEC70981E96BF8800EF788E /* DefaultCurrencyTests.swift in Sources */,
 				22C4312A1DF89D0A0017CAEA /* BRTarTests.swift in Sources */,
 				7138BABB223062F50059091E /* NotificationTests.swift in Sources */,
-				71249918222046EB00BEA491 /* PromptTests.swift in Sources */,
 				71988B0B21EF8D06008B8EA0 /* BRUserAgentHeaderGeneratorTests.swift in Sources */,
 				E821D4CA21C16A8300B0907B /* AnalyticsEventTests.swift in Sources */,
 				22C4312C1DF89D700017CAEA /* BRBSPatchTests.swift in Sources */,
@@ -3499,82 +2737,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F29A99625D5C605000FEB40 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F3C305725DA902E00C7C398 /* Currency.swift in Sources */,
-				9F3C311B25DAC14900C7C398 /* Numeric+Extensions.swift in Sources */,
-				9F29A9CF25D5C8AD000FEB40 /* BreadwalletWidget.intentdefinition in Sources */,
-				9F2118C025DD7D7D00ABD2C8 /* CoinGecko+Extesions.swift in Sources */,
-				9F29A99F25D5C605000FEB40 /* IntentHandler.swift in Sources */,
-				9FD519DC25E310D800F9D856 /* Strings.swift in Sources */,
-				9F3C307825DA926800C7C398 /* Environment.swift in Sources */,
-				9F9FAF7725D5D0140014F729 /* WidgetService.swift in Sources */,
-				9F00EAD725DDF28F00A99218 /* Bundle+Extensions.swift in Sources */,
-				9F00EADE25DDF29800A99218 /* ImageStorageService.swift in Sources */,
-				9F3C30B025DA954300C7C398 /* UIFont+BRWAdditions.swift in Sources */,
-				9F3C308625DA929600C7C398 /* Identifier.swift in Sources */,
-				9F3C30A225DA951200C7C398 /* Theme.swift in Sources */,
-				9F3C309425DA94C600C7C398 /* UIColor+BRWAdditions.swift in Sources */,
-				A243978083345DAFD36DA7A4 /* MarketInfo.swift in Sources */,
-				9F3C313F25DACEDA00C7C398 /* ColorOption+ExtensionUI.swift in Sources */,
-				9F0EA16525E2902700D4225E /* WidgetDataShareService.swift in Sources */,
-				9F00EAEC25DDF93D00A99218 /* BRTar.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FB0CA0B25D5AD180057DD11 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FDDE55825D5B79D00E42BE3 /* String+Extensions.swift in Sources */,
-				9F3C308D25DA94C400C7C398 /* UIColor+BRWAdditions.swift in Sources */,
-				9F3C316C25DACFF000C7C398 /* LogoStyle+Extensions.swift in Sources */,
-				9F00EAD025DDF28400A99218 /* Bundle+Extensions.swift in Sources */,
-				9FDDE57225D5B82A00E42BE3 /* AssetWidget.swift in Sources */,
-				9F3C309B25DA951200C7C398 /* Theme.swift in Sources */,
-				9F2118AC25DD74EA00ABD2C8 /* CoinGecko+Extesions.swift in Sources */,
-				9FD519D525E310D300F9D856 /* Strings.swift in Sources */,
-				9FB0CA1A25D5AD190057DD11 /* BreadwalletWidget.intentdefinition in Sources */,
-				9FB0CA1525D5AD180057DD11 /* BreadwalletWidget.swift in Sources */,
-				9F3C302525DA8B2F00C7C398 /* WidgetService.swift in Sources */,
-				9F3C315725DACF3300C7C398 /* PortfolioView.swift in Sources */,
-				9FDDE55B25D5B79D00E42BE3 /* ChartView.swift in Sources */,
-				9F3C315825DACF3300C7C398 /* AssetListView.swift in Sources */,
-				9F29A9BB25D5C75B000FEB40 /* AssetView.swift in Sources */,
-				9F3C314725DACF1300C7C398 /* AssetListViewModel.swift in Sources */,
-				9F9F89E025D7E202004AC3C3 /* MinimalistAssetView.swift in Sources */,
-				9FBF66BD25D5F1AB007F172D /* AssetViewModel.swift in Sources */,
-				9F3C307125DA926800C7C398 /* Environment.swift in Sources */,
-				9F0EA16425E2902700D4225E /* WidgetDataShareService.swift in Sources */,
-				9F2118F525DDBC6200ABD2C8 /* Formatter+Extensions.swift in Sources */,
-				9F3C307F25DA929600C7C398 /* Identifier.swift in Sources */,
-				9FDDE55725D5B79D00E42BE3 /* Date+Extension.swift in Sources */,
-				9F3C305625DA902E00C7C398 /* Currency.swift in Sources */,
-				9FDDE55C25D5B79D00E42BE3 /* ChartViewModel.swift in Sources */,
-				9FDDE58C25D5B88F00E42BE3 /* PortfolioWidget.swift in Sources */,
-				9F00EAE525DDF93C00A99218 /* BRTar.swift in Sources */,
-				9FDDE55925D5B79D00E42BE3 /* CGTypes+Extensions.swift in Sources */,
-				9F00EAA825DDEF7900A99218 /* ImageStorageService.swift in Sources */,
-				9FDDE57925D5B85000E42BE3 /* AssetListWidget.swift in Sources */,
-				9FDDE55A25D5B79D00E42BE3 /* Numeric+Extensions.swift in Sources */,
-				9F3C30A925DA954300C7C398 /* UIFont+BRWAdditions.swift in Sources */,
-				9F3C313E25DACEDA00C7C398 /* ColorOption+ExtensionUI.swift in Sources */,
-				A2439D019C08106D6E14D70A /* MarketInfo.swift in Sources */,
-				A243915E84E4AA2AE09D687F /* SharedComponentViews.swift in Sources */,
-				A24391B09865778F327FD609 /* PortfolioViewModel.swift in Sources */,
-				9F00EAF425DDFC9600A99218 /* Currency+Extensions.swift in Sources */,
-				A24395E9DFDD64D08DDC45B4 /* Configuration.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CEA7E6771F09A9D2001F8C27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA7E67E1F09A9D2001F8C27 /* Screenshots.swift in Sources */,
-				CEA7E6871F09AB00001F8C27 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3595,16 +2761,6 @@
 			isa = PBXTargetDependency;
 			target = 75A2A78F1DA5934300A983D8 /* breadwallet */;
 			targetProxy = 75A2A7B01DA5934300A983D8 /* PBXContainerItemProxy */;
-		};
-		9F29A9A225D5C605000FEB40 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F29A99925D5C605000FEB40 /* breadwalletIntentHandler */;
-			targetProxy = 9F29A9A125D5C605000FEB40 /* PBXContainerItemProxy */;
-		};
-		9FB0CA1D25D5AD190057DD11 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9FB0CA0E25D5AD180057DD11 /* breadwalletWidgetExtension */;
-			targetProxy = 9FB0CA1C25D5AD190057DD11 /* PBXContainerItemProxy */;
 		};
 		CEA7E6811F09A9D2001F8C27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3873,7 +3029,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
+				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/Modules",
 					"$(BUILD_DIR)/$(BRCORE_CONFIGURATION)-$(PLATFORM_NAME)",
@@ -3891,7 +3047,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				MARKETING_VERSION = 3.17.2;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.brd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -3908,7 +3064,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
+				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3-staging.tar",
 					"brd-tokens-staging.tar",
@@ -3930,7 +3086,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				MARKETING_VERSION = 3.17.2;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.brd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -4110,7 +3266,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
+				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/Modules",
 					"$(BUILD_DIR)/$(BRCORE_CONFIGURATION)-$(PLATFORM_NAME)",
@@ -4128,7 +3284,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				MARKETING_VERSION = 3.17.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.internalQA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.brd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -4315,7 +3471,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
+				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3.tar",
 					"brd-tokens.tar",
@@ -4337,7 +3493,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				MARKETING_VERSION = 3.17.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.internalQA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.brd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -4524,7 +3680,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
+				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3.tar",
 					"brd-tokens.tar",
@@ -4546,7 +3702,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				MARKETING_VERSION = 3.17.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.testnetQA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.testnetQA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -4657,530 +3813,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = breadwallet;
-			};
-			name = "Release-Testnet";
-		};
-		9F29A9A425D5C605000FEB40 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletIntentHandler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet.breadwalletIntentHandler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9F29A9A525D5C605000FEB40 /* Debug-Internal */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletIntentHandler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.internalQA.breadwalletIntentHandler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG INTERNAL IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Debug-Internal";
-		};
-		9F29A9A625D5C605000FEB40 /* Debug-Testnet */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletIntentHandler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.testnetQA.breadwalletIntentHandler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TESTNET IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Debug-Testnet";
-		};
-		9F29A9A725D5C605000FEB40 /* Screenshots */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletIntentHandler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet.breadwalletIntentHandler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG SCREENSHOTS TESTNET IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Screenshots;
-		};
-		9F29A9A825D5C605000FEB40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletIntentHandler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet.breadwalletIntentHandler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = IS_EXTENSION_ENVIRONMENT;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		9F29A9A925D5C605000FEB40 /* Release-Testflight */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletIntentHandler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet.breadwalletIntentHandler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "TESTFLIGHT IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Release-Testflight";
-		};
-		9F29A9AA25D5C605000FEB40 /* Release-Internal */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletIntentHandler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.internalQA.breadwalletIntentHandler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "TESTFLIGHT INTERNAL IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Release-Internal";
-		};
-		9F29A9AB25D5C605000FEB40 /* Release-Testnet */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletIntentHandler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.testnetQA.breadwalletIntentHandler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "TESTFLIGHT TESTNET IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Release-Testnet";
-		};
-		9FB0CA1F25D5AD190057DD11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APP_GROUPS_ID = org.voisine.breadwallet;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = breadwalletWidget/breadwalletWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet.breadwalletWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9FB0CA2025D5AD190057DD11 /* Debug-Internal */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APP_GROUPS_ID = com.brd.internalQA;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = breadwalletWidget/breadwalletWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.internalQA.breadwalletWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG INTERNAL IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Debug-Internal";
-		};
-		9FB0CA2125D5AD190057DD11 /* Debug-Testnet */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APP_GROUPS_ID = com.brd.testnetQA;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = breadwalletWidget/breadwalletWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.testnetQA.breadwalletWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TESTNET IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Debug-Testnet";
-		};
-		9FB0CA2225D5AD190057DD11 /* Screenshots */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APP_GROUPS_ID = org.voisine.breadwallet;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = breadwalletWidget/breadwalletWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet.breadwalletWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG SCREENSHOTS TESTNET IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Screenshots;
-		};
-		9FB0CA2325D5AD190057DD11 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APP_GROUPS_ID = org.voisine.breadwallet;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = breadwalletWidget/breadwalletWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet.breadwalletWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = IS_EXTENSION_ENVIRONMENT;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		9FB0CA2425D5AD190057DD11 /* Release-Testflight */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APP_GROUPS_ID = org.voisine.breadwallet;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = breadwalletWidget/breadwalletWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet.breadwalletWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "TESTFLIGHT IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Release-Testflight";
-		};
-		9FB0CA2525D5AD190057DD11 /* Release-Internal */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APP_GROUPS_ID = com.brd.internalQA;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = breadwalletWidget/breadwalletWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.internalQA.breadwalletWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "TESTFLIGHT INTERNAL IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "Release-Internal";
-		};
-		9FB0CA2625D5AD190057DD11 /* Release-Testnet */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APP_GROUPS_ID = com.brd.testnetQA;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = breadwalletWidget/breadwalletWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = breadwalletWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.7;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.testnetQA.breadwalletWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "TESTFLIGHT TESTNET IS_EXTENSION_ENVIRONMENT";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Release-Testnet";
 		};
@@ -5333,7 +3965,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
+				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/Modules",
 					"$(BUILD_DIR)/$(BRCORE_CONFIGURATION)-$(PLATFORM_NAME)",
@@ -5351,7 +3983,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				MARKETING_VERSION = 3.17.2;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.brd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -5543,7 +4175,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
+				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/Modules",
 					"$(BUILD_DIR)/$(BRCORE_CONFIGURATION)-$(PLATFORM_NAME)",
@@ -5561,7 +4193,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				MARKETING_VERSION = 3.17.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brd.testnetQA;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.testnetQA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -5748,7 +4380,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = breadwallet/breadwallet.entitlements;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 4R7S6N88W9;
+				DEVELOPMENT_TEAM = ZV7987N2ZC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3.tar",
 					"brd-tokens.tar",
@@ -5770,7 +4402,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS)";
 				MARKETING_VERSION = 3.17.2;
-				PRODUCT_BUNDLE_IDENTIFIER = org.voisine.breadwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litecoin.brdTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -5953,36 +4585,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F29A9AC25D5C605000FEB40 /* Build configuration list for PBXNativeTarget "breadwalletIntentHandler" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F29A9A425D5C605000FEB40 /* Debug */,
-				9F29A9A525D5C605000FEB40 /* Debug-Internal */,
-				9F29A9A625D5C605000FEB40 /* Debug-Testnet */,
-				9F29A9A725D5C605000FEB40 /* Screenshots */,
-				9F29A9A825D5C605000FEB40 /* Release */,
-				9F29A9A925D5C605000FEB40 /* Release-Testflight */,
-				9F29A9AA25D5C605000FEB40 /* Release-Internal */,
-				9F29A9AB25D5C605000FEB40 /* Release-Testnet */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9FB0CA2725D5AD190057DD11 /* Build configuration list for PBXNativeTarget "breadwalletWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9FB0CA1F25D5AD190057DD11 /* Debug */,
-				9FB0CA2025D5AD190057DD11 /* Debug-Internal */,
-				9FB0CA2125D5AD190057DD11 /* Debug-Testnet */,
-				9FB0CA2225D5AD190057DD11 /* Screenshots */,
-				9FB0CA2325D5AD190057DD11 /* Release */,
-				9FB0CA2425D5AD190057DD11 /* Release-Testflight */,
-				9FB0CA2525D5AD190057DD11 /* Release-Internal */,
-				9FB0CA2625D5AD190057DD11 /* Release-Testnet */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		CEA7E6851F09A9D2001F8C27 /* Build configuration list for PBXNativeTarget "Screenshots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -6001,7 +4603,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3A858B28250A781700812B36 = {
+		3A858B28250A781700812B36 /* XCRemoteSwiftPackageReference "coingecko" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/breadwallet/coingecko";
 			requirement = {
@@ -6012,23 +4614,13 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3A0C6087242A5CC900F0FBC2 = {
+		3A0C6087242A5CC900F0FBC2 /* WalletKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WalletKit;
 		};
-		3A858B29250A781700812B36 = {
+		3A858B29250A781700812B36 /* CoinGecko */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3A858B28250A781700812B36;
-			productName = CoinGecko;
-		};
-		9F3C2FA625DA7F1C00C7C398 = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3A858B28250A781700812B36;
-			productName = CoinGecko;
-		};
-		9F3C2FAA25DA7F2F00C7C398 = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3A858B28250A781700812B36;
+			package = 3A858B28250A781700812B36 /* XCRemoteSwiftPackageReference "coingecko" */;
 			productName = CoinGecko;
 		};
 /* End XCSwiftPackageProductDependency section */
