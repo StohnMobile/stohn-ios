@@ -110,11 +110,9 @@ class OnboardingViewController: UIViewController {
     // Used to ensure we only animate the landing page on the first appearance.
     var appearanceCount: Int = 0
     
-    let pageCount: Int = 3
-    
-    let globePageIndex = 1
-    let coinsPageIndex = 2
-    let finalPageIndex = 3
+    let pageCount: Int = 1
+
+    let finalPageIndex = 1
     
     // Whenever we're animating from page to page this is set to true
     // to prevent additional taps on the Next button during the transition.
@@ -140,10 +138,6 @@ class OnboardingViewController: UIViewController {
             }, completion: nil)
             
             switch pageIndex {
-            case globePageIndex:
-                logEvent(.appeared, screen: .globePage)
-            case coinsPageIndex:
-                logEvent(.appeared, screen: .coinsPage)
             case finalPageIndex:
                 logEvent(.appeared, screen: .finalPage)
             default:
@@ -183,22 +177,6 @@ class OnboardingViewController: UIViewController {
     
     private func exitWith(action exitAction: OnboardingExitAction) {
         didExitWithAction?(exitAction)
-    }
-            
-    // Starts the video clip for the given page.
-    private func startVideoClipForPage(pageIndex: Int) {
-        let page: OnboardingPage = pages[pageIndex]
-        let videoClip = page.videoClip
-        
-        guard !videoClip.isEmpty else { return }   // no clip for this page
-             
-        let clipIndex = pageIndex - 1
-        let rate = videoRates[clipIndex]
-        
-        prepareVideoPlayer(index: clipIndex)
-                
-        let player = videoPlayers[clipIndex]
-        player.playImmediately(atRate: rate)            
     }
     
     @objc private func backTapped(sender: Any) {
@@ -253,8 +231,6 @@ class OnboardingViewController: UIViewController {
         self.videoContainerViews.forEach { $0.removeFromSuperview() }
         self.videoContainerViews.removeAll()
         
-        self.setUpVideoClips()
-        
         self.pageIndex = 0
 
         self.topButton.title = topButtonText(pageIndex: 0)
@@ -286,18 +262,9 @@ class OnboardingViewController: UIViewController {
     }
     
     private func setUpPages() {
-
         pages.append(OnboardingPage(heading: S.OnboardingScreen.pageOneTitle,
                                     subheading: "", 
                                     videoClip: ""))
-        
-        pages.append(OnboardingPage(heading: S.OnboardingScreen.pageTwoTitle,
-                                    subheading: S.OnboardingScreen.pageTwoSubtitle,
-                                    videoClip: "onboarding-video-globe"))
-            
-        pages.append(OnboardingPage(heading: S.OnboardingScreen.pageThreeTitle,
-                           subheading: S.OnboardingScreen.pageThreeSubtitle,
-                           videoClip: "onboarding-video-coins-in"))
     }
         
     private func makeHeadingLabel(text: String, font: UIFont, color: UIColor) -> UILabel {
@@ -496,70 +463,6 @@ class OnboardingViewController: UIViewController {
         }
     }
     
-    private func setUpVideoClips() {
-                
-        videoPlayers.removeAll()
-        videoLayers.removeAll()
-        
-        for view in videoContainerViews {
-            view.removeFromSuperview()
-        }
-        
-        videoContainerViews.removeAll()
-        
-        for index in 1...lastPageIndex {
-            let page = pages[index]
-            let clipName = page.videoClip
-            
-            guard let filePath = Bundle.main.path(forResource: clipName, ofType: "mp4") else { 
-                continue
-            }
-            
-            let fileURL = URL.init(fileURLWithPath: filePath)
-            let asset = AVURLAsset(url: fileURL, options: [AVURLAssetPreferPreciseDurationAndTimingKey: true])
-
-            let videoItem = AVPlayerItem(asset: asset)
-            let player = AVPlayer(playerItem: videoItem)
-            let videoLayer: AVPlayerLayer = AVPlayerLayer(player: player)
-
-            let containerView = UIView(frame: view.frame)
-            containerView.backgroundColor = .clear
-            containerView.alpha = 0
-            containerView.layer.addSublayer(videoLayer)            
-            view.insertSubview(containerView, at: 0)
-            
-            // On larger screens such as iPhone XR the video content can overlap the subheading text
-            // due to scaling of the video, so use `videoClipContainerTopInset` here.
-            let insets = UIEdgeInsets(top: videoClipContainerTopInset, left: 0, bottom: 0, right: 0)
-            containerView.constrain(toSuperviewEdges: insets)
-            
-            // add the video layer with aspect-fill so that it conforms to the bounds
-            // of the container view
-            videoLayer.frame = containerView.frame
-            videoLayer.backgroundColor = UIColor.clear.cgColor
-            videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-            
-            videoPlayers.append(player)
-            videoLayers.append(videoLayer)
-            videoContainerViews.append(containerView)
-        }
-        
-        // Make the first video layer visible so it's ready to roll when the user navigates to 
-        // the first page.
-        if let firstLayer = videoLayers.first {
-            firstLayer.isHidden = false
-        }
-    }
-
-    private func prepareVideoPlayer(index: Int) {
-        // makes all the video layers hidden except for the one at 'index'
-        var idx = 0
-        for container in videoContainerViews {
-            container.alpha = (index != idx) ? 0 : 1
-            idx += 1
-        }
-    }
-    
     private func addBackAndSkipButtons() {
         let image = UIImage(named: "BackArrowWhite")
         
@@ -670,8 +573,6 @@ class OnboardingViewController: UIViewController {
         isPaging = true
         
         let nextIndex = pageIndex + 1
-        
-        startVideoClipForPage(pageIndex: nextIndex)
         
         let pageAnimationDuration = 0.6//1.0
         let delay = animationDelays[nextIndex]
@@ -797,7 +698,6 @@ class OnboardingViewController: UIViewController {
                          
     private func setupSubviews() {
         setUpHeadingLabels()
-        setUpVideoClips()
         
         setUpBottomButtons()
         addBackAndSkipButtons()        
